@@ -1,0 +1,313 @@
+### YamlMime:Hub
+title: Azure ハイブリッド クラウドのドキュメント
+summary: グローバルなクラウド、データセンター、エッジにまたがるハイブリッド ソリューションを構築および運用するためのリソース。
+brand: azure
+metadata:
+  title: Azure ハイブリッド クラウドのドキュメント
+  description: グローバルなクラウド、データセンター、エッジにまたがるハイブリッド ソリューションを構築および運用するためのリソース。
+  ms.service: multiple
+  ms.topic: hub-page
+  author: BryanLa
+  ms.author: bryanla
+  ms.date: 06/19/2020
+  ms.openlocfilehash: 4d2cd89f0375031c25820509290f4fe9336d0ca4
+  ms.sourcegitcommit: 058c7d4366cd015b8c5fbcba012f9e74be9f81cc
+  ms.translationtype: HT
+  ms.contentlocale: ja-JP
+  ms.lasthandoff: 06/19/2020
+  ms.locfileid: "85111283"
+highlightedContent:
+  items:
+  - title: Azure ハイブリッドに関するバーチャル イベント - 2020 年 6 月 24 日
+    itemType: video
+    url: https://info.microsoft.com/ww-registration-azure-hybrid-virtual-event.html
+  - title: 'Build 2020: ハイブリッドに関するセッション'
+    itemType: video
+    url: https://mybuild.microsoft.com/sessions?q=hybrid&g=%255B%2522on-demand%2522%255D
+  - title: 'Build 2020: Azure Arc に関するセッション'
+    itemType: video
+    url: https://mybuild.microsoft.com/sessions?q=%2522%2520Arc%2520%2522&g=%255B%2522on-demand%2522%255D
+  - title: 'Build 2020: インテリジェント エッジに関するセッション'
+    itemType: video
+    url: https://mybuild.microsoft.com/sessions?q=%2522%2520intelligent%2520edge%2520%2522%2520%2522%2520sql%2520edge%2520%2522
+  - title: Ignite 2019:ハイブリッドに関するセッション
+    itemType: video
+    url: https://myignite.techcommunity.microsoft.com/sessions?t={"from":"2019-11-03T08:00:00-05:00","to":"2019-11-08T19:00:00-05:00"}&q=hybrid&s={"name":"translate.refine.label.sort.relevance","type":0}&g=["on-demand"]
+productDirectory:
+  title: Azure ハイブリッド クラウド プラットフォーム
+  summary: ハイブリッド ソリューションの構築と運用に使用されるハイブリッド対応のプラットフォーム。
+  items:
+  - title: Azure のグローバル パブリックまたはソブリン クラウド プラットフォーム
+    imageSrc: media/index/logo_azure.svg
+    links:
+    - url: /azure
+      text: Azure サービス
+  - title: ホスト型、オンプレミス、モバイルのデータ センター向けのプライベート クラウド プラットフォーム。
+    imageSrc: media/index/azure-stack-hub.svg
+    links:
+    - url: /azure-stack/operator
+      text: Azure Stack Hub
+    - url: /azure-stack/hci
+      text: Azure Stack HCI
+  - title: デバイス向けのインテリジェント エッジ プラットフォーム。
+    imageSrc: media/index/azure-stack-hub.svg
+    links:
+    - url: /azure/iot-edge/
+      text: Azure IoT Edge
+    - url: /azure-sphere
+      text: Azure Sphere
+    - url: /windows/iot-core/
+      text: Windows for IoT
+conceptualContent:
+  title: ハイブリッド対応テクノロジ
+  summary: ハイブリッド ソリューションを構築および運用するためのサービスと製品。
+  items:
+  - title: AI + 機械学習
+    links:
+    - url: /azure/bot-service
+      itemType: overview
+      text: Azure Bot Service
+    - url: /azure/search/
+      itemType: overview
+      text: Azure Cognitive Search
+    - url: /azure/cognitive-services/
+      itemType: overview
+      text: Azure Cognitive Services
+    - url: /azure/machine-learning/
+      itemType: overview
+      text: Azure Machine Learning
+  - title: Containers
+    links:
+    - url: /azure/azure-arc/kubernetes/
+      itemType: overview
+      text: Azure Arc 対応 Kubernetes (プレビュー)
+    - url: /azure/container-instances/
+      itemType: overview
+      text: Azure Container Instances
+    - url: /azure/container-registry/
+      itemType: overview
+      text: Azure Container Registry
+    - url: /azure/aks/
+      itemType: overview
+      text: Azure の Azure Kubernetes Service
+    - url: /azure-stack/user/azure-stack-kubernetes-aks-engine-overview
+      itemType: overview
+      text: Azure Stack Hub の Azure Kubernetes Service
+    - url: /azure/docker/
+      itemType: overview
+      text: Azure 上の Docker
+    - url: /azure/iot-edge/how-to-install-iot-edge-kubernetes
+      itemType: overview
+      text: Kubernetes の IoT Edge
+  - title: データベース
+    links:
+    - url: https://azure.microsoft.com/services/azure-arc/hybrid-data-services/
+      itemType: overview
+      text: Azure Arc 対応のデータ サービス (プライベート プレビューのサインアップ)
+    - url: /azure/azure-sql-edge/overview
+      itemType: overview
+      text: Azure SQL Edge (プレビュー)
+  - title: 開発と統合
+    links:
+    - url: /azure-stack/operator/azure-stack-app-service-overview
+      itemType: overview
+      text: Azure Stack Hub 上の App Service
+    - url: /azure/app-service/app-service-hybrid-connections
+      itemType: overview
+      text: Azure App Services からのハイブリッド接続
+    - url: /azure/devops
+      itemType: overview
+      text: CI/CD 用の Azure DevOps
+    - url: /azure/event-hubs/
+      itemType: overview
+      text: Azure Event Hubs
+    - url: /azure/azure-functions/
+      itemType: overview
+      text: Azure Functions
+    - url: /azure/logic-apps/
+      itemType: overview
+      text: Azure Logic Apps
+    - url: /azure/azure-monitor/app/app-insights-overview
+      itemType: overview
+      text: Azure Monitor - Application Insights
+    - url: /azure/service-fabric/
+      itemType: overview
+      text: Azure Service Fabric
+    - url: /azure-stack/operator/event-hubs-rp-overview
+      itemType: overview
+      text: Azure Stack Hub 上の Event Hubs
+  - title: Edge
+    links:
+    - url: /azure/databox-online/data-box-gateway-overview
+      itemType: overview
+      text: Azure Data Box Gateway
+    - url: /azure/iot-edge/
+      itemType: overview
+      text: Azure IoT Edge
+    - url: /azure-sphere
+      itemType: overview
+      text: Azure Sphere
+    - url: /azure/databox-online/azure-stack-edge-overview
+      itemType: overview
+      text: Azure Stack Edge
+    - url: /azure/azure-sql-edge/overview
+      itemType: overview
+      text: Azure SQL Edge (プレビュー)
+    - url: /azure/iot-edge/how-to-install-iot-edge-kubernetes
+      itemType: overview
+      text: Kubernetes の IoT Edge
+    - url: /windows/iot-core/
+      itemType: overview
+      text: Windows for IoT
+  - title: ID とセキュリティ
+    links:
+    - url: /azure/active-directory/hybrid/
+      itemType: overview
+      text: Azure AD ハイブリッド ID
+    - url: /azure/security-center/
+      itemType: overview
+      text: Azure Security Center
+    - url: /azure/sentinel/
+      itemType: overview
+      text: Azure Sentinel
+    - url: /azure/active-directory/devices/concept-azure-ad-join-hybrid
+      itemType: overview
+      text: ハイブリッド Azure AD 参加済みデバイス
+  - title: 管理
+    links:
+    - url: https://azure.microsoft.com/services/azure-arc/hybrid-data-services/
+      itemType: overview
+      text: Azure Arc 対応のデータ サービス (プライベート プレビューのサインアップ)
+    - url: /azure/azure-arc/kubernetes/
+      itemType: overview
+      text: Azure Arc 対応 Kubernetes (プレビュー)
+    - url: /azure/azure-arc/
+      itemType: overview
+      text: Azure Arc 対応サーバー (プレビュー)
+    - url: /azure/automation/
+      itemType: overview
+      text: Azure Automation
+    - url: /azure/storage/files/
+      itemType: overview
+      text: Azure Files
+    - url: /azure-monitor
+      itemType: overview
+      text: Azure Monitor
+    - url: /azure/site-recovery/
+      itemType: overview
+      text: Azure Site Recovery
+    - url: /azure-stack/hci/overview
+      itemType: overview
+      text: Azure Stack HCI のハイブリッド機能
+    - url: /windows-server/manage/windows-admin-center/azure/
+      itemType: overview
+      text: Windows Admin Center の Azure ハイブリッド サービス
+  - title: ネットワーク
+    links:
+    - url: /azure/networking/edge-zones-overview
+      itemType: overview
+      text: Azure Edge Zone
+    - url: /azure/expressroute/
+      itemType: overview
+      text: Azure ExpressRoute
+    - url: /azure/load-balancer/
+      itemType: overview
+      text: Azure Load Balancer
+    - url: /azure/private-link/
+      itemType: overview
+      text: Azure Private Link
+    - url: /azure/azure-relay/
+      itemType: overview
+      text: Azure Relay
+    - url: /azure/traffic-manager/
+      itemType: overview
+      text: Azure の Traffic Manager
+    - url: /azure/virtual-network/
+      itemType: overview
+      text: Azure Virtual Network
+    - url: /azure/vpn-gateway/
+      itemType: overview
+      text: Azure VPN Gateway
+  - title: ストレージ
+    links:
+    - url: /azure/avere-vfxt/avere-vfxt-overview
+      itemType: overview
+      text: Avere vFXT for Azure
+    - url: /azure/backup/
+      itemType: overview
+      text: Azure Backup
+    - url: /azure/storage/files/storage-files-introduction
+      itemType: overview
+      text: Azure Files
+    - url: /azure/site-recovery/
+      itemType: overview
+      text: Azure Site Recovery
+    - url: /azure/fxt-edge-filer/fxt-overview
+      itemType: overview
+      text: Azure FXT Edge Filer
+additionalContent:
+  sections:
+  - title: ハイブリッド ソリューション
+    items:
+    - title: ハイブリッド アプリのパターンとソリューションの例
+      links:
+      - url: /hybrid/app-solutions/overview-patterns-solution-examples
+        text: パターンとソリューションの例とは
+      - url: /hybrid/app-solutions/overview-app-design-considerations
+        text: ハイブリッド アプリの設計上の考慮事項
+    - title: ハイブリッド パターンを確認する
+      links:
+      - url: /hybrid/app-solutions/pattern-cross-cloud-scale
+        text: クラウド間スケーリング
+      - url: /hybrid/app-solutions/pattern-cicd-pipeline
+        text: DevOps ハイブリッド CI/CD
+      - url: /hybrid/app-solutions/pattern-retail-footfall-detection
+        text: 足音検知 (リテール)
+      - url: /hybrid/app-solutions/pattern-geo-distributed
+        text: 地理的に分散されたアプリ
+    - title: ハイブリッド ソリューションのデプロイの例
+      links:
+      - url: /hybrid/app-solutions/solution-deployment-guide-cross-cloud-scaling
+        text: クラウド間スケーリング
+      - url: https://aka.ms/hybriddevopsdeploy
+        text: DevOps ハイブリッド CI/CD
+      - url: /hybrid/app-solutions/solution-deployment-guide-retail-footfall-detection
+        text: 足音検知 (リテール)
+      - url: /hybrid/app-solutions/solution-deployment-guide-geo-distributed
+        text: 地理的に分散されたアプリ
+  - title: その他のリソース
+    items:
+    - title: 一般的なリソース
+      links:
+      - url: /azure-stack/operator/compare-azure-azure-stack
+        text: グローバルなAzure と Azure Stack
+      - url: https://azure.microsoft.com/blog/topics/hybrid/
+        text: Azure ハイブリッドのブログ
+      - url: https://azure.microsoft.com/overview/azure-hybrid/
+        text: Azure ハイブリッドの機能
+      - url: /learn
+        text: Microsoft Learn の対話型トレーニング
+      - url: /learn/tv/
+        text: Microsoft Learn TV
+    - title: 構築と運用に関するリソース
+      links:
+      - url: /dotnet/azure/
+        text: Azure の .NET 開発
+      - url: https://github.com/likamrat/azure_arc
+        text: Azure Arc のジャンプスタート ガイド
+      - url: /samples/browse/
+        text: コード サンプル ブラウザー
+      - url: https://www.youtube.com/watch?v=2lw8zOpJTn0
+        text: Azure Stack Hub から Azure への動的なスケーリング
+      - url: https://labs.iotedge.dev/
+        text: IoT Edge のハンズオン ラボ
+      - url: https://azure.github.io/Vision-AI-DevKit-Pages/
+        text: Vision AI Developer Kit
+      - url: /visualstudio/azure/
+        text: Visual Studio での Azure の開発
+    - title: サポートとその他のリソース
+      links:
+      - url: https://catalog.azureiotsolutions.com/alldevices?filters={%2218%22:[%221%22]}
+        text: Azure IoT Edge 認定デバイス
+      - url: /answers/products/
+        text: Microsoft Q&A フォーラム

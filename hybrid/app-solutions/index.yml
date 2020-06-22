@@ -1,0 +1,72 @@
+### YamlMime:Landing
+title: Azure のハイブリッド パターンとソリューションのドキュメント
+summary: アプリ開発でハイブリッド パターンとソリューションの例を活用する方法について説明します。 Azure と Azure Stack では、インテリジェントなクラウドとインテリジェントなエッジ サービスのスイート上に構築されたハイブリッド アプリケーションの開発が可能になります。
+metadata:
+  title: Azure のハイブリッド パターンとソリューションのドキュメント
+  description: アプリ開発でハイブリッド パターンとソリューションの例を活用する方法について説明します。 Azure と Azure Stack では、インテリジェントなクラウドとインテリジェントなエッジ サービスのスイート上に構築されたハイブリッド アプリケーションの開発が可能になります。
+  ms.service: azure-stack
+  ms.topic: landing-page
+  author: BryanLa
+  ms.author: bryanla
+  ms.date: 10/31/2019
+  ms.openlocfilehash: 923e8aa2af78b5d23ba1f25d8b0eb5b80edc4f0a
+  ms.sourcegitcommit: bb3e40b210f86173568a47ba18c3cc50d4a40607
+  ms.translationtype: HT
+  ms.contentlocale: ja-JP
+  ms.lasthandoff: 06/17/2020
+  ms.locfileid: "84909720"
+landingContent:
+- title: ハイブリッド パターンとソリューションについて
+  linkLists:
+  - linkListType: overview
+    links:
+    - text: ハイブリッド パターンとソリューションの例とは
+      url: overview-patterns-solution-examples.md
+  - linkListType: concept
+    links:
+    - text: ハイブリッド アプリの設計上の考慮事項
+      url: overview-app-design-considerations.md
+- title: ハイブリッド パターンを確認する
+  linkLists:
+  - linkListType: architecture
+    links:
+    - text: クラウド間スケーリング
+      url: pattern-cross-cloud-scale.md
+    - text: DevOps ハイブリッド CI/CD
+      url: pattern-cicd-pipeline.md
+    - text: 足音検知 (リテール)
+      url: pattern-retail-footfall-detection.md
+    - text: 地理的に分散されたアプリ
+      url: pattern-geo-distributed.md
+- title: ハイブリッド ソリューションのデプロイの例
+  linkLists:
+  - linkListType: tutorial
+    links:
+    - text: クラウド間スケーリング
+      url: solution-deployment-guide-cross-cloud-scaling.md
+    - text: DevOps ハイブリッド CI/CD
+      url: https://aka.ms/hybriddevopsdeploy
+    - text: 足音検知 (リテール)
+      url: solution-deployment-guide-retail-footfall-detection.md
+    - text: 地理的に分散されたアプリ
+      url: solution-deployment-guide-geo-distributed.md
+- title: リテール足音検知のシナリオ
+  linkLists:
+  - linkListType: architecture
+    links:
+    - text: Pattern
+      url: pattern-retail-footfall-detection.md
+  - linkListType: tutorial
+    links:
+    - text: ソリューション デプロイ ガイド
+      url: solution-deployment-guide-retail-footfall-detection.md
+- title: オンプレミスのデータ シナリオを使ったクラウド間スケーリング
+  linkLists:
+  - linkListType: architecture
+    links:
+    - text: Pattern
+      url: pattern-cross-cloud-scale-onprem-data.md
+  - linkListType: tutorial
+    links:
+    - text: ソリューション デプロイ ガイド
+      url: solution-deployment-guide-cross-cloud-scaling-onprem-data.md

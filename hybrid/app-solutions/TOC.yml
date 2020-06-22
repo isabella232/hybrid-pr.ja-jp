@@ -1,0 +1,74 @@
+- name: Azure ハイブリッドのドキュメント
+  href: index.yml
+- name: 概要
+  items:
+    - name: ハイブリッド パターンとソリューションの例
+      href: overview-patterns-solution-examples.md
+- name: パターン
+  items:
+    - name: Single
+      items:
+        - name: クラウド間スケーリング
+          href: pattern-cross-cloud-scale.md
+        - name: DevOps ハイブリッド CI/CD
+          href: pattern-cicd-pipeline.md
+        - name: 地理的に分散されたアプリ
+          href: pattern-geo-distributed.md
+        - name: ハイブリッド リレー
+          href: pattern-hybrid-relay.md
+        - name: 階層化データ
+          href: pattern-tiered-data-analytics.md
+        - name: エッジでの ML モデルのトレーニング
+          href: pattern-train-ml-model-at-edge.md
+    - name: 複数
+      items:
+        - name: クラウド間スケーリング (オンプレミスのデータ)
+          href: pattern-cross-cloud-scale-onprem-data.md
+        - name: 足音検知 (リテール)
+          href: pattern-retail-footfall-detection.md
+        - name: エッジでの在庫切れ検出
+          href: pattern-out-of-stock-at-edge.md
+- name: ソリューション デプロイ ガイド
+  items:
+    - name: クラウド間スケーリング
+      href: solution-deployment-guide-cross-cloud-scaling.md
+    - name: クラウド間スケーリング (オンプレミスのデータ)
+      href: solution-deployment-guide-cross-cloud-scaling-onprem-data.md
+    - name: DevOps ハイブリッド CI/CD
+      href: 'https://aka.ms/hybriddevopsdeploy'
+    - name: 足音検知 (リテール)
+      href: solution-deployment-guide-retail-footfall-detection.md
+    - name: 地理的に分散されたアプリ
+      href: solution-deployment-guide-geo-distributed.md
+    - name: ハイブリッド接続
+      href: solution-deployment-guide-connectivity.md
+    - name: ハイブリッド ID
+      href: solution-deployment-guide-identity.md
+    - name: ハイブリッド リレー
+      href: 'https://aka.ms/hybridrelaydeployment'
+    - name: 階層化データ
+      href: 'https://aka.ms/tiereddatadeploy'
+    - name: 高可用性 MongoDB
+      href: solution-deployment-guide-mongodb-ha.md
+    - name: 高可用性 SQL Server 2016
+      href: solution-deployment-guide-sql-ha.md
+    - name: エッジでの在庫切れ
+      href: 'https://aka.ms/edgeinferencingdeploy'
+    - name: エッジでの ML モデルのトレーニング
+      href: 'https://aka.ms/edgetrainingdeploy'
+- name: 概念
+  items:
+    - name: ハイブリッド アプリの設計上の考慮事項
+      href: overview-app-design-considerations.md
+- name: 関連項目
+  items:
+    - name: Azure のドキュメント
+      href: /azure
+    - name: Azure Stack のドキュメント
+      href: /azure-stack
+- name: リソース
+  items:
+    - name: Microsoft Learn
+      href: /learn
+    - name: Microsoft Q&A
+      href: /answers/products/
