@@ -9,13 +9,13 @@ metadata:
   ms.topic: hub-page
   author: BryanLa
   ms.author: bryanla
-  ms.date: 06/19/2020
-  ms.openlocfilehash: 4d2cd89f0375031c25820509290f4fe9336d0ca4
-  ms.sourcegitcommit: 058c7d4366cd015b8c5fbcba012f9e74be9f81cc
+  ms.date: 06/23/2020
+  ms.openlocfilehash: 07c1f66901ca5cfeb1fba10f4ae256a727fe9aed
+  ms.sourcegitcommit: 7e1ffd9825fce79d1d3972c0dfd0adc25f4adc0a
   ms.translationtype: HT
   ms.contentlocale: ja-JP
-  ms.lasthandoff: 06/19/2020
-  ms.locfileid: "85111283"
+  ms.lasthandoff: 06/23/2020
+  ms.locfileid: "85289518"
 highlightedContent:
   items:
   - title: Azure ハイブリッドに関するバーチャル イベント - 2020 年 6 月 24 日
@@ -281,10 +281,10 @@ additionalContent:
       links:
       - url: /azure-stack/operator/compare-azure-azure-stack
         text: グローバルなAzure と Azure Stack
-      - url: https://azure.microsoft.com/blog/topics/hybrid/
-        text: Azure ハイブリッドのブログ
       - url: https://azure.microsoft.com/overview/azure-hybrid/
         text: Azure ハイブリッドの機能
+      - url: https://customers.microsoft.com/en-us/search?sq="hybrid cloud"
+        text: ハイブリッド クラウドの顧客事例
       - url: /learn
         text: Microsoft Learn の対話型トレーニング
       - url: /learn/tv/
@@ -295,6 +295,8 @@ additionalContent:
         text: Azure の .NET 開発
       - url: https://github.com/likamrat/azure_arc
         text: Azure Arc のジャンプスタート ガイド
+      - url: https://catalog.azureiotsolutions.com/alldevices?filters={%2218%22:[%221%22]}
+        text: Azure IoT Edge 認定デバイス
       - url: /samples/browse/
         text: コード サンプル ブラウザー
       - url: https://www.youtube.com/watch?v=2lw8zOpJTn0
@@ -307,7 +309,7 @@ additionalContent:
         text: Visual Studio での Azure の開発
     - title: サポートとその他のリソース
       links:
-      - url: https://catalog.azureiotsolutions.com/alldevices?filters={%2218%22:[%221%22]}
-        text: Azure IoT Edge 認定デバイス
+      - url: https://azure.microsoft.com/blog/topics/hybrid/
+        text: Azure ハイブリッドのブログ
       - url: /answers/products/
         text: Microsoft Q&A フォーラム
