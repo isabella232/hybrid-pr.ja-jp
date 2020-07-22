@@ -10,12 +10,12 @@ metadata:
   author: BryanLa
   ms.author: bryanla
   ms.date: 06/30/2020
-  ms.openlocfilehash: ac27dd4f6dd719fade045f33750502fa2572bd9a
-  ms.sourcegitcommit: 6914306c4a326c4532d2fc7f325953b56d9d92f8
+  ms.openlocfilehash: ee69d8f1110166063edc5a4b2cdbfaf36b402868
+  ms.sourcegitcommit: d2def847937178f68177507be151df2aa8e25d53
   ms.translationtype: HT
   ms.contentlocale: ja-JP
-  ms.lasthandoff: 07/01/2020
-  ms.locfileid: "85594057"
+  ms.lasthandoff: 07/20/2020
+  ms.locfileid: "86477305"
 highlightedContent:
   items:
   - title: Azure ハイブリッドに関するバーチャル イベント
@@ -251,29 +251,29 @@ additionalContent:
     items:
     - title: ハイブリッド アプリのパターンとソリューションの例
       links:
-      - url: /hybrid/app-solutions/overview-patterns-solution-examples
+      - url: ./app-solutions/overview-patterns-solution-examples.md
         text: パターンとソリューションの例とは
-      - url: /hybrid/app-solutions/overview-app-design-considerations
+      - url: ./app-solutions/overview-app-design-considerations.md
         text: ハイブリッド アプリの設計上の考慮事項
     - title: ハイブリッド パターンを確認する
       links:
-      - url: /hybrid/app-solutions/pattern-cross-cloud-scale
+      - url: ./app-solutions/pattern-cross-cloud-scale.md
         text: クラウド間スケーリング
-      - url: /hybrid/app-solutions/pattern-cicd-pipeline
+      - url: ./app-solutions/pattern-cicd-pipeline.md
         text: DevOps ハイブリッド CI/CD
-      - url: /hybrid/app-solutions/pattern-retail-footfall-detection
+      - url: ./app-solutions/pattern-retail-footfall-detection.md
         text: 足音検知 (リテール)
-      - url: /hybrid/app-solutions/pattern-geo-distributed
+      - url: ./app-solutions/pattern-geo-distributed.md
         text: 地理的に分散されたアプリ
     - title: ハイブリッド ソリューションのデプロイの例
       links:
-      - url: /hybrid/app-solutions/solution-deployment-guide-cross-cloud-scaling
+      - url: ./app-solutions/solution-deployment-guide-cross-cloud-scaling.md
         text: クラウド間スケーリング
       - url: https://aka.ms/hybriddevopsdeploy
         text: DevOps ハイブリッド CI/CD
-      - url: /hybrid/app-solutions/solution-deployment-guide-retail-footfall-detection
+      - url: ./app-solutions/solution-deployment-guide-retail-footfall-detection.md
         text: 足音検知 (リテール)
-      - url: /hybrid/app-solutions/solution-deployment-guide-geo-distributed
+      - url: ./app-solutions/solution-deployment-guide-geo-distributed.md
         text: 地理的に分散されたアプリ
   - title: その他のリソース
     items:
