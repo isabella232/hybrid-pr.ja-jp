@@ -7,16 +7,16 @@ ms.date: 11/05/2019
 ms.author: bryanla
 ms.reviewer: anajod
 ms.lastreviewed: 11/05/2019
-ms.openlocfilehash: ff6d5b9667e63a6b8d232b6dd93db2d8b12fd46d
-ms.sourcegitcommit: bb3e40b210f86173568a47ba18c3cc50d4a40607
-ms.translationtype: MT
+ms.openlocfilehash: 85b859457b9b54a973c5fc23329b927212b60a07
+ms.sourcegitcommit: d2def847937178f68177507be151df2aa8e25d53
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/17/2020
-ms.locfileid: "84911044"
+ms.lasthandoff: 07/20/2020
+ms.locfileid: "86477084"
 ---
 # <a name="deploy-a-sql-server-2016-availability-group-to-azure-and-azure-stack-hub"></a>Azure と Azure Stack Hub に SQL Server 2016 可用性グループをデプロイする
 
-この記事では、2 つの Azure Stack Hub 環境にわたって、非同期 DR (ディザスター リカバリー) サイトと共に、基本的な高可用性 (HA) SQL Server 2016 Enterprise クラスターを自動デプロイする方法を段階的に説明します。 SQL Server 2016 と高可用性の詳細については、「[AlwaysOn 可用性グループ: 高可用性とディザスター リカバリーのソリューション](https://docs.microsoft.com/sql/database-engine/availability-groups/windows/always-on-availability-groups-sql-server?view=sql-server-2016)」を参照してください。
+この記事では、2 つの Azure Stack Hub 環境にわたって、非同期 DR (ディザスター リカバリー) サイトと共に、基本的な高可用性 (HA) SQL Server 2016 Enterprise クラスターを自動デプロイする方法を段階的に説明します。 SQL Server 2016 と高可用性の詳細については、「[AlwaysOn 可用性グループ: 高可用性とディザスター リカバリーのソリューション](/sql/database-engine/availability-groups/windows/always-on-availability-groups-sql-server?view=sql-server-2016)」を参照してください。
 
 このソリューションでは、以下を実現するためのサンプル環境を構築します。
 
@@ -40,9 +40,9 @@ ms.locfileid: "84911044"
 - 2 つの接続された Azure Stack Hub 統合システム (Azure Stack Hub)。 このデプロイは Azure Stack Development Kit (ASDK) では機能しません。 Azure Stack Hub の詳細については、「[Azure Stack の概要](https://azure.microsoft.com/overview/azure-stack/)」を参照してください。
 - 各 Azure Stack Hub のテナント サブスクリプション。
   - **各サブスクリプション ID と Azure Resource Manager エンドポイントを Azure Stack Hub ごとにメモしてください。**
-- 各 Azure Stack Hub のテナント サブスクリプションに対する権限が与えられた Azure Active Directory (Azure AD) サービス プリンシパル。 複数の Azure AD テナントに対して Azure Stack Hub がデプロイされている場合、サービス プリンシパルを 2 つ作成しなければならないことがあります。 Azure Stack Hub のサービス プリンシパルを作成する方法については、[Azure Stack Hub リソースへのアクセスをアプリに提供するサービス プリンシパルを作成する](https://docs.microsoft.com/azure-stack/user/azure-stack-create-service-principals)方法に関するページを参照してください。
+- 各 Azure Stack Hub のテナント サブスクリプションに対する権限が与えられた Azure Active Directory (Azure AD) サービス プリンシパル。 複数の Azure AD テナントに対して Azure Stack Hub がデプロイされている場合、サービス プリンシパルを 2 つ作成しなければならないことがあります。 Azure Stack Hub のサービス プリンシパルを作成する方法については、[Azure Stack Hub リソースへのアクセスをアプリに提供するサービス プリンシパルを作成する](/azure-stack/user/azure-stack-create-service-principals)方法に関するページを参照してください。
   - **各サービス プリンシパルのアプリケーション ID、クライアント シークレット、テナント名 (xxxxx.onmicrosoft.com) をメモしてください。**
-- 各 Azure Stack Hub の Marketplace にシンジケート化された SQL Server 2016 Enterprise。 マーケットプレース シンジケーションの詳細については、「[Azure Stack Hub に Marketplace の項目をダウンロードする](https://docs.microsoft.com/azure-stack/operator/azure-stack-download-azure-marketplace-item)」を参照してください。
+- 各 Azure Stack Hub の Marketplace にシンジケート化された SQL Server 2016 Enterprise。 マーケットプレース シンジケーションの詳細については、「[Azure Stack Hub に Marketplace の項目をダウンロードする](/azure-stack/operator/azure-stack-download-azure-marketplace-item)」を参照してください。
     **組織に適切な SQL ライセンスが与えられていることを確認してください。**
 - ローカル コンピューターにインストールされた [Docker for Windows](https://docs.docker.com/docker-for-windows/)。
 
@@ -105,6 +105,6 @@ ms.locfileid: "84911044"
 
 ## <a name="next-steps"></a>次のステップ
 
-- SQL Server Management Studio を使用して手動でクラスターをフェールオーバーします。 「[Always On 可用性グループの強制手動フェールオーバーの実行 (SQL Server)](https://docs.microsoft.com/sql/database-engine/availability-groups/windows/perform-a-forced-manual-failover-of-an-availability-group-sql-server?view=sql-server-2017)」を参照してください
+- SQL Server Management Studio を使用して手動でクラスターをフェールオーバーします。 「[Always On 可用性グループの強制手動フェールオーバーの実行 (SQL Server)](/sql/database-engine/availability-groups/windows/perform-a-forced-manual-failover-of-an-availability-group-sql-server?view=sql-server-2017)」を参照してください
 - ハイブリッド クラウド アプリの詳細を確認してください。 [ハイブリッド クラウド ソリューション](https://aka.ms/azsdevtutorials)に関するページを参照してください。
 - 独自のデータを使用するか、[GitHub](https://github.com/Azure-Samples/azure-intelligent-edge-patterns) のこのサンプルに合わせてコードを変更します。

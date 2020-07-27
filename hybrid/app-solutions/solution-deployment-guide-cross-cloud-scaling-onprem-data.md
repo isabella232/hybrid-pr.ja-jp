@@ -7,12 +7,12 @@ ms.date: 11/05/2019
 ms.author: bryanla
 ms.reviewer: anajod
 ms.lastreviewed: 11/05/2019
-ms.openlocfilehash: 75289eae902c5363862e345bdedb97cbcee0476e
-ms.sourcegitcommit: bb3e40b210f86173568a47ba18c3cc50d4a40607
-ms.translationtype: MT
+ms.openlocfilehash: 6de35cb55c4c35a2a9927f9ffc2516ccb00cd89f
+ms.sourcegitcommit: d2def847937178f68177507be151df2aa8e25d53
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/17/2020
-ms.locfileid: "84910890"
+ms.lasthandoff: 07/20/2020
+ms.locfileid: "86477322"
 ---
 # <a name="deploy-hybrid-app-with-on-premises-data-that-scales-cross-cloud"></a>オンプレミス データを使用してクロスクラウドをスケーリングするハイブリッド アプリをデプロイする
 
@@ -131,7 +131,7 @@ Azure App Service は、Web アプリの実行と管理を簡単にします。 
 
 ### <a name="create-web-apps"></a>Web アプリを作成する
 
-1. 「[Azure で App Service プランを管理する](https://docs.microsoft.com/azure/app-service/app-service-plan-manage#create-an-app-service-plan)」の手順に従って、Azure で Web アプリを作成します。 Web アプリは、ご利用のハイブリッド ネットワークと同じサブスクリプションおよびリソース グループに配置してください。
+1. 「[Azure で App Service プランを管理する](/azure/app-service/app-service-plan-manage#create-an-app-service-plan)」の手順に従って、Azure で Web アプリを作成します。 Web アプリは、ご利用のハイブリッド ネットワークと同じサブスクリプションおよびリソース グループに配置してください。
 
 2. 前の手順 (1) を Azure Stack Hub でも行います。
 
@@ -172,7 +172,7 @@ Azure App Service と統合するためには、ハイブリッド ネットワ�
 
 ### <a name="integrate-the-azure-app-service-app-with-the-hybrid-network"></a>Azure App Service アプリとハイブリッド ネットワークを統合する
 
-1. Azure VNet にアプリを接続するには、「[ゲートウェイが必要な Vnet 統合](https://docs.microsoft.com/azure/app-service/web-sites-integrate-with-vnet#gateway-required-vnet-integration)」の指示に従ってください。
+1. Azure VNet にアプリを接続するには、「[ゲートウェイが必要な Vnet 統合](/azure/app-service/web-sites-integrate-with-vnet#gateway-required-vnet-integration)」の指示に従ってください。
 
 2. Web アプリをホストしている App Service プランの **[設定]** に移動します。 **[設定]** の **[ネットワーク]** を選択します。
 
@@ -186,7 +186,7 @@ Azure App Service と統合するためには、ハイブリッド ネットワ�
 
     ![Virtual Network 統合でルーティングする IP アドレス範囲](media/solution-deployment-guide-hybrid/image13.png)
 
-App Service と Azure VNet の統合方法の詳細については、「[アプリを Azure 仮想ネットワークに統合する](https://docs.microsoft.com/azure/app-service/web-sites-integrate-with-vnet)」を参照してください。
+App Service と Azure VNet の統合方法の詳細については、「[アプリを Azure 仮想ネットワークに統合する](/azure/app-service/web-sites-integrate-with-vnet)」を参照してください。
 
 ### <a name="configure-the-azure-stack-hub-virtual-network"></a>Azure Stack Hub 仮想ネットワークを構成する
 
@@ -210,7 +210,7 @@ App Service ドメインが機能しないため、このチュートリアル�
 
 ### <a name="create-subdomains"></a>サブドメインを作成する
 
-Traffic Manager は DNS の CNAME に依存しているため、エンドポイントに対して適切にトラフィックをルーティングするためには、サブドメインが必要となります。 DNS レコードとドメイン マッピングの詳細については、「[Traffic Manager を使用したドメインのマップ](https://docs.microsoft.com/azure/app-service/web-sites-traffic-manager-custom-domain-name)」を参照してください。
+Traffic Manager は DNS の CNAME に依存しているため、エンドポイントに対して適切にトラフィックをルーティングするためには、サブドメインが必要となります。 DNS レコードとドメイン マッピングの詳細については、「[Traffic Manager を使用したドメインのマップ](/azure/app-service/web-sites-traffic-manager-custom-domain-name)」を参照してください。
 
 Azure エンドポイントについては、Web アプリにアクセスするためにユーザーが使用できるサブドメインを作成します。 このチュートリアルでは、**app.northwind.com** を使用できますが、この値はご自身のドメインに合わせてカスタマイズする必要があります。
 
@@ -218,13 +218,13 @@ Azure エンドポイントについては、Web アプリにアクセスする�
 
 ### <a name="configure-a-custom-domain-in-azure"></a>Azure でカスタム ドメインを構成する
 
-1. [Azure App Service に CNAME をマップ](https://docs.microsoft.com/Azure/app-service/app-service-web-tutorial-custom-domain#map-a-cname-record)して、**app.northwind.com** ホスト名を Azure Web アプリに追加します。
+1. [Azure App Service に CNAME をマップ](/azure/app-service/app-service-web-tutorial-custom-domain#map-a-cname-record)して、**app.northwind.com** ホスト名を Azure Web アプリに追加します。
 
 ### <a name="configure-custom-domains-in-azure-stack-hub"></a>Azure Stack Hub でカスタム ドメインを構成する
 
-1. [Azure App Service に A レコードをマップ](https://docs.microsoft.com/Azure/app-service/app-service-web-tutorial-custom-domain#map-an-a-record)して、ホスト名 **azurestack.northwind.com** を Azure Stack Hub Web アプリに追加します。 App Service アプリには、インターネット ルーティング可能な IP アドレスを使用します。
+1. [Azure App Service に A レコードをマップ](/azure/app-service/app-service-web-tutorial-custom-domain#map-an-a-record)して、ホスト名 **azurestack.northwind.com** を Azure Stack Hub Web アプリに追加します。 App Service アプリには、インターネット ルーティング可能な IP アドレスを使用します。
 
-2. [Azure App Service に CNAME をマップ](https://docs.microsoft.com/Azure/app-service/app-service-web-tutorial-custom-domain#map-a-cname-record)して、ホスト名 **app.northwind.com** を Azure Stack Hub Web アプリに追加します。 CNAME のターゲットとして、前の手順 (1) で構成したホスト名を使用してください。
+2. [Azure App Service に CNAME をマップ](/azure/app-service/app-service-web-tutorial-custom-domain#map-a-cname-record)して、ホスト名 **app.northwind.com** を Azure Stack Hub Web アプリに追加します。 CNAME のターゲットとして、前の手順 (1) で構成したホスト名を使用してください。
 
 ## <a name="configure-ssl-certificates-for-cross-cloud-scaling"></a>クラウド間スケーリング向けに SSL 証明書を構成する
 
@@ -238,9 +238,9 @@ Azure に SSL を追加するには、次の手順に従います。
 
 1. 作成したサブドメインに対し、取得した SSL 証明書が有効であることを確認します  (ワイルドカード証明書を使用してもかまいません)。
 
-2. Azure で、[Azure Web Apps に既存のカスタム SSL 証明書をバインドする](https://docs.microsoft.com/Azure/app-service/app-service-web-tutorial-custom-ssl)方法に関する記事の「**Web アプリの準備**」と **SSL 証明書のバインド**に関するセクションの指示に従います。 **[SSL の種類]** として **[SNI ベースの SSL]** を選択します。
+2. Azure で、[Azure Web Apps に既存のカスタム SSL 証明書をバインドする](/azure/app-service/app-service-web-tutorial-custom-ssl)方法に関する記事の「**Web アプリの準備**」と **SSL 証明書のバインド**に関するセクションの指示に従います。 **[SSL の種類]** として **[SNI ベースの SSL]** を選択します。
 
-3. すべてのトラフィックを HTTP ポートにリダイレクトします。 [Azure Web Apps への既存のカスタム SSL 証明書のバインド](https://docs.microsoft.com/Azure/app-service/app-service-web-tutorial-custom-ssl)に関する記事のセクション「**HTTPS の適用**」の手順に従ってください。
+3. すべてのトラフィックを HTTP ポートにリダイレクトします。 [Azure Web Apps への既存のカスタム SSL 証明書のバインド](/azure/app-service/app-service-web-tutorial-custom-ssl)に関する記事のセクション「**HTTPS の適用**」の手順に従ってください。
 
 Azure Stack Hub に SSL を追加するには、次の手順に従います。
 
@@ -248,13 +248,13 @@ Azure Stack Hub に SSL を追加するには、次の手順に従います。
 
 ## <a name="configure-and-deploy-the-web-app"></a>Web アプリを構成し、デプロイする
 
-テレメトリを正しい Application Insights インスタンスに報告するようにアプリ コードを構成し、正しい接続文字列で Web アプリを構成します。 Application Insights の詳細については、「[Application Insights とは何か?](https://docs.microsoft.com/azure/application-insights/app-insights-overview)」を参照してください。
+テレメトリを正しい Application Insights インスタンスに報告するようにアプリ コードを構成し、正しい接続文字列で Web アプリを構成します。 Application Insights の詳細については、「[Application Insights とは何か?](/azure/application-insights/app-insights-overview)」を参照してください。
 
 ### <a name="add-application-insights"></a>Application Insights を追加する
 
 1. Microsoft Visual Studio で Web アプリを開きます。
 
-2. プロジェクトに [Application Insights を追加](https://docs.microsoft.com/azure/azure-monitor/app/asp-net-core#enable-client-side-telemetry-for-web-applications)し、Web トラフィックが増減したときのアラートを生成するために Application Insights によって使用されるテレメトリが転送されるようにします。
+2. プロジェクトに [Application Insights を追加](/azure/azure-monitor/app/asp-net-core#enable-client-side-telemetry-for-web-applications)し、Web トラフィックが増減したときのアラートを生成するために Application Insights によって使用されるテレメトリが転送されるようにします。
 
 ### <a name="configure-dynamic-connection-strings"></a>動的接続文字列を構成する
 
@@ -287,7 +287,7 @@ App Service 環境変数を使用し、アプリの各インスタンスに異�
 
 1. Azure と Azure Stack Hub 用の接続文字列を作成します。 IP アドレス以外は、同じ文字列を使用してください。
 
-2. Azure と Azure Stack Hub で、Web アプリの[アプリ設定として](https://docs.microsoft.com/azure/app-service/web-sites-configure)適切な接続文字列を追加します。そのとき、名前のプレフィックスとして `SQLCONNSTR\_` を使用します。
+2. Azure と Azure Stack Hub で、Web アプリの[アプリ設定として](/azure/app-service/web-sites-configure)適切な接続文字列を追加します。そのとき、名前のプレフィックスとして `SQLCONNSTR\_` を使用します。
 
 3. Web アプリ設定を**保存**し、アプリを再起動します。
 
@@ -543,4 +543,4 @@ Azure Functions によって実現される[サーバーレス](https://azure.mi
 
 ## <a name="next-steps"></a>次のステップ
 
-- Azure のクラウド パターンの詳細については、「[Cloud Design Pattern (クラウド設計パターン)](https://docs.microsoft.com/azure/architecture/patterns)」を参照してください。
+- Azure のクラウド パターンの詳細については、「[Cloud Design Pattern (クラウド設計パターン)](/azure/architecture/patterns)」を参照してください。

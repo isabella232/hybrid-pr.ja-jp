@@ -7,12 +7,12 @@ ms.date: 11/05/2019
 ms.author: bryanla
 ms.reviewer: anajod
 ms.lastreviewed: 11/05/2019
-ms.openlocfilehash: 306cc9604a8e919724f9f76b7e5122d534d2d1ae
-ms.sourcegitcommit: bb3e40b210f86173568a47ba18c3cc50d4a40607
-ms.translationtype: MT
+ms.openlocfilehash: e26056a9507a7467473b009725d4f210d9d59ec8
+ms.sourcegitcommit: d2def847937178f68177507be151df2aa8e25d53
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/17/2020
-ms.locfileid: "84911119"
+ms.lasthandoff: 07/20/2020
+ms.locfileid: "86477237"
 ---
 # <a name="devops-pattern"></a>DevOps パターン
 
@@ -47,7 +47,7 @@ DevOps パターンは、ターゲット環境に関係なく、デプロイ間�
 - デプロイ パラメーターはすべてのターゲット環境で機能しますか?
 - リソース固有のプロパティはすべてのターゲット クラウドで使用できますか?
 
-詳細については、「[クラウドの一貫性のための Azure Resource Manager テンプレートを開発する](https://docs.microsoft.com/azure/azure-resource-manager/templates-cloud-consistency)」を参照してください。
+詳細については、「[クラウドの一貫性のための Azure Resource Manager テンプレートを開発する](/azure/azure-resource-manager/templates-cloud-consistency)」を参照してください。
 
 また、このパターンの実装方法を決めるときには、以下の点に注意してください。
 

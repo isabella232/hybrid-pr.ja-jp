@@ -7,12 +7,12 @@ ms.date: 11/05/2019
 ms.author: bryanla
 ms.reviewer: anajod
 ms.lastreviewed: 11/05/2019
-ms.openlocfilehash: 0e1a0fc4fb4110fdb406d4b4b2e72abb8f5412c9
-ms.sourcegitcommit: bb3e40b210f86173568a47ba18c3cc50d4a40607
-ms.translationtype: MT
+ms.openlocfilehash: 16c5d7820e8c865a9f88cb00da5cc7c854379414
+ms.sourcegitcommit: d2def847937178f68177507be151df2aa8e25d53
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/17/2020
-ms.locfileid: "84910867"
+ms.lasthandoff: 07/20/2020
+ms.locfileid: "86477288"
 ---
 # <a name="configure-hybrid-cloud-connectivity-using-azure-and-azure-stack-hub"></a>Azure と Azure Stack Hub を使用してハイブリッド クラウド接続を構成する
 
@@ -37,7 +37,7 @@ ms.locfileid: "84910867"
 ### <a name="azure"></a>Azure
 
 - Azure サブスクリプションをお持ちでない場合は、開始する前に [無料アカウント](https://azure.microsoft.com/free/?WT.mc_id=A261C142F) を作成してください。
-- Azure で [Web アプリ](https://docs.microsoft.com/vsts/build-release/apps/cd/azure/aspnet-core-to-azure-webapp?view=vsts&tabs=vsts)を作成します。 このソリューションで必要になるため、Web アプリの URL を書き留めておきます。
+- Azure で [Web アプリ](/vsts/build-release/apps/cd/azure/aspnet-core-to-azure-webapp?tabs=vsts&view=vsts)を作成します。 このソリューションで必要になるため、Web アプリの URL を書き留めておきます。
 
 ### <a name="azure-stack-hub"></a>Azure Stack Hub
 
@@ -69,7 +69,7 @@ Azure Stack Hub オペレーターが、App Service のデプロイ、プラン�
 
 #### <a name="solution-example-values"></a>ソリューションの例の値
 
-このソリューションの例では、次の値を使用します。 これらの値を使用して、テスト環境を作成できます。また、この値を参考にすると、例をよく理解できます。 VPN ゲートウェイ設定の詳細については、「[VPN ゲートウェイの構成設定について](https://docs.microsoft.com/azure/vpn-gateway/vpn-gateway-about-vpn-gateway-settings)」を参照してください。
+このソリューションの例では、次の値を使用します。 これらの値を使用して、テスト環境を作成できます。また、この値を参考にすると、例をよく理解できます。 VPN ゲートウェイ設定の詳細については、「[VPN ゲートウェイの構成設定について](/azure/vpn-gateway/vpn-gateway-about-vpn-gateway-settings)」を参照してください。
 
 接続の仕様:
 
@@ -99,7 +99,7 @@ Azure Stack Hub オペレーターが、App Service のデプロイ、プラン�
 
 ## <a name="create-a-virtual-network-in-global-azure-and-azure-stack-hub"></a>グローバル Azure および Azure Stack Hub に仮想ネットワークを作成する
 
-ポータルを使用して仮想ネットワークを作成するには、次の手順を使用します。 この記事をソリューションとしてのみ使用している場合は、これらの[例の値](https://docs.microsoft.com/azure/vpn-gateway/vpn-gateway-howto-site-to-site-resource-manager-portal#values)を使用できます。 この記事を使用して運用環境を構成する場合は、例の設定値を独自の値に置き換えます。
+ポータルを使用して仮想ネットワークを作成するには、次の手順を使用します。 この記事をソリューションとしてのみ使用している場合は、これらの[例の値](/azure/vpn-gateway/vpn-gateway-howto-site-to-site-resource-manager-portal#values)を使用できます。 この記事を使用して運用環境を構成する場合は、例の設定値を独自の値に置き換えます。
 
 > [!IMPORTANT]
 > Azure または Azure Stack Hub の vNet アドレス空間に IP アドレスの重複がないことを確認する必要があります。
@@ -212,4 +212,4 @@ Azure に仮想ネットワーク ゲートウェイを作成するには、次�
 
 ## <a name="next-steps"></a>次のステップ
 
-- Azure のクラウド パターンの詳細については、「[Cloud Design Pattern (クラウド設計パターン)](https://docs.microsoft.com/azure/architecture/patterns)」を参照してください。
+- Azure のクラウド パターンの詳細については、「[Cloud Design Pattern (クラウド設計パターン)](/azure/architecture/patterns)」を参照してください。

@@ -7,12 +7,12 @@ ms.date: 11/05/2019
 ms.author: bryanla
 ms.reviewer: anajod
 ms.lastreviewed: 11/05/2019
-ms.openlocfilehash: b34ba7c10ff5f658d645923ae8b6de2fb2607ccb
-ms.sourcegitcommit: bb3e40b210f86173568a47ba18c3cc50d4a40607
-ms.translationtype: MT
+ms.openlocfilehash: f6064aaa1087a3c0cfc26e09371e81752c777edb
+ms.sourcegitcommit: d2def847937178f68177507be151df2aa8e25d53
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/17/2020
-ms.locfileid: "84911450"
+ms.lasthandoff: 07/20/2020
+ms.locfileid: "86477271"
 ---
 # <a name="deploy-a-highly-available-mongodb-solution-to-azure-and-azure-stack-hub"></a>高可用性の MongoDB ソリューションを Azure と Azure Stack Hub にデプロイする
 
@@ -40,9 +40,9 @@ ms.locfileid: "84911450"
 - 2 つの接続された Azure Stack Hub 統合システム (Azure Stack Hub)。 このデプロイは Azure Stack Development Kit (ASDK) では機能しません。 Azure Stack Hub の詳細については、「[Azure Stack Hub とは](https://azure.microsoft.com/products/azure-stack/hub/)」を参照してください。
   - 各 Azure Stack Hub のテナント サブスクリプション。 
   - **各サブスクリプション ID と Azure Resource Manager エンドポイントを Azure Stack Hub ごとにメモしてください。**
-- 各 Azure Stack Hub のテナント サブスクリプションに対する権限が与えられた Azure Active Directory (Azure AD) サービス プリンシパル。 複数の Azure AD テナントに対して Azure Stack Hub がデプロイされている場合、サービス プリンシパルを 2 つ作成しなければならないことがあります。 Azure Stack Hub のサービス プリンシパルを作成する方法については、「[アプリ ID を使用して Azure Stack Hub リソースにアクセスする](https://docs.microsoft.com/azure-stack/user/azure-stack-create-service-principals)」を参照してください。
+- 各 Azure Stack Hub のテナント サブスクリプションに対する権限が与えられた Azure Active Directory (Azure AD) サービス プリンシパル。 複数の Azure AD テナントに対して Azure Stack Hub がデプロイされている場合、サービス プリンシパルを 2 つ作成しなければならないことがあります。 Azure Stack Hub のサービス プリンシパルを作成する方法については、「[アプリ ID を使用して Azure Stack Hub リソースにアクセスする](/azure-stack/user/azure-stack-create-service-principals)」を参照してください。
   - **各サービス プリンシパルのアプリケーション ID、クライアント シークレット、テナント名 (xxxxx.onmicrosoft.com) をメモしてください。**
-- 各 Azure Stack Hub の Marketplace にシンジケート化された Ubuntu 16.04。 マーケットプレース シンジケーションの詳細については、「[Azure Stack Hub に Marketplace の項目をダウンロードする](https://docs.microsoft.com/azure-stack/operator/azure-stack-download-azure-marketplace-item)」を参照してください。
+- 各 Azure Stack Hub の Marketplace にシンジケート化された Ubuntu 16.04。 マーケットプレース シンジケーションの詳細については、「[Azure Stack Hub に Marketplace の項目をダウンロードする](/azure-stack/operator/azure-stack-download-azure-marketplace-item)」を参照してください。
 - ローカル コンピューターにインストールされた [Docker for Windows](https://docs.docker.com/docker-for-windows/)。
 
 ## <a name="get-the-docker-image"></a>Docker イメージを取得する

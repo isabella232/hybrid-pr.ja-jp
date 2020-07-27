@@ -7,12 +7,12 @@ ms.date: 11/05/2019
 ms.author: bryanla
 ms.reviewer: anajod
 ms.lastreviewed: 11/05/2019
-ms.openlocfilehash: 740a8c0ec904fe8eb3f9744626bc9dd6655bdb52
-ms.sourcegitcommit: bb3e40b210f86173568a47ba18c3cc50d4a40607
-ms.translationtype: MT
+ms.openlocfilehash: 10cb042e2c6d0c6cb567e14072cd80bc663d686c
+ms.sourcegitcommit: d2def847937178f68177507be151df2aa8e25d53
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/17/2020
-ms.locfileid: "84911525"
+ms.lasthandoff: 07/20/2020
+ms.locfileid: "86477339"
 ---
 # <a name="deploy-an-app-that-scales-cross-cloud-using-azure-and-azure-stack-hub"></a>Azure と Azure Stack Hub を使用してクロスクラウドをスケーリングするアプリをデプロイする
 
@@ -68,7 +68,7 @@ Azure Stack Hub でホストされる Web アプリから、Traffic Manager を�
 
 ### <a name="get-a-custom-domain-and-configure-dns"></a>カスタム ドメインを取得し DNS を構成する
 
-ドメインの DNS ゾーン ファイルを更新します。 Azure AD は、カスタム ドメイン名の所有権を確認します。 Azure 内の Azure/Office 365/外部 DNS レコードに [Azure DNS](https://docs.microsoft.com/azure/dns/dns-getstarted-portal) を使用するか、または[別の DNS レジストラー](https://support.office.com/article/Create-DNS-records-for-Office-365-when-you-manage-your-DNS-records-b0f3fdca-8a80-4e8e-9ef3-61e8a2a9ab23/)で DNS エントリを追加します。
+ドメインの DNS ゾーン ファイルを更新します。 Azure AD は、カスタム ドメイン名の所有権を確認します。 Azure 内の Azure/Office 365/外部 DNS レコードに [Azure DNS](/azure/dns/dns-getstarted-portal) を使用するか、または[別の DNS レジストラー](https://support.office.com/article/Create-DNS-records-for-Office-365-when-you-manage-your-DNS-records-b0f3fdca-8a80-4e8e-9ef3-61e8a2a9ab23/)で DNS エントリを追加します。
 
 1. パブリック レジストラーでカスタム ドメインを登録します。
 2. ドメインのドメイン名レジストラーにサインインします。 DNS の更新を行うには、承認された管理者が必要になることがあります。
@@ -97,7 +97,7 @@ Azure Repos
 
 ### <a name="create-self-contained-web-app-deployment-for-app-services-in-both-clouds"></a>両方のクラウドで App Services の自己完結型 Web アプリ デプロイを作成する
 
-1. **WebApplication.csproj** ファイルを編集します。 `Runtimeidentifier` を選択し、`win10-x64` を追加します。 (「[自己完結型デプロイ](https://docs.microsoft.com/dotnet/core/deploying/deploy-with-vs#simpleSelf)」に関するドキュメントを参照してください)。
+1. **WebApplication.csproj** ファイルを編集します。 `Runtimeidentifier` を選択し、`win10-x64` を追加します。 (「[自己完結型デプロイ](/dotnet/core/deploying/deploy-with-vs#simpleSelf)」に関するドキュメントを参照してください)。
 
     ![Web アプリ プロジェクト ファイルを編集する](media/solution-deployment-guide-cross-cloud-scaling/image3.png)
 
@@ -113,7 +113,7 @@ Azure Repos
 
     ![Web アプリにコードを追加する](media/solution-deployment-guide-cross-cloud-scaling/image4.png)
 
-3. ビルドを実行します。 [自己完結型のデプロイ ビルド](https://docs.microsoft.com/dotnet/core/deploying/deploy-with-vs#simpleSelf)のプロセスにより、Azure 上と Azure Stack Hub 上で実行される成果物が発行されます。
+3. ビルドを実行します。 [自己完結型のデプロイ ビルド](/dotnet/core/deploying/deploy-with-vs#simpleSelf)のプロセスにより、Azure 上と Azure Stack Hub 上で実行される成果物が発行されます。
 
 ## <a name="use-an-azure-hosted-agent"></a>Azure でホストされるエージェントを使用する
 
@@ -211,7 +211,7 @@ Azure Pipelines および Azure DevOps Services が提供するパイプライ�
 21. すべての変更を保存します。
 
 > [!Note]  
-> タスクの一部の設定は、テンプレートからリリース定義を作成したときに、[環境変数](https://docs.microsoft.com/azure/devops/pipelines/release/variables?view=vsts&tabs=batch#custom-variables)として自動的に定義されている可能性があります。 こうした設定は、タスクの設定では変更できません。これらの設定を編集するには、親環境項目を選択する必要があります。
+> タスクの一部の設定は、テンプレートからリリース定義を作成したときに、[環境変数](/azure/devops/pipelines/release/variables?tabs=batch&view=vsts#custom-variables)として自動的に定義されている可能性があります。 こうした設定は、タスクの設定では変更できません。これらの設定を編集するには、親環境項目を選択する必要があります。
 
 ## <a name="publish-to-azure-stack-hub-via-visual-studio"></a>Visual Studio 経由で Azure Stack Hub に発行する
 
@@ -254,7 +254,7 @@ Azure Repos から [Azure Resource Manager テンプレート](https://azure.mic
 
 #### <a name="create-self-contained-web-app-deployment-for-app-services-in-both-clouds"></a>両方のクラウドで App Services の自己完結型 Web アプリ デプロイを作成する
 
-1. **WebApplication.csproj** ファイルを編集します。`Runtimeidentifier` を選択し、`win10-x64` を追加します。 詳細については、「[自己完結型デプロイ](https://docs.microsoft.com/dotnet/core/deploying/deploy-with-vs#simpleSelf)」に関するドキュメントを参照してください。
+1. **WebApplication.csproj** ファイルを編集します。`Runtimeidentifier` を選択し、`win10-x64` を追加します。 詳細については、「[自己完結型デプロイ](/dotnet/core/deploying/deploy-with-vs#simpleSelf)」に関するドキュメントを参照してください。
 
 2. チーム エクスプローラーを使用して、コードを Azure Repos にチェックインします。
 
@@ -268,7 +268,7 @@ Azure Repos から [Azure Resource Manager テンプレート](https://azure.mic
 
 3. **[引数]** に **-r win10-x64** コードを追加します。 この追加は、.NET Core を使用して自己完結型のデプロイをトリガーするために必要です。
 
-4. ビルドを実行します。 [自己完結型のデプロイ ビルド](https://docs.microsoft.com/dotnet/core/deploying/deploy-with-vs#simpleSelf)のプロセスにより、Azure および Azure Stack Hub 上で実行できる成果物が発行されます。
+4. ビルドを実行します。 [自己完結型のデプロイ ビルド](/dotnet/core/deploying/deploy-with-vs#simpleSelf)のプロセスにより、Azure および Azure Stack Hub 上で実行できる成果物が発行されます。
 
 #### <a name="use-an-azure-hosted-build-agent"></a>Azure ホスト ビルド エージェントを使用する
 
@@ -329,7 +329,7 @@ Azure Pipelines および Azure DevOps Services が提供するパイプライ�
 23. すべての変更を保存します。
 
 > [!Note]  
-> リリース タスクの一部の設定は、テンプレートからリリース定義を作成したときに、[環境変数](https://docs.microsoft.com/azure/devops/pipelines/release/variables?view=vsts&tabs=batch#custom-variables)として自動的に定義されます。 これらの設定は、タスク設定では変更できませんが、親環境項目で変更できます。
+> リリース タスクの一部の設定は、テンプレートからリリース定義を作成したときに、[環境変数](/azure/devops/pipelines/release/variables?tabs=batch&view=vsts#custom-variables)として自動的に定義されます。 これらの設定は、タスク設定では変更できませんが、親環境項目で変更できます。
 
 ## <a name="create-a-release"></a>リリースを作成する
 
@@ -361,4 +361,4 @@ Azure Pipelines および Azure DevOps Services が提供するパイプライ�
 
 ## <a name="next-steps"></a>次のステップ
 
-- Azure のクラウド パターンの詳細については、「[Cloud Design Pattern (クラウド設計パターン)](https://docs.microsoft.com/azure/architecture/patterns)」を参照してください。
+- Azure のクラウド パターンの詳細については、「[Cloud Design Pattern (クラウド設計パターン)](/azure/architecture/patterns)」を参照してください。

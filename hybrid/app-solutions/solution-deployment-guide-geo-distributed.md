@@ -7,12 +7,12 @@ ms.date: 11/05/2019
 ms.author: bryanla
 ms.reviewer: anajod
 ms.lastreviewed: 11/05/2019
-ms.openlocfilehash: 8f2b7e48a62896acfce7293dcd4f18d5a43add01
-ms.sourcegitcommit: bb3e40b210f86173568a47ba18c3cc50d4a40607
-ms.translationtype: MT
+ms.openlocfilehash: 741ddf2c3ed234788af359dd233f6a656fbea13c
+ms.sourcegitcommit: d2def847937178f68177507be151df2aa8e25d53
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/17/2020
-ms.locfileid: "84911324"
+ms.lasthandoff: 07/20/2020
+ms.locfileid: "86477356"
 ---
 # <a name="direct-traffic-with-a-geo-distributed-app-using-azure-and-azure-stack-hub"></a>Azure と Azure Stack Hub を利用し、地理的分散アプリでトラフィックを転送する
 
@@ -52,7 +52,7 @@ ms.locfileid: "84911324"
 
 - **アプリのカスタム ドメイン:** 顧客がアプリへのアクセスに使用するカスタム ドメイン名が必要です。 サンプル アプリでは、カスタム ドメイン名は *www\.scalableasedemo.com* です。
 
-- **Traffic Manager ドメイン:** [Azure Traffic Manager プロファイル](https://docs.microsoft.com/azure/traffic-manager/traffic-manager-manage-profiles)の作成時に、ドメイン名が選択されます。 この名前は、Traffic Manager が管理するドメイン エントリを登録する際に、*trafficmanager.net* サフィックスと組み合わされます。 サンプル アプリでは、選択される名前は *scalable-ase-demo*です。 そのため、Traffic Manager で管理される完全なドメイン名は、*scalable-ase-demo.trafficmanager.net* になります。
+- **Traffic Manager ドメイン:** [Azure Traffic Manager プロファイル](/azure/traffic-manager/traffic-manager-manage-profiles)の作成時に、ドメイン名が選択されます。 この名前は、Traffic Manager が管理するドメイン エントリを登録する際に、*trafficmanager.net* サフィックスと組み合わされます。 サンプル アプリでは、選択される名前は *scalable-ase-demo*です。 そのため、Traffic Manager で管理される完全なドメイン名は、*scalable-ase-demo.trafficmanager.net* になります。
 
 - **アプリ フットプリントのスケーリングに関する戦略:** アプリのフットプリントは単一リージョン内の複数の App Service 環境に分散されるのか、リージョンは複数なのか、あるいは両方の手法の混在になるのかを決定します。 この決定は、顧客のトラフィックが発生する場所に加えて、アプリをサポートするバックエンド インフラストラクチャの他の要素のスケーラビリティに関する期待事項に基づく必要があります。 たとえば、完全にステートレスなアプリでは、各 Azure リージョンで複数の App Service 環境を組み合わせ、さらに複数の Azure リージョンにデプロイされた App Service 環境を掛け合わせることで、大規模なスケーリングを実施できます。 選択できるグローバルな Azure リージョンは 15 以上あるため、顧客はスケーラビリティのきわめて高いアプリ フットプリントを世界規模で構築できます。 ここで使用されるサンプル アプリでは、単一の Azure リージョン (米国中南部) に 3 つの App Service 環境が作成されています。
 
@@ -84,7 +84,7 @@ Azure サブスクリプションと Azure Stack Hub のインストールが必
 
 ### <a name="obtain-a-custom-domain-and-configure-dns"></a>カスタム ドメインを取得し DNS を構成する
 
-ドメインの DNS ゾーン ファイルを更新します。 Azure AD は続いて、カスタム ドメイン名の所有権を確認できます。 Azure 内の Azure/Office 365/外部 DNS レコードに [Azure DNS](https://docs.microsoft.com/azure/dns/dns-getstarted-portal) を使用するか、または[別の DNS レジストラー](https://support.office.com/article/Create-DNS-records-for-Office-365-when-you-manage-your-DNS-records-b0f3fdca-8a80-4e8e-9ef3-61e8a2a9ab23/)で DNS エントリを追加します。
+ドメインの DNS ゾーン ファイルを更新します。 Azure AD は続いて、カスタム ドメイン名の所有権を確認できます。 Azure 内の Azure/Office 365/外部 DNS レコードに [Azure DNS](/azure/dns/dns-getstarted-portal) を使用するか、または[別の DNS レジストラー](https://support.office.com/article/Create-DNS-records-for-Office-365-when-you-manage-your-DNS-records-b0f3fdca-8a80-4e8e-9ef3-61e8a2a9ab23/)で DNS エントリを追加します。
 
 1. パブリック レジストラーでカスタム ドメインを登録します。
 
@@ -113,7 +113,7 @@ Azure サブスクリプションと Azure Stack Hub のインストールが必
 
 ### <a name="create-web-app-deployment-in-both-clouds"></a>両方のクラウドで Web アプリ デプロイを作成する
 
-1. **WebApplication.csproj** ファイルを編集します。`Runtimeidentifier` を選択し、`win10-x64` を追加します。 (「[自己完結型デプロイ](https://docs.microsoft.com/dotnet/core/deploying/deploy-with-vs#simpleSelf)」に関するドキュメントを参照してください)。
+1. **WebApplication.csproj** ファイルを編集します。`Runtimeidentifier` を選択し、`win10-x64` を追加します。 (「[自己完結型デプロイ](/dotnet/core/deploying/deploy-with-vs#simpleSelf)」に関するドキュメントを参照してください)。
 
     ![Visual Studio で Web アプリ プロジェクト ファイルを編集する](media/solution-deployment-guide-geo-distributed/image3.png)
 
@@ -129,7 +129,7 @@ Azure サブスクリプションと Azure Stack Hub のインストールが必
 
     ![Azure Pipelines でビルド定義にコードを追加する](media/solution-deployment-guide-geo-distributed/image4.png)
 
-3. **ビルドを実行します**。 [自己完結型のデプロイ ビルド](https://docs.microsoft.com/dotnet/core/deploying/deploy-with-vs#simpleSelf)のプロセスにより、Azure および Azure Stack Hub 上で実行できる成果物が発行されます。
+3. **ビルドを実行します**。 [自己完結型のデプロイ ビルド](/dotnet/core/deploying/deploy-with-vs#simpleSelf)のプロセスにより、Azure および Azure Stack Hub 上で実行できる成果物が発行されます。
 
 #### <a name="using-an-azure-hosted-agent"></a>Azure ホステッド エージェントを使用する
 
@@ -229,11 +229,11 @@ Azure DevOps Services が提供するパイプラインは自由に構成でき�
 21. すべての変更を保存します。
 
 > [!Note]  
-> タスクの一部の設定は、テンプレートからリリース定義を作成したときに、[環境変数](https://docs.microsoft.com/azure/devops/pipelines/release/variables?view=vsts&tabs=batch#custom-variables)として自動的に定義されている可能性があります。 こうした設定は、タスクの設定では変更できません。これらの設定を編集するには、親環境項目を選択する必要があります。
+> タスクの一部の設定は、テンプレートからリリース定義を作成したときに、[環境変数](/azure/devops/pipelines/release/variables?tabs=batch&view=vsts#custom-variables)として自動的に定義されている可能性があります。 こうした設定は、タスクの設定では変更できません。これらの設定を編集するには、親環境項目を選択する必要があります。
 
 ## <a name="part-2-update-web-app-options"></a>パート 2: Web アプリ オプションを更新する
 
-[Azure App Service](https://docs.microsoft.com/azure/app-service/overview) は、非常にスケーラブルな、自己適用型の Web ホスティング サービスを提供します。
+[Azure App Service](/azure/app-service/overview) は、非常にスケーラブルな、自己適用型の Web ホスティング サービスを提供します。
 
 ![Azure App Service](media/solution-deployment-guide-geo-distributed/image27.png)
 
@@ -246,17 +246,17 @@ Azure DevOps Services が提供するパイプラインは自由に構成でき�
 > [!Note]  
 > ルート ドメイン (northwind.com など) を除くすべてのカスタム DNS 名に CNAME を使用します。
 
-ライブ サイトとその DNS ドメイン名を App Service に移行する方法については、「[Azure App Service へのアクティブな DNS 名の移行](https://docs.microsoft.com/azure/app-service/manage-custom-dns-migrate-domain)」をご覧ください。
+ライブ サイトとその DNS ドメイン名を App Service に移行する方法については、「[Azure App Service へのアクティブな DNS 名の移行](/azure/app-service/manage-custom-dns-migrate-domain)」をご覧ください。
 
 ### <a name="prerequisites"></a>前提条件
 
 このソリューションを完了するには:
 
-- [App Service アプリを作成する](https://docs.microsoft.com/azure/app-service/)か、別のソリューションで作成したアプリを使用します。
+- [App Service アプリを作成する](/azure/app-service/)か、別のソリューションで作成したアプリを使用します。
 
 - ドメイン名を購入し、ドメイン プロバイダーの DNS レジストリへのアクセスを確認します。
 
-ドメインの DNS ゾーン ファイルを更新します。 Azure AD は、カスタム ドメイン名の所有権を確認します。 Azure 内の Azure/Office 365/外部 DNS レコードに [Azure DNS](https://docs.microsoft.com/azure/dns/dns-getstarted-portal) を使用するか、または[別の DNS レジストラー](https://support.office.com/article/Create-DNS-records-for-Office-365-when-you-manage-your-DNS-records-b0f3fdca-8a80-4e8e-9ef3-61e8a2a9ab23/)で DNS エントリを追加します。
+ドメインの DNS ゾーン ファイルを更新します。 Azure AD は、カスタム ドメイン名の所有権を確認します。 Azure 内の Azure/Office 365/外部 DNS レコードに [Azure DNS](/azure/dns/dns-getstarted-portal) を使用するか、または[別の DNS レジストラー](https://support.office.com/article/Create-DNS-records-for-Office-365-when-you-manage-your-DNS-records-b0f3fdca-8a80-4e8e-9ef3-61e8a2a9ab23/)で DNS エントリを追加します。
 
 - パブリック レジストラーでカスタム ドメインを登録します。
 
@@ -267,14 +267,14 @@ Azure DevOps Services が提供するパイプラインは自由に構成でき�
 たとえば、northwindcloud.com と www\.northwindcloud.com の DNS エントリを追加するには、northwindcloud.com ルート ドメインの DNS 設定を構成します。
 
 > [!Note]  
-> ドメイン名は [Microsoft Azure portal](https://docs.microsoft.com/azure/app-service/manage-custom-dns-buy-domain) を使用して購入できます。 Web アプリにカスタム DNS 名をマップするには、Web アプリの [App Service プラン](https://azure.microsoft.com/pricing/details/app-service/)が有料レベル (**Shared**、**Basic**、**Standard**、または **Premium**) である必要があります。
+> ドメイン名は [Microsoft Azure portal](/azure/app-service/manage-custom-dns-buy-domain) を使用して購入できます。 Web アプリにカスタム DNS 名をマップするには、Web アプリの [App Service プラン](https://azure.microsoft.com/pricing/details/app-service/)が有料レベル (**Shared**、**Basic**、**Standard**、または **Premium**) である必要があります。
 
 ### <a name="create-and-map-cname-and-a-records"></a>CNAME および A レコードを作成してマップする
 
 #### <a name="access-dns-records-with-domain-provider"></a>ドメイン プロバイダーで DNS レコードにアクセスする
 
 > [!Note]  
->  Azure DNS を使用して、Azure Web Apps のカスタム DNS 名を構成します。 詳細については、「[Azure DNS を使用して Azure サービス用のカスタム ドメイン設定を提供する](https://docs.microsoft.com/azure/dns/dns-custom-domain)」をご覧ください。
+>  Azure DNS を使用して、Azure Web Apps のカスタム DNS 名を構成します。 詳細については、「[Azure DNS を使用して Azure サービス用のカスタム ドメイン設定を提供する](/azure/dns/dns-custom-domain)」をご覧ください。
 
 1. ドメイン プロバイダーの Web サイトにサインインします。
 
@@ -355,14 +355,14 @@ CNAME を追加した後の DNS レコード ページは次の例のように�
 > - スクリプトで SSL 証明書のバインドを自動化します。
 
 > [!Note]  
-> 必要に応じて、Microsoft Azure portal で顧客の SSL 証明書を取得し、それを Web アプリにバインドします。 詳細については、[Azure App Service 証明書のチュートリアル](https://docs.microsoft.com/azure/app-service/web-sites-purchase-ssl-web-site)を参照してください。
+> 必要に応じて、Microsoft Azure portal で顧客の SSL 証明書を取得し、それを Web アプリにバインドします。 詳細については、[Azure App Service 証明書のチュートリアル](/azure/app-service/web-sites-purchase-ssl-web-site)を参照してください。
 
 ### <a name="prerequisites"></a>前提条件
 
 このソリューションを完了するには:
 
-- [App Service アプリを作成します。](https://docs.microsoft.com/azure/app-service/)
-- [カスタム DNS 名を Web アプリにマップします。](https://docs.microsoft.com/azure/app-service/app-service-web-tutorial-custom-domain)
+- [App Service アプリを作成します。](/azure/app-service/)
+- [カスタム DNS 名を Web アプリにマップします。](/azure/app-service/app-service-web-tutorial-custom-domain)
 - 信頼された証明機関から SSL 証明書を取得し、キーを使用して要求に署名します。
 
 ### <a name="requirements-for-your-ssl-certificate"></a>SSL 証明書の必要条件
@@ -402,7 +402,7 @@ App Service で証明書を使用するには、証明書が次のすべての�
 
     ![Web アプリで価格レベルを確認する](media/solution-deployment-guide-geo-distributed/image35.png)
 
-カスタム SSL は、**Free** レベルまたは **Shared** レベルではサポートされていません。 アップスケールするには、次のセクション、 **[価格レベルの選択]** ページの手順に従い、[[Upload and bind your SSL certificate]\(SSL 証明書のアップロードおよびバインド\)](https://docs.microsoft.com/azure/app-service/app-service-web-tutorial-custom-ssl) にスキップします。
+カスタム SSL は、**Free** レベルまたは **Shared** レベルではサポートされていません。 アップスケールするには、次のセクション、 **[価格レベルの選択]** ページの手順に従い、[[Upload and bind your SSL certificate]\(SSL 証明書のアップロードおよびバインド\)](/azure/app-service/app-service-web-tutorial-custom-ssl) にスキップします。
 
 #### <a name="scale-up-your-app-service-plan"></a>App Service プランのスケール アップ
 
@@ -463,7 +463,7 @@ openssl pkcs12 -export -out myserver.pfx -inkey <private-key-file> -in <merged-c
 
 プロンプトが表示されたら、後から SSL 証明書を App Service にアップロードするためのエクスポート パスワードを定義します。
 
-IIS または **Certreq.exe** を使用して証明書の要求を生成した場合は、ローカル コンピューターに証明書をインストールした後で[証明書を PFX にエクスポート](https://technet.microsoft.com/library/cc754329(v=ws.11).aspx)します。
+IIS または **Certreq.exe** を使用して証明書の要求を生成した場合は、ローカル コンピューターに証明書をインストールした後で[証明書を PFX にエクスポート](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc754329(v=ws.11))します。
 
 #### <a name="upload-the-ssl-certificate"></a>SSL 証明書をアップロードする
 
@@ -508,13 +508,13 @@ App Service による証明書のアップロードが完了すると、 **[SSL 
 
 #### <a name="remap-the-a-record-for-ip-ssl"></a>IP SSL の A レコードを再マップする
 
-Web アプリで IP ベースの SSL を使用していない場合、[カスタム ドメインの HTTPS のテスト](https://docs.microsoft.com/azure/app-service/app-service-web-tutorial-custom-ssl)に関するセクションにスキップしてください。
+Web アプリで IP ベースの SSL を使用していない場合、[カスタム ドメインの HTTPS のテスト](/azure/app-service/app-service-web-tutorial-custom-ssl)に関するセクションにスキップしてください。
 
 既定では、Web アプリは、共有のパブリック IP アドレスを使用します。 IP ベースの SSL で証明書をバインドすると、Web アプリ用の新規の専用 IP アドレスが App Service によって作成されます。
 
 A レコードが Web アプリにマップされた場合、ドメイン レジストリを専用の IP アドレスで更新する必要があります。
 
-**[カスタム ドメイン]** ページが、新規の専用 IP アドレスで更新されます。 [この IP アドレスをコピー](https://docs.microsoft.com/azure/app-service/app-service-web-tutorial-custom-domain)して、この新しい IP アドレスに [A レコードを再マップ](https://docs.microsoft.com/azure/app-service/app-service-web-tutorial-custom-domain)します。
+**[カスタム ドメイン]** ページが、新規の専用 IP アドレスで更新されます。 [この IP アドレスをコピー](/azure/app-service/app-service-web-tutorial-custom-domain)して、この新しい IP アドレスに [A レコードを再マップ](/azure/app-service/app-service-web-tutorial-custom-domain)します。
 
 #### <a name="test-https"></a>HTTPS のテスト
 
@@ -626,4 +626,4 @@ Azure Traffic Manager と地域固有のエンドポイントを利用してデ�
 
 ## <a name="next-steps"></a>次のステップ
 
-- Azure のクラウド パターンの詳細については、「[Cloud Design Pattern (クラウド設計パターン)](https://docs.microsoft.com/azure/architecture/patterns)」を参照してください。
+- Azure のクラウド パターンの詳細については、「[Cloud Design Pattern (クラウド設計パターン)](/azure/architecture/patterns)」を参照してください。

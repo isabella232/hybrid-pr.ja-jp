@@ -7,12 +7,12 @@ ms.date: 11/05/2019
 ms.author: bryanla
 ms.reviewer: anajod
 ms.lastreviewed: 11/05/2019
-ms.openlocfilehash: 6913cc522da447092dad0af24e148a3b2576495c
-ms.sourcegitcommit: bb3e40b210f86173568a47ba18c3cc50d4a40607
-ms.translationtype: MT
+ms.openlocfilehash: 5f2e18e164e54f60b1bb7a14026a0c75c7d7ce69
+ms.sourcegitcommit: d2def847937178f68177507be151df2aa8e25d53
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/17/2020
-ms.locfileid: "84910895"
+ms.lasthandoff: 07/20/2020
+ms.locfileid: "86477169"
 ---
 # <a name="deploy-an-ai-based-footfall-detection-solution-using-azure-and-azure-stack-hub"></a>Azure と Azure Stack Hub を使用して AI ベースの足取り検出ソリューションをデプロイする
 
@@ -44,7 +44,7 @@ ms.locfileid: "84910895"
 - ディレクトリに 2 つのサービス プリンシパルを作成する
   - 1 つは、Azure サブスクリプションのスコープでアクセスする、Azure リソースで使用するように設定します。
   - 1 つは、Azure Stack Hub サブスクリプションのスコープでアクセスする、Azure Stack Hub リソースで使用するように設定します。
-  - サービス プリンシパルの作成とアクセスの承認の詳細については、[アプリ ID を使用してリソースにアクセスする](/azure-stack/operator/azure-stack-create-service-principals.md)に関するページを参照してください。 Azure CLI を使用する場合は、「[Azure CLI で Azure サービス プリンシパルを作成する](https://docs.microsoft.com/cli/azure/create-an-azure-service-principal-azure-cli?view=azure-cli-latest)」を参照してください。
+  - サービス プリンシパルの作成とアクセスの承認の詳細については、[アプリ ID を使用してリソースにアクセスする](/azure-stack/operator/azure-stack-create-service-principals.md)に関するページを参照してください。 Azure CLI を使用する場合は、「[Azure CLI で Azure サービス プリンシパルを作成する](/cli/azure/create-an-azure-service-principal-azure-cli?view=azure-cli-latest)」を参照してください。
 - Azure Cognitive Services を Azure または Azure Stack Hub にデプロイします。
   - まず、[Cognitive Services の詳細について説明します](https://azure.microsoft.com/services/cognitive-services/)。
   - 次に、「[Azure Cognitive Services を Azure Stack にデプロイする](/azure-stack/user/azure-stack-solution-template-cognitive-services.md)」にアクセスして、Azure Stack Hub 上に Cognitive Services をデプロイします。 プレビューにアクセスするには、まず、サインアップする必要があります。

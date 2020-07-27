@@ -7,20 +7,20 @@ ms.date: 06/07/2020
 ms.author: bryanla
 ms.reviewer: anajod
 ms.lastreviewed: 11/05/2019
-ms.openlocfilehash: 4fd52f76baad8059e130adfc01cdd0152b40a510
-ms.sourcegitcommit: bb3e40b210f86173568a47ba18c3cc50d4a40607
-ms.translationtype: MT
+ms.openlocfilehash: c56575ac8ea6cb35d60bb9419269db89b0295721
+ms.sourcegitcommit: d2def847937178f68177507be151df2aa8e25d53
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/17/2020
-ms.locfileid: "84911114"
+ms.lasthandoff: 07/20/2020
+ms.locfileid: "86477220"
 ---
 # <a name="hybrid-app-design-considerations"></a>ハイブリッド アプリの設計上の考慮事項
 
 Microsoft Azure は、一貫性のある唯一のハイブリッド クラウドです。 これにより、開発への投資を再利用でき、グローバル Azure、Azure のソブリン クラウド、およびデータセンター内の Azure の拡張機能である Azure Stack にまたがるアプリを使用できるようになります。 クラウドをまたぐアプリは "*ハイブリッド アプリ*" とも呼ばれます。
 
-「[*Azure アプリケーション アーキテクチャ ガイド*](https://docs.microsoft.com/azure/architecture/guide)」には、スケーラブルで回復力がある高可用性のアプリを設計するための体系化された方法が示されています。 「[*Azure アプリケーション アーキテクチャ ガイド*](https://docs.microsoft.com/azure/architecture/guide)」で説明されている考慮事項は、単一のクラウド向けに設計されたアプリや、クラウドをまたがるアプリにも同様に適用されます。
+「[*Azure アプリケーション アーキテクチャ ガイド*](/azure/architecture/guide)」には、スケーラブルで回復力がある高可用性のアプリを設計するための体系化された方法が示されています。 「[*Azure アプリケーション アーキテクチャ ガイド*](/azure/architecture/guide)」で説明されている考慮事項は、単一のクラウド向けに設計されたアプリや、クラウドをまたがるアプリにも同様に適用されます。
 
-この記事は、「[*Azure アプリケーション*](https://docs.microsoft.com/azure/architecture/guide/) [*アーキテクチャ ガイド*](https://docs.microsoft.com/azure/architecture/guide/)」で説明されている "[*ソフトウェア品質の要点*](https://docs.microsoft.com/azure/architecture/guide/pillars)" を補強するもので、特にハイブリッド アプリの設計に重点を置いています。 また、ハイブリッド アプリは 1 つのクラウドや 1 つのオンプレミス データセンターに限定されないため、要点として "*配置*" を追加しています。
+この記事は、「[*Azure アプリケーション*](/azure/architecture/guide/) [*アーキテクチャ ガイド*](/azure/architecture/guide/)」で説明されている "[*ソフトウェア品質の要点*](/azure/architecture/guide/pillars)" を補強するもので、特にハイブリッド アプリの設計に重点を置いています。 また、ハイブリッド アプリは 1 つのクラウドや 1 つのオンプレミス データセンターに限定されないため、要点として "*配置*" を追加しています。
 
 ハイブリッド シナリオは、開発で使用できるリソースによって大きく異なり、地理、セキュリティ、インターネット アクセスなど、考慮事項は多岐にわたります。 このガイドでは、特定の考慮事項を列挙することはできませんが、従うべきいくつかの重要なガイドラインとベスト プラクティスを紹介します。 ハイブリッド アプリ アーキテクチャの設計、構成、展開、および保守を正常に行うには、本質的に知られていない可能性がある多くの設計上の考慮事項に対応する必要があります。
 
@@ -93,7 +93,7 @@ Microsoft Azure は、一貫性のある唯一のハイブリッド クラウド
 
 **必要な場所を確認します。** アプリまたはそのいずれかのコンポーネントが、特定のクラウドで動作する必要があるか、または特定のクラウドの認定を必要としていないか確認します。 これには会社や法律で定めるデータ主権要件が含まれる場合があります。 また、特定の場所またはロケールに対してオンプレミスの操作が必要かどうかを確認します。
 
-**接続の依存関係を確認します。** 必要な場所とその他の要因によって、コンポーネント間の接続の依存関係が決まります。 コンポーネントを配置する際は、それらのコンポーネント間の通信に最適な接続とセキュリティを確認します。 選択肢として、[*VPN*、](https://docs.microsoft.com/azure/vpn-gateway/)[*ExpressRoute*、](https://docs.microsoft.com/azure/expressroute/)および[*ハイブリッド接続*](https://docs.microsoft.com/azure/app-service/app-service-hybrid-connections)があります。
+**接続の依存関係を確認します。** 必要な場所とその他の要因によって、コンポーネント間の接続の依存関係が決まります。 コンポーネントを配置する際は、それらのコンポーネント間の通信に最適な接続とセキュリティを確認します。 選択肢として、[*VPN*、](/azure/vpn-gateway/)[*ExpressRoute*、](/azure/expressroute/)および[*ハイブリッド接続*](/azure/app-service/app-service-hybrid-connections)があります。
 
 **プラットフォームの機能を評価します。** アプリ コンポーネントごとに、アプリ コンポーネントに必要なリソース プロバイダーがクラウドで利用可能かどうか、および帯域幅が予想されるスループットと待機時間の要件を満たすことができるかどうかを確認します。
 
@@ -109,7 +109,7 @@ Microsoft Azure は、一貫性のある唯一のハイブリッド クラウド
 
 スケーラビリティとは、アプリのサイズと範囲に加えて、他の要因や影響力が対象ユーザーのサイズに影響することが原因で時間の経過と共に変化することがあるアプリの負荷の増加に対処するための、システムの能力のことです。
 
-この要点の主要な説明については、優れたアーキテクチャの 5 つの要素にある "[*スケーラビリティ*](https://docs.microsoft.com/azure/architecture/guide/pillars#scalability)" を参照してください。
+この要点の主要な説明については、優れたアーキテクチャの 5 つの要素にある "[*スケーラビリティ*](/azure/architecture/guide/pillars#scalability)" を参照してください。
 
 ハイブリッド アプリの水平スケーリング アプローチを使用すると、需要を満たすためにインスタンスを追加し、需要が減った期間にそれらを無効にすることができます。
 
@@ -155,7 +155,7 @@ Microsoft Azure は、一貫性のある唯一のハイブリッド クラウド
 
 回復性とは、障害から回復して動作を続行する、ハイブリッド アプリおよびシステムの能力です。 回復性の目的は、障害の発生後にアプリを十分に機能する状態に戻すことです。 回復性戦略には、バックアップ、レプリケーション、ディザスター リカバリーなどのソリューションが含まれます。
 
-この要点の主要な説明については、優れたアーキテクチャの 5 つの要素にある "[*回復性*](https://docs.microsoft.com/azure/architecture/guide/pillars#resiliency)" を参照してください。
+この要点の主要な説明については、優れたアーキテクチャの 5 つの要素にある "[*回復性*](/azure/architecture/guide/pillars#resiliency)" を参照してください。
 
 ### <a name="resiliency-checklist"></a>回復性のチェックリスト
 
@@ -201,7 +201,7 @@ Microsoft Azure は、一貫性のある唯一のハイブリッド クラウド
 
 セキュリティは、クラウド アプリの主要な考慮事項の 1 つであり、ハイブリッド クラウド アプリにとってはさらに重要になります。
 
-この要点の主要な説明については、優れたアーキテクチャの 5 つの要素にある "[*セキュリティ*](https://docs.microsoft.com/azure/architecture/guide/pillars#security)" を参照してください。
+この要点の主要な説明については、優れたアーキテクチャの 5 つの要素にある "[*セキュリティ*](/azure/architecture/guide/pillars#security)" を参照してください。
 
 ### <a name="security-checklist"></a>セキュリティ チェックリスト
 

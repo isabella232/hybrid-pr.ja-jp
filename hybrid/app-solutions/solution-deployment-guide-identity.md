@@ -7,12 +7,12 @@ ms.date: 11/05/2019
 ms.author: bryanla
 ms.reviewer: anajod
 ms.lastreviewed: 11/05/2019
-ms.openlocfilehash: 1b3c683dd3e4a68413f83fd3cc129d6e6f594e1b
-ms.sourcegitcommit: bb3e40b210f86173568a47ba18c3cc50d4a40607
-ms.translationtype: MT
+ms.openlocfilehash: 650eef0f144ecafab4586d93f72e1defdf4a61ce
+ms.sourcegitcommit: d2def847937178f68177507be151df2aa8e25d53
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/17/2020
-ms.locfileid: "84911315"
+ms.lasthandoff: 07/20/2020
+ms.locfileid: "86477254"
 ---
 # <a name="configure-hybrid-cloud-identity-for-azure-and-azure-stack-hub-apps"></a>Azure および Azure Stack Hub アプリのハイブリッド クラウド ID を構成する
 
@@ -69,4 +69,4 @@ Azure Stack Hub API にアクセスするためのトークンを取得するプ
 ## <a name="next-steps"></a>次のステップ
 
 - Azure Stack Hub での ID の処理方法の詳細については、「[Azure Stack Hub の ID アーキテクチャ](/azure-stack/operator/azure-stack-identity-architecture.md)」を参照してください。
-- Azure のクラウド パターンの詳細については、「[Cloud Design Pattern (クラウド設計パターン)](https://docs.microsoft.com/azure/architecture/patterns)」を参照してください。
+- Azure のクラウド パターンの詳細については、「[Cloud Design Pattern (クラウド設計パターン)](/azure/architecture/patterns)」を参照してください。
