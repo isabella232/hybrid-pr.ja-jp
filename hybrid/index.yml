@@ -10,17 +10,20 @@ metadata:
   author: BryanLa
   ms.author: bryanla
   ms.date: 06/30/2020
-  ms.openlocfilehash: 9793f34db13e324de65b719613c0f4dbf4bdf127
-  ms.sourcegitcommit: 8d75007af6ad574e0629208464bbadb97a5c438e
+  ms.openlocfilehash: 5e47f05293640339329914a3183fae51649ded4c
+  ms.sourcegitcommit: ad41cc782094d57b506a3a1d98209f6cf94f0f3b
   ms.translationtype: HT
   ms.contentlocale: ja-JP
-  ms.lasthandoff: 07/22/2020
-  ms.locfileid: "86949663"
+  ms.lasthandoff: 07/24/2020
+  ms.locfileid: "87121809"
 highlightedContent:
   items:
   - title: 新しい Azure Stack HCI を検出する
     itemType: video
     url: https://azure.microsoft.com/resources/videos/discover-the-new-azure-stack-hci/
+  - title: 'Inspire 2020: Azure Stack HCI の新機能'
+    itemType: video
+    url: https://myinspire.microsoft.com/sessions/4a50e354-b3a8-4d54-9d2a-9dc723ac1030
   - title: Azure ハイブリッドに関するバーチャル イベント
     itemType: video
     url: https://www.youtube.com/playlist?list=PLLasX02E8BPDY8lteNSno4etuLx-6bALf
@@ -258,7 +261,7 @@ additionalContent:
         text: パターンとソリューションの例とは
       - url: ./app-solutions/overview-app-design-considerations.md
         text: ハイブリッド アプリの設計上の考慮事項
-    - title: ハイブリッド パターンを確認する
+    - title: ハイブリッド アプリ パターンの探索
       links:
       - url: ./app-solutions/pattern-cross-cloud-scale.md
         text: クラウド間スケーリング
@@ -268,7 +271,7 @@ additionalContent:
         text: 足音検知 (リテール)
       - url: ./app-solutions/pattern-geo-distributed.md
         text: 地理的に分散されたアプリ
-    - title: ハイブリッド ソリューションのデプロイの例
+    - title: ハイブリッド アプリ パターンのデプロイの例
       links:
       - url: ./app-solutions/solution-deployment-guide-cross-cloud-scaling.md
         text: クラウド間スケーリング
@@ -298,6 +301,8 @@ additionalContent:
         text: Azure の .NET 開発
       - url: https://github.com/likamrat/azure_arc
         text: Azure Arc のジャンプスタート ガイド
+      - url: https://github.com/Azure/AzureStackHCI-EvalGuide
+        text: Azure Stack HCI の評価ガイド
       - url: https://catalog.azureiotsolutions.com/alldevices?filters={%2218%22:[%221%22]}
         text: Azure IoT Edge 認定デバイス
       - url: /samples/browse/
