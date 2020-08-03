@@ -10,12 +10,12 @@ metadata:
   author: BryanLa
   ms.author: bryanla
   ms.date: 06/30/2020
-  ms.openlocfilehash: ab8146340f284af226f336af8fddd2a30977869d
-  ms.sourcegitcommit: 2efdd6422c2af773ad7890dcbc546e816e501c0e
+  ms.openlocfilehash: b888756accc1e538d358e91aec6740b392dafea0
+  ms.sourcegitcommit: 72dbbc933220a4e7273abf46ad3fc6032d122ca7
   ms.translationtype: HT
   ms.contentlocale: ja-JP
-  ms.lasthandoff: 07/28/2020
-  ms.locfileid: "87264099"
+  ms.lasthandoff: 07/31/2020
+  ms.locfileid: "87473796"
 highlightedContent:
   items:
   - title: 新しい Azure Stack HCI を検出する
@@ -56,7 +56,7 @@ productDirectory:
     - url: /azure-stack/hci
       text: Azure Stack HCI
   - title: デバイス向けのインテリジェント エッジ プラットフォーム。
-    imageSrc: media/index/azure-stack-hub.svg
+    imageSrc: media/index/intelligent.svg
     links:
     - url: /azure/iot-edge/
       text: Azure IoT Edge
@@ -251,6 +251,20 @@ conceptualContent:
     - url: /azure/fxt-edge-filer/fxt-overview
       itemType: overview
       text: Azure FXT Edge Filer
+  - title: ツール
+    links:
+    - url: /dotnet/azure/
+      itemType: overview
+      text: Azure の .NET 開発
+    - url: https://azure.github.io/Vision-AI-DevKit-Pages/
+      itemType: overview
+      text: Vision AI Developer Kit
+    - url: https://marketplace.visualstudio.com/items?itemName=vsciot-vscode.azure-iot-tools
+      itemType: overview
+      text: Visual Studio Code 用の Azure IoT Tools
+    - url: /visualstudio/azure/
+      itemType: overview
+      text: Visual Studio での Azure の開発
 additionalContent:
   sections:
   - title: ハイブリッド ソリューション
@@ -283,43 +297,43 @@ additionalContent:
         text: 地理的に分散されたアプリ
   - title: その他のリソース
     items:
-    - title: 一般的なリソース
+    - title: 全般
       links:
       - url: /azure-stack/operator/compare-azure-azure-stack
         text: Azure グローバル クラウド と Azure Stack
+      - url: https://azure.microsoft.com/blog/topics/hybrid/
+        text: Azure ハイブリッドのブログ
       - url: https://azure.microsoft.com/overview/azure-hybrid/
         text: Azure ハイブリッドの機能
-      - url: https://www.youtube.com/watch?v=to8D7Xl9SU8
-        text: Azure Stack ハイブリッド アプリケーションの概要
+      - url: https://channel9.msdn.com/Search?term=%22Azure%20Stack%20Hub%20Partner%20Solutions%20Series%22
+        text: お客様の Azure Stack Hub ソリューション
       - url: https://customers.microsoft.com/en-us/search?sq="hybrid cloud"
         text: ハイブリッド クラウドの顧客事例
-      - url: /learn
-        text: Microsoft Learn の対話型トレーニング
-      - url: /learn/tv/
-        text: Microsoft Learn TV
-    - title: 構築と運用に関するリソース
+      - url: /answers/products/
+        text: Microsoft Q&A フォーラム
+    - title: 評価と学習
       links:
-      - url: /dotnet/azure/
-        text: Azure の .NET 開発
       - url: https://github.com/likamrat/azure_arc
         text: Azure Arc のジャンプスタート ガイド
+      - url: https://github.com/Azure-Samples/AI-Video-Intelligence-Solution-Accelerator
+        text: Azure IoT Edge AI ビデオ インテリジェンス ソリューション アクセラレータ
+      - url: https://labs.iotedge.dev/
+        text: Azure IoT Edge のハンズオン ラボ
+      - url: https://www.azureiotsolutions.com/Accelerators
+        text: Azure IoT ソリューション アクセラレータ
+      - url: /azure-stack/asdk
+        text: Azure Stack 開発キット
       - url: https://github.com/Azure/AzureStackHCI-EvalGuide
         text: Azure Stack HCI の評価ガイド
+      - url: https://www.youtube.com/watch?v=to8D7Xl9SU8
+        text: Azure Stack ハイブリッド アプリの概要
       - url: https://catalog.azureiotsolutions.com/alldevices?filters={%2218%22:[%221%22]}
         text: Azure IoT Edge 認定デバイス
       - url: /samples/browse/
         text: コード サンプル ブラウザー
+      - url: https://docs.docker.com/
+        text: Docker ドキュメント
       - url: https://www.youtube.com/watch?v=2lw8zOpJTn0
         text: Azure Stack Hub から Azure への動的なスケーリング
-      - url: https://labs.iotedge.dev/
-        text: IoT Edge のハンズオン ラボ
-      - url: https://azure.github.io/Vision-AI-DevKit-Pages/
-        text: Vision AI Developer Kit
-      - url: /visualstudio/azure/
-        text: Visual Studio での Azure の開発
-    - title: サポートとその他のリソース
-      links:
-      - url: https://azure.microsoft.com/blog/topics/hybrid/
-        text: Azure ハイブリッドのブログ
-      - url: /answers/products/
-        text: Microsoft Q&A フォーラム
+      - url: /learn
+        text: Microsoft Learn
