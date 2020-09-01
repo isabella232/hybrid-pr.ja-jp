@@ -7,12 +7,12 @@ ms.date: 11/05/2019
 ms.author: bryanla
 ms.reviewer: anajod
 ms.lastreviewed: 11/05/2019
-ms.openlocfilehash: 741ddf2c3ed234788af359dd233f6a656fbea13c
-ms.sourcegitcommit: d2def847937178f68177507be151df2aa8e25d53
+ms.openlocfilehash: 27d07070becfa902a715b451baae7c81c7e4b46f
+ms.sourcegitcommit: 56980e3c118ca0a672974ee3835b18f6e81b6f43
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/20/2020
-ms.locfileid: "86477356"
+ms.lasthandoff: 08/26/2020
+ms.locfileid: "88886834"
 ---
 # <a name="direct-traffic-with-a-geo-distributed-app-using-azure-and-azure-stack-hub"></a>Azure と Azure Stack Hub を利用し、地理的分散アプリでトラフィックを転送する
 
@@ -84,7 +84,7 @@ Azure サブスクリプションと Azure Stack Hub のインストールが必
 
 ### <a name="obtain-a-custom-domain-and-configure-dns"></a>カスタム ドメインを取得し DNS を構成する
 
-ドメインの DNS ゾーン ファイルを更新します。 Azure AD は続いて、カスタム ドメイン名の所有権を確認できます。 Azure 内の Azure/Office 365/外部 DNS レコードに [Azure DNS](/azure/dns/dns-getstarted-portal) を使用するか、または[別の DNS レジストラー](https://support.office.com/article/Create-DNS-records-for-Office-365-when-you-manage-your-DNS-records-b0f3fdca-8a80-4e8e-9ef3-61e8a2a9ab23/)で DNS エントリを追加します。
+ドメインの DNS ゾーン ファイルを更新します。 Azure AD は続いて、カスタム ドメイン名の所有権を確認できます。 Azure 内の Azure/Microsoft 365/外部 DNS レコードに [Azure DNS](/azure/dns/dns-getstarted-portal) を使用するか、[別の DNS レジストラー](/microsoft-365/admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider)で DNS エントリを追加します。
 
 1. パブリック レジストラーでカスタム ドメインを登録します。
 
@@ -256,7 +256,7 @@ Azure DevOps Services が提供するパイプラインは自由に構成でき�
 
 - ドメイン名を購入し、ドメイン プロバイダーの DNS レジストリへのアクセスを確認します。
 
-ドメインの DNS ゾーン ファイルを更新します。 Azure AD は、カスタム ドメイン名の所有権を確認します。 Azure 内の Azure/Office 365/外部 DNS レコードに [Azure DNS](/azure/dns/dns-getstarted-portal) を使用するか、または[別の DNS レジストラー](https://support.office.com/article/Create-DNS-records-for-Office-365-when-you-manage-your-DNS-records-b0f3fdca-8a80-4e8e-9ef3-61e8a2a9ab23/)で DNS エントリを追加します。
+ドメインの DNS ゾーン ファイルを更新します。 Azure AD は、カスタム ドメイン名の所有権を確認します。 Azure 内の Azure/Microsoft 365/外部 DNS レコードに [Azure DNS](/azure/dns/dns-getstarted-portal) を使用するか、[別の DNS レジストラー](/microsoft-365/admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider)で DNS エントリを追加します。
 
 - パブリック レジストラーでカスタム ドメインを登録します。
 
