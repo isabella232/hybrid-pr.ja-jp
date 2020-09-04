@@ -9,13 +9,13 @@ metadata:
   ms.topic: hub-page
   author: BryanLa
   ms.author: bryanla
-  ms.date: 08/05/2020
-  ms.openlocfilehash: 09eca5be0d1b638b1ca5122c12f362ddde8559e8
-  ms.sourcegitcommit: e1bdde91a92840fe1da420148329fee36addc03e
+  ms.date: 09/02/2020
+  ms.openlocfilehash: 8df4847263d2632d35f0817752fbdf69afbe01d3
+  ms.sourcegitcommit: 36f2c0f6e8ed4512b76d77dde8c4e7473cc4719c
   ms.translationtype: HT
   ms.contentlocale: ja-JP
-  ms.lasthandoff: 08/06/2020
-  ms.locfileid: "87838517"
+  ms.lasthandoff: 09/03/2020
+  ms.locfileid: "89410776"
 highlightedContent:
   items:
   - title: 新しい Azure Stack HCI を検出する
@@ -187,7 +187,7 @@ conceptualContent:
     - url: /azure/azure-arc/kubernetes/
       itemType: overview
       text: Azure Arc 対応 Kubernetes (プレビュー)
-    - url: /azure/azure-arc/
+    - url: /azure/azure-arc/servers
       itemType: overview
       text: Azure Arc 対応サーバー (プレビュー)
     - url: /azure/automation/
@@ -268,6 +268,7 @@ conceptualContent:
 additionalContent:
   sections:
   - title: ハイブリッド ソリューション
+    summary: ハイブリッド プロジェクト用に探索して再利用するためのガイダンスと例。
     items:
     - title: ハイブリッド アプリのパターンとソリューションの例
       links:
