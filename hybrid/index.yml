@@ -10,12 +10,12 @@ metadata:
   author: BryanLa
   ms.author: bryanla
   ms.date: 09/02/2020
-  ms.openlocfilehash: 8109b1b42c133afa3179b362c543118965486ac7
-  ms.sourcegitcommit: 64698a0824c87d0838b57cff05187f4225bb619c
+  ms.openlocfilehash: fe346e09aba6e073f291037eb767a3936dea3a99
+  ms.sourcegitcommit: 1c9d681b45f3cc91fd6896badf998be68e284a35
   ms.translationtype: HT
   ms.contentlocale: ja-JP
-  ms.lasthandoff: 09/24/2020
-  ms.locfileid: "91209707"
+  ms.lasthandoff: 09/28/2020
+  ms.locfileid: "91407720"
 highlightedContent:
   items:
   - title: Ignite 2020:ハイブリッドに関するセッション
@@ -263,20 +263,6 @@ conceptualContent:
     - url: /azure/fxt-edge-filer/fxt-overview
       itemType: overview
       text: Azure FXT Edge Filer
-  - title: ツール
-    links:
-    - url: /dotnet/azure/
-      itemType: overview
-      text: Azure の .NET 開発
-    - url: https://azure.github.io/Vision-AI-DevKit-Pages/
-      itemType: overview
-      text: Vision AI Developer Kit
-    - url: https://marketplace.visualstudio.com/items?itemName=vsciot-vscode.azure-iot-tools
-      itemType: overview
-      text: Visual Studio Code 用の Azure IoT Tools
-    - url: /visualstudio/azure/
-      itemType: overview
-      text: Visual Studio での Azure の開発
 additionalContent:
   sections:
   - title: ハイブリッド ソリューション
@@ -308,47 +294,113 @@ additionalContent:
         text: 足音検知 (リテール)
       - url: ./app-solutions/solution-deployment-guide-geo-distributed.md
         text: 地理的に分散されたアプリ
-  - title: その他のリソース
+  - title: 評価と学習に関するリソース
     items:
-    - title: 全般
+    - title: Azure Stack
       links:
-      - url: /azure-stack/operator/compare-azure-azure-stack
-        text: Azure グローバル クラウド と Azure Stack
-      - url: https://azure.microsoft.com/blog/topics/hybrid/
-        text: Azure ハイブリッドのブログ
-      - url: https://azure.microsoft.com/overview/azure-hybrid/
-        text: Azure ハイブリッドの機能
-      - url: https://www.youtube.com/playlist?list=PLLasX02E8BPDY8lteNSno4etuLx-6bALf
-        text: Azure ハイブリッドに関するバーチャル イベント
-      - url: https://channel9.msdn.com/Search?term=%22Azure%20Stack%20Hub%20Partner%20Solutions%20Series%22
-        text: お客様の Azure Stack Hub ソリューション
-      - url: https://customers.microsoft.com/en-us/search?sq="hybrid cloud"
-        text: ハイブリッド クラウドの顧客事例
-      - url: /answers/products/
-        text: Microsoft Q&A フォーラム
-    - title: 評価と学習
-      links:
-      - url: https://github.com/likamrat/azure_arc
-        text: Azure Arc のジャンプスタート ガイド
-      - url: https://github.com/Azure-Samples/AI-Video-Intelligence-Solution-Accelerator
-        text: Azure IoT Edge AI ビデオ インテリジェンス ソリューション アクセラレータ
-      - url: https://labs.iotedge.dev/
-        text: Azure IoT Edge のハンズオン ラボ
-      - url: https://www.azureiotsolutions.com/Accelerators
-        text: Azure IoT ソリューション アクセラレータ
       - url: /azure-stack/asdk
         text: Azure Stack 開発キット
       - url: https://github.com/Azure/AzureStackHCI-EvalGuide
         text: Azure Stack HCI の評価ガイド
       - url: https://www.youtube.com/watch?v=to8D7Xl9SU8
         text: Azure Stack ハイブリッド アプリの概要
-      - url: https://catalog.azureiotsolutions.com/alldevices?filters={%2218%22:[%221%22]}
-        text: Azure IoT Edge 認定デバイス
-      - url: /samples/browse/
-        text: コード サンプル ブラウザー
-      - url: https://docs.docker.com/
-        text: Docker ドキュメント
       - url: https://www.youtube.com/watch?v=2lw8zOpJTn0
         text: Azure Stack Hub から Azure への動的なスケーリング
+    - title: Edge
+      links:
+      - url: https://github.com/Azure-Samples/AI-Video-Intelligence-Solution-Accelerator
+        text: Azure IoT Edge AI ビデオ インテリジェンス ソリューション アクセラレータ
+      - url: https://labs.iotedge.dev/
+        text: Azure IoT Edge のハンズオン ラボ
+      - url: https://www.azureiotsolutions.com/Accelerators
+        text: Azure IoT ソリューション アクセラレータ
+      - url: https://catalog.azureiotsolutions.com/alldevices?filters={%2218%22:[%221%22]}
+        text: Azure IoT Edge 認定デバイス
+    - title: 全般
+      links:
+      - url: /learn/modules/align-requirements-in-azure/
+        text: Azure でクラウドの種類とサービス モデルに合わせて要件を調整する
+      - url: https://azure.microsoft.com/overview/azure-hybrid/
+        text: Azure ハイブリッドの機能
+      - url: https://www.youtube.com/playlist?list=PLLasX02E8BPDY8lteNSno4etuLx-6bALf
+        text: Azure ハイブリッドに関するバーチャル イベント
+      - url: /learn/modules/intro-to-azure-hybrid-services/
+        text: Azure ハイブリッド クラウドの概要
       - url: /learn
         text: Microsoft Learn
+    - title: ID とセキュリティ
+      links:
+      - url: /learn/modules/azure-sentinel-deploy-configure/
+        text: Azure Sentinel のデプロイとデータ ソースの接続
+      - url: /learn/modules/implement-hybrid-identity-windows-server/
+        text: Windows Server でハイブリッド ID を実装する
+      - url: /learn/modules/intro-to-azure-sentinel/
+        text: Azure Sentinel の概要
+      - url: /learn/paths/implement-windows-server-hybrid-cloud-management-monitoring-security/
+        text: Windows Server ハイブリッド クラウドの管理、監視、およびセキュリティ
+    - title: 管理
+      links:
+      - url: https://github.com/likamrat/azure_arc
+        text: Azure Arc のジャンプスタート ガイド
+      - url: /learn/modules/describe-high-availability-disaster-recovery-strategies/
+        text: 高可用性とディザスター リカバリーの戦略
+      - url: /learn/modules/explore-iaas-paas-platform-tools-for-high-availability-disaster-recovery/
+        text: 高可用性とディザスター リカバリーのための IaaS および PaaS プラットフォームのツール
+      - url: /learn/modules/intro-to-azure-arc/
+        text: Azure Arc の概要
+      - url: /learn/modules/manage-hybrid-workloads-azure-arc/
+        text: Azure Arc を使用してハイブリッド ワークロードを管理する
+      - url: /learn/modules/monitor-windows-server-iaas-virtual-machines-hybrid-instances/
+        text: Windows Server IaaS Virtual Machines とハイブリッド インスタンスの監視
+      - url: /learn/paths/implement-windows-server-hybrid-cloud-management-monitoring-security/
+        text: Windows Server ハイブリッド クラウドの管理、監視、およびセキュリティ
+    - title: ネットワーク
+      links:
+      - url: /learn/modules/design-a-hybrid-network-architecture/
+        text: Azure でハイブリッド ネットワーク アーキテクチャを設計する
+      - url: /learn/modules/expose-hybrid-services-with-azure-relay/
+        text: Azure Relay でハイブリッド サービスを安全に公開する
+      - url: /learn/modules/implement-hybrid-network-infrastructure/
+        text: ハイブリッド ネットワーク インフラストラクチャを実装する
+    - title: ストレージ
+      links:
+      - url: /learn/modules/implement-hybrid-file-server-infrastructure/
+        text: ハイブリッド ファイル サーバー インフラストラクチャを実装する
+      - url: /learn/modules/implement-hybrid-backup-recovery-windows-server-iaas/
+        text: Windows Server IaaS を使用してハイブリッド バックアップと回復を実装する
+  - title: その他のリソース
+    items:
+    - title: 開発者
+      links:
+      - url: /azure/developer/
+        text: Azure 開発者向けドキュメントとツール
+      - url: /azure/architecture/hybrid/azure-arc-hybrid-config
+        text: Azure ハイブリッド アーキテクチャ
+      - url: https://marketplace.visualstudio.com/items?itemName=vsciot-vscode.azure-iot-tools
+        text: Visual Studio Code 用の Azure IoT Tools
+      - url: /samples/browse/
+        text: コード サンプル ブラウザー
+      - url: https://azure.github.io/Vision-AI-DevKit-Pages/
+        text: Vision AI Developer Kit
+      - url: /visualstudio/azure/
+        text: Visual Studio での Azure の開発
+    - title: 全般
+      links:
+      - url: https://azure.microsoft.com/blog/topics/hybrid/
+        text: Azure ハイブリッドのブログ
+      - url: https://azure.microsoft.com/overview/azure-hybrid/
+        text: Azure ハイブリッドの機能
+      - url: https://channel9.msdn.com/Search?term=%22Azure%20Stack%20Hub%20Partner%20Solutions%20Series%22
+        text: お客様の Azure Stack Hub ソリューション
+      - url: https://customers.microsoft.com/en-us/search?sq="hybrid cloud"
+        text: ハイブリッド クラウドの顧客事例
+    - title: ヘルプとサポート
+      links:
+      - url: https://azure.microsoft.com/support/options/
+        text: Azure サポート
+      - url: https://feedback.azure.com/
+        text: Azure ユーザーの声によるフィードバック
+      - url: /answers/products/
+        text: Microsoft Q&A フォーラム
+      - url: https://stackoverflow.com/
+        text: Stack Overflow
