@@ -7,12 +7,12 @@ ms.date: 11/05/2019
 ms.author: bryanla
 ms.reviewer: anajod
 ms.lastreviewed: 11/05/2019
-ms.openlocfilehash: f6064aaa1087a3c0cfc26e09371e81752c777edb
-ms.sourcegitcommit: d2def847937178f68177507be151df2aa8e25d53
+ms.openlocfilehash: def9abaa2a7231648f11453f66119399be015a4d
+ms.sourcegitcommit: 485a1f97fa1579364e2be1755cadfc5ea89db50e
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/20/2020
-ms.locfileid: "86477271"
+ms.lasthandoff: 10/08/2020
+ms.locfileid: "91852509"
 ---
 # <a name="deploy-a-highly-available-mongodb-solution-to-azure-and-azure-stack-hub"></a>高可用性の MongoDB ソリューションを Azure と Azure Stack Hub にデプロイする
 
@@ -105,5 +105,5 @@ ms.locfileid: "86477271"
 ## <a name="next-steps"></a>次のステップ
 
 - DR Azure Stack Hub でジャンプ ボックス VM を有効にした場合、mongo CLI をインストールすることで、SSH 経由で接続し、MongoDB クラスターとやりとりできます。 MongoDB とやりとりする方法については、「[mongo Shell](https://docs.mongodb.com/manual/mongo/)」(mongo シェル) を参照してください。
-- ハイブリッド クラウド アプリの詳細については、[ハイブリッド クラウド ソリューション](https://aka.ms/azsdevtutorials)に関するページを参照してください。
+- ハイブリッド クラウド アプリの詳細については、[ハイブリッド クラウド ソリューション](/azure-stack/user/)に関するページを参照してください。
 - [GitHub](https://github.com/Azure-Samples/azure-intelligent-edge-patterns) のこのサンプルに合わせてコードを変更します。

@@ -7,12 +7,12 @@ ms.date: 06/07/2020
 ms.author: bryanla
 ms.reviewer: anajod
 ms.lastreviewed: 11/05/2019
-ms.openlocfilehash: c56575ac8ea6cb35d60bb9419269db89b0295721
-ms.sourcegitcommit: d2def847937178f68177507be151df2aa8e25d53
+ms.openlocfilehash: 8b975c7b99807490d446f557e84b6e0eabf34649
+ms.sourcegitcommit: 485a1f97fa1579364e2be1755cadfc5ea89db50e
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/20/2020
-ms.locfileid: "86477220"
+ms.lasthandoff: 10/08/2020
+ms.locfileid: "91852492"
 ---
 # <a name="hybrid-app-design-considerations"></a>ハイブリッド アプリの設計上の考慮事項
 
@@ -231,4 +231,4 @@ Microsoft Azure は、一貫性のある唯一のハイブリッド クラウド
 
 - [ハイブリッド クラウド](https://azure.microsoft.com/overview/hybrid-cloud/)
 - [ハイブリッド クラウド アプリ](https://azure.microsoft.com/solutions/hybrid-cloud-app/)
-- [クラウドの一貫性のための Azure Resource Manager テンプレートを開発する](https://aka.ms/consistency)
+- [クラウドの一貫性のための Azure Resource Manager テンプレートを開発する](/azure/azure-resource-manager/templates/templates-cloud-consistency)
