@@ -7,12 +7,12 @@ ms.date: 11/05/2019
 ms.author: bryanla
 ms.reviewer: anajod
 ms.lastreviewed: 11/05/2019
-ms.openlocfilehash: 6de35cb55c4c35a2a9927f9ffc2516ccb00cd89f
-ms.sourcegitcommit: d2def847937178f68177507be151df2aa8e25d53
+ms.openlocfilehash: ecc42a94e2c59531b2a2e933772b0d8ce8c58609
+ms.sourcegitcommit: 0d5b5336bdb969588d0b92e04393e74b8f682c3b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/20/2020
-ms.locfileid: "86477322"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "92353480"
 ---
 # <a name="deploy-hybrid-app-with-on-premises-data-that-scales-cross-cloud"></a>オンプレミス データを使用してクロスクラウドをスケーリングするハイブリッド アプリをデプロイする
 
@@ -37,7 +37,7 @@ ms.locfileid: "86477322"
 > - グローバル Azure と Azure Stack Hub の間で自動トラフィック切り替えを構成する。
 
 > [!Tip]  
-> ![hybrid-pillars.png](./media/solution-deployment-guide-cross-cloud-scaling/hybrid-pillars.png)  
+> ![ハイブリッドの柱の図](./media/solution-deployment-guide-cross-cloud-scaling/hybrid-pillars.png)  
 > Microsoft Azure Stack Hub は Azure の拡張機能です。 Azure Stack Hub により、オンプレミス環境にクラウド コンピューティングの機敏性とイノベーションがもたらされ、ハイブリッド アプリをビルドし、どこにでもデプロイできる唯一のハイブリッド クラウドが可能になります。  
 > 
 > [ハイブリッド アプリの設計の考慮事項](overview-app-design-considerations.md)に関する記事では、ハイブリッド アプリを設計、デプロイ、および運用するためのソフトウェア品質の重要な要素 (配置、スケーラビリティ、可用性、回復性、管理容易性、およびセキュリティ) についてレビューしています。 これらの設計の考慮事項は、ハイブリッド アプリの設計を最適化したり、運用環境での課題を最小限に抑えたりするのに役立ちます。
@@ -90,8 +90,8 @@ ms.locfileid: "86477322"
 
 7. **[設定] の [オプション機能の構成]** で、次の設定を構成します。
 
-   - **ストレージ アカウント**: 新しいアカウントが必要な場合は、作成します。
-   - **仮想ネットワーク**:
+   - **ストレージ アカウント** : 新しいアカウントが必要な場合は、作成します。
+   - **仮想ネットワーク** :
 
      > [!Important]  
      > SQL Server VM が VPN ゲートウェイと同じ仮想ネットワーク上にデプロイされていることを確認してください。
@@ -107,7 +107,7 @@ ms.locfileid: "86477322"
 8. **[SQL Server の設定]** で、次の設定を構成します。
 
    - **[SQL 接続]** で **[パブリック (インターネット)]** を選択します。
-   - **[ポート]** は、既定値 (**1433**) のままにします。
+   - **[ポート]** は、既定値 ( **1433** ) のままにします。
    - **[SQL 認証]** には **[有効]** を選択します。
 
      > [!Note]  
@@ -153,7 +153,7 @@ Azure の Web フロントエンドと Azure Stack Hub の SQL Server データ�
 
 Azure App Service と統合するためには、ハイブリッド ネットワークの Azure 側にある仮想ネットワーク ゲートウェイでポイント対サイト接続を許可する必要があります。
 
-1. Azure で仮想ネットワーク ゲートウェイ ページに移動します。 **[設定]** で、 **[ポイント対サイトの構成]** を選択します。
+1. Azure portal で仮想ネットワーク ゲートウェイのページに移動します。 **[設定]** で、 **[ポイント対サイトの構成]** を選択します。
 
     ![Azure 仮想ネットワーク ゲートウェイのポイント対サイト オプション](media/solution-deployment-guide-hybrid/image8.png)
 
@@ -192,7 +192,7 @@ App Service と Azure VNet の統合方法の詳細については、「[アプ�
 
 App Service のポイント対サイト アドレス範囲からのトラフィックをルーティングするために、Azure Stack Hub 仮想ネットワーク内のローカル ネットワーク ゲートウェイを構成する必要があります。
 
-1. Azure Stack Hub で **[ローカル ネットワーク ゲートウェイ]** に移動します。 **[設定]** で **[構成]** を選択します。
+1. Azure Stack Hub ポータルで、 **[ローカル ネットワーク ゲートウェイ]** に移動します。 **[設定]** で **[構成]** を選択します。
 
     ![Azure Stack Hub ローカル ネットワーク ゲートウェイのゲートウェイ構成オプション](media/solution-deployment-guide-hybrid/image14.png)
 
@@ -212,13 +212,13 @@ App Service ドメインが機能しないため、このチュートリアル�
 
 Traffic Manager は DNS の CNAME に依存しているため、エンドポイントに対して適切にトラフィックをルーティングするためには、サブドメインが必要となります。 DNS レコードとドメイン マッピングの詳細については、「[Traffic Manager を使用したドメインのマップ](/azure/app-service/web-sites-traffic-manager-custom-domain-name)」を参照してください。
 
-Azure エンドポイントについては、Web アプリにアクセスするためにユーザーが使用できるサブドメインを作成します。 このチュートリアルでは、**app.northwind.com** を使用できますが、この値はご自身のドメインに合わせてカスタマイズする必要があります。
+Azure エンドポイントについては、Web アプリにアクセスするためにユーザーが使用できるサブドメインを作成します。 このチュートリアルでは、 **app.northwind.com** を使用できますが、この値はご自身のドメインに合わせてカスタマイズする必要があります。
 
 また、Azure Stack Hub エンドポイントについても、A レコードを使用してサブドメインを作成する必要があります。 **azurestack.northwind.com** を使用できます。
 
 ### <a name="configure-a-custom-domain-in-azure"></a>Azure でカスタム ドメインを構成する
 
-1. [Azure App Service に CNAME をマップ](/azure/app-service/app-service-web-tutorial-custom-domain#map-a-cname-record)して、**app.northwind.com** ホスト名を Azure Web アプリに追加します。
+1. [Azure App Service に CNAME をマップ](/azure/app-service/app-service-web-tutorial-custom-domain#map-a-cname-record)して、 **app.northwind.com** ホスト名を Azure Web アプリに追加します。
 
 ### <a name="configure-custom-domains-in-azure-stack-hub"></a>Azure Stack Hub でカスタム ドメインを構成する
 
@@ -238,13 +238,13 @@ Azure に SSL を追加するには、次の手順に従います。
 
 1. 作成したサブドメインに対し、取得した SSL 証明書が有効であることを確認します  (ワイルドカード証明書を使用してもかまいません)。
 
-2. Azure で、[Azure Web Apps に既存のカスタム SSL 証明書をバインドする](/azure/app-service/app-service-web-tutorial-custom-ssl)方法に関する記事の「**Web アプリの準備**」と **SSL 証明書のバインド**に関するセクションの指示に従います。 **[SSL の種類]** として **[SNI ベースの SSL]** を選択します。
+2. Azure portal で、 [Azure Web Apps に既存のカスタム SSL 証明書をバインドする](/azure/app-service/app-service-web-tutorial-custom-ssl)方法に関する記事の「 **Web アプリの準備** 」と **SSL 証明書のバインド** に関するセクションの指示に従います。 **[SSL の種類]** として **[SNI ベースの SSL]** を選択します。
 
-3. すべてのトラフィックを HTTP ポートにリダイレクトします。 [Azure Web Apps への既存のカスタム SSL 証明書のバインド](/azure/app-service/app-service-web-tutorial-custom-ssl)に関する記事のセクション「**HTTPS の適用**」の手順に従ってください。
+3. すべてのトラフィックを HTTP ポートにリダイレクトします。 [Azure Web Apps への既存のカスタム SSL 証明書のバインド](/azure/app-service/app-service-web-tutorial-custom-ssl)に関する記事のセクション「 **HTTPS の適用** 」の手順に従ってください。
 
 Azure Stack Hub に SSL を追加するには、次の手順に従います。
 
-1. Azure で使用した手順 1. から手順 3. を繰り返します。
+1. Azure Stack Hub ポータルを使用して、Azure で使用した手順 1 から 3 を繰り返します。
 
 ## <a name="configure-and-deploy-the-web-app"></a>Web アプリを構成し、デプロイする
 
@@ -274,7 +274,7 @@ App Service 環境変数を使用し、アプリの各インスタンスに異�
         options.UseSqlite("Data Source=localdatabase.db"));
     ```
 
-3. 前のコード ブロックを次のコードに置き換えます。このコードでは、*appsettings.json* ファイルで定義されている接続文字列が使用されます。
+3. 前のコード ブロックを次のコードに置き換えます。このコードでは、 *appsettings.json* ファイルで定義されている接続文字列が使用されます。
 
     ```C#
     services.AddDbContext<MyDatabaseContext>(options =>
@@ -289,7 +289,7 @@ App Service 環境変数を使用し、アプリの各インスタンスに異�
 
 2. Azure と Azure Stack Hub で、Web アプリの[アプリ設定として](/azure/app-service/web-sites-configure)適切な接続文字列を追加します。そのとき、名前のプレフィックスとして `SQLCONNSTR\_` を使用します。
 
-3. Web アプリ設定を**保存**し、アプリを再起動します。
+3. Web アプリ設定を **保存** し、アプリを再起動します。
 
 ## <a name="enable-automatic-scaling-in-global-azure"></a>グローバル Azure で自動スケーリングを有効にする
 
@@ -300,7 +300,7 @@ App Service 環境で Web アプリを作成するとき、1 つのインスタ�
 
 ### <a name="enable-automatic-scale-out"></a>自動スケールアウトを有効にする
 
-1. Azure で、スケールアウトしたいサイトの App Service プランを見つけて、 **[スケールアウト (App Service プラン)]** を選択します。
+1. Azure portal で、スケールアウトしたいサイトの App Service プランを見つけて、 **[スケールアウト (App Service プラン)]** を選択します。
 
     ![Azure App Service をスケールアウトする](media/solution-deployment-guide-hybrid/image16.png)
 
@@ -308,7 +308,7 @@ App Service 環境で Web アプリを作成するとき、1 つのインスタ�
 
     ![Azure App Service で自動スケーリングを有効にする](media/solution-deployment-guide-hybrid/image17.png)
 
-3. **[自動スケール設定の名前]** に名前を入力します。 **既存**の自動スケール ルールで、 **[メトリックに基づいてスケーリングする]** を選択します。 **[インスタンスの制限]** で、 **[最小]** を 1、 **[最大]** を 10、 **[既定]** を 1 に設定します。
+3. **[自動スケール設定の名前]** に名前を入力します。 **既存** の自動スケール ルールで、 **[メトリックに基づいてスケーリングする]** を選択します。 **[インスタンスの制限]** で、 **[最小]** を 1、 **[最大]** を 10、 **[既定]** を 1 に設定します。
 
     ![Azure App Service で自動スケーリングを構成する](media/solution-deployment-guide-hybrid/image18.png)
 
@@ -372,7 +372,7 @@ App Service 環境で Web アプリを作成するとき、1 つのインスタ�
 
 ## <a name="create-a-traffic-manager-profile-and-configure-cross-cloud-scaling"></a>Traffic Manager プロファイルを作成し、クラウド間スケーリングを構成する
 
-Azure で Traffic Manager プロファイルを作成し、クラウド間スケーリングを有効にするようにエンドポイントを構成します。
+Azure portal を使用して Traffic Manager プロファイルを作成し、クラウド間スケーリングを有効にするようにエンドポイントを構成します。
 
 ### <a name="create-traffic-manager-profile"></a>Traffic Manager プロファイルを作成する
 
@@ -380,7 +380,7 @@ Azure で Traffic Manager プロファイルを作成し、クラウド間スケ
 2. **[ネットワーク]** を選択します。
 3. **[Traffic Manager プロファイル]** を選択し、次の設定を構成します。
 
-   - **[名前]** に、プロファイルの名前を入力します。 この名前は、trafficmanager.net ゾーン内で一意であることが**必要**です。新しい DNS 名を作成するときに使用されます (例: northwindstore.trafficmanager.net)。
+   - **[名前]** に、プロファイルの名前を入力します。 この名前は、trafficmanager.net ゾーン内で一意であることが **必要** です。新しい DNS 名を作成するときに使用されます (例: northwindstore.trafficmanager.net)。
    - **[ルーティング方法]** で **[重み付け]** を選択します。
    - **[サブスクリプション]** で、このプロファイルを作成するサブスクリプションを選択します。
    - **[リソース グループ]** で、このプロファイルの新しいリソース グループを作成します。
@@ -405,7 +405,7 @@ Azure で Traffic Manager プロファイルを作成し、クラウド間スケ
    - **[Type] (種類)** で、 **[外部エンドポイント]** を選択します。
    - エンドポイントの **[名前]** を入力します。
    - **完全修飾ドメイン名 (FQDN) または IP** として、Azure Stack Hub Web アプリの外部 URL を入力します。
-   - **[重み]** は、既定値 (**1**) のままにします。 これにより、このエンドポイントが正常な状態である場合、すべてのトラフィックがそのエンドポイントに送信されるようになります。
+   - **[重み]** は、既定値 ( **1** ) のままにします。 これにより、このエンドポイントが正常な状態である場合、すべてのトラフィックがそのエンドポイントに送信されるようになります。
    - **[無効として追加]** はオフのままにします。
 
 5. **[OK]** を選択して、Azure Stack Hub エンドポイントを保存します。
@@ -430,15 +430,15 @@ Azure で Traffic Manager プロファイルを作成し、クラウド間スケ
 
 ![Traffic Manager プロファイルのエンドポイント](media/solution-deployment-guide-hybrid/image20.png)
 
-## <a name="set-up-application-insights-monitoring-and-alerting"></a>Application Insights の監視とアラートを設定する
+## <a name="set-up-application-insights-monitoring-and-alerting-in-azure"></a>Azure で Application Insights の監視とアラートを設定する
 
 Azure Application Insights を使用すると、アプリを監視し、構成した条件に応じてアラートを送信できます。 たとえば、アプリが利用できなくなった、障害が発生した、パフォーマンスの問題が生じたなどの例があります。
 
-アラートの作成には、Application Insights のメトリックを使用します。 これらのアラートがトリガーされると、Web アプリ インスタンスが自動的に Azure Stack Hub から Azure に切り替わってスケールアウトし、その後、Azure Stack Hub に戻ってスケールインします。
+アラートの作成には、Azure Application Insights のメトリックを使用します。 これらのアラートがトリガーされると、Web アプリ インスタンスが自動的に Azure Stack Hub から Azure に切り替わってスケールアウトし、その後、Azure Stack Hub に戻ってスケールインします。
 
 ### <a name="create-an-alert-from-metrics"></a>メトリックに基づくアラートを作成する
 
-このチュートリアルのリソース グループに移動して Application Insights インスタンスを選択し、 **[Application Insights]** を開きます。
+Azure portal で、このチュートリアルのリソース グループに移動して Application Insights インスタンスを選択し、 **[Application Insights]** を開きます。
 
 ![Application Insights](media/solution-deployment-guide-hybrid/image21.png)
 
@@ -450,14 +450,14 @@ Azure Application Insights を使用すると、アプリを監視し、構成�
 2. **[メトリック アラートの追加 (クラシック)]** を選択します。
 3. **[ルールの追加]** で、次の設定を構成します。
 
-   - **[名前]** に「**Burst into Azure Cloud**」と入力します。
+   - **[名前]** に「 **Burst into Azure Cloud** 」と入力します。
    - **[説明]** は省略できます。
    - **[ソース]** の **[アラート対象]** で **[メトリック]** を選択します。
    - **[条件]** で、自分のサブスクリプション、Traffic Manager プロファイルのリソース グループ、リソースに使用する Traffic Manager プロファイルの名前を選択します。
 
 4. **[メトリック]** で **[要求率]** を選択します。
 5. **[条件]** で **[より大きい]** を選択します。
-6. **[しきい値]** に「**2**」を入力します。
+6. **[しきい値]** に「 **2** 」を入力します。
 7. **[期間]** で **[直近 5 分]** を選択します。
 8. **[通知手段]** で次のように設定します。
    - **[所有者、共同作成者、閲覧者に電子メールを送信]** のチェック ボックスをオンにします。
@@ -471,14 +471,14 @@ Azure Application Insights を使用すると、アプリを監視し、構成�
 2. **[メトリック アラートの追加 (クラシック)]** を選択します。
 3. **[ルールの追加]** で、次の設定を構成します。
 
-   - **[名前]** に「**Scale back into Azure Stack Hub**」と入力します。
+   - **[名前]** に「 **Scale back into Azure Stack Hub** 」と入力します。
    - **[説明]** は省略できます。
    - **[ソース]** の **[アラート対象]** で **[メトリック]** を選択します。
    - **[条件]** で、自分のサブスクリプション、Traffic Manager プロファイルのリソース グループ、リソースに使用する Traffic Manager プロファイルの名前を選択します。
 
 4. **[メトリック]** で **[要求率]** を選択します。
 5. **[条件]** で **[より小さい]** を選択します。
-6. **[しきい値]** に「**2**」を入力します。
+6. **[しきい値]** に「 **2** 」を入力します。
 7. **[期間]** で **[直近 5 分]** を選択します。
 8. **[通知手段]** で次のように設定します。
    - **[所有者、共同作成者、閲覧者に電子メールを送信]** のチェック ボックスをオンにします。
