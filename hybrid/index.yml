@@ -1,21 +1,21 @@
 ### YamlMime:Hub
-title: Azure ハイブリッドのドキュメント
-summary: グローバルなクラウド、データセンター、エッジにまたがるハイブリッド ソリューションを構築および運用するためのリソース。
+title: Azure ハイブリッドおよびマルチクラウドのドキュメント
+summary: グローバルなクラウド、データセンター、エッジにまたがるハイブリッドおよびマルチクラウドのソリューションを構築および運用するためのリソース。
 brand: azure
 metadata:
-  title: Azure ハイブリッド クラウドのドキュメント
-  description: グローバルなクラウド、データセンター、エッジにまたがるハイブリッド ソリューションを構築および運用するためのリソース。
+  title: Azure ハイブリッドおよびマルチクラウドのドキュメント
+  description: グローバルなクラウド、データセンター、エッジにまたがるハイブリッドおよびマルチクラウドのソリューションを構築および運用するためのリソース。
   ms.service: multiple
   ms.topic: hub-page
   author: BryanLa
   ms.author: bryanla
-  ms.date: 09/02/2020
-  ms.openlocfilehash: 823d9f2f8823c47854647ce378c6866978df7feb
-  ms.sourcegitcommit: 6be3914e28349883dba004697dc550a6fd1b7393
+  ms.date: 11/16/2020
+  ms.openlocfilehash: 23c1d6e1444e637a8e012b2628d3dfbafe903b3e
+  ms.sourcegitcommit: 40117c1f26640d276fcdb9c760bb4e508c0c6003
   ms.translationtype: HT
   ms.contentlocale: ja-JP
-  ms.lasthandoff: 10/30/2020
-  ms.locfileid: "93062918"
+  ms.lasthandoff: 11/18/2020
+  ms.locfileid: "94873025"
 highlightedContent:
   items:
   - title: Azure Modular Datacenter の紹介
@@ -43,8 +43,8 @@ highlightedContent:
     itemType: video
     url: https://mybuild.microsoft.com/sessions?q=%2522%2520intelligent%2520edge%2520%2522%2520%2522%2520sql%2520edge%2520%2522
 productDirectory:
-  title: Azure ハイブリッド クラウド プラットフォーム
-  summary: ハイブリッド ソリューションの構築と運用に使用されるハイブリッド対応のプラットフォーム。
+  title: Azure ハイブリッドおよびマルチクラウド プラットフォーム
+  summary: ハイブリッドおよびマルチクラウド ソリューションの構築および運用に使用されるプラットフォーム。
   items:
   - title: Azure のグローバル パブリックまたはソブリン クラウド プラットフォーム
     imageSrc: media/index/logo_azure.svg
@@ -70,8 +70,8 @@ productDirectory:
     - url: /windows/iot-core/
       text: Windows for IoT
 conceptualContent:
-  title: ハイブリッド対応テクノロジ
-  summary: ハイブリッド ソリューションを構築および運用するためのサービスと製品。
+  title: ハイブリッドおよびマルチクラウド テクノロジ
+  summary: ハイブリッドおよびマルチクラウド ソリューションを構築および運用するためのサービスと製品。
   items:
   - title: AI + 機械学習
     links:
@@ -155,7 +155,7 @@ conceptualContent:
       text: Azure Stack Hub 上の Event Hubs
     - url: /azure-stack/user/iot-hub-overview
       itemType: overview
-      text: Azure Stack Hub 上の IoT Hub
+      text: Azure Stack Hub 上の IoT Hub (プレビュー)
   - title: Edge
     links:
     - url: /azure/databox-online/data-box-gateway-overview
@@ -164,6 +164,9 @@ conceptualContent:
     - url: /azure/iot-edge/
       itemType: overview
       text: Azure IoT Edge
+    - url: /azure/iot-edge/how-to-install-iot-edge-kubernetes
+      itemType: overview
+      text: Kubernetes 上の Azure IoT Edge
     - url: /azure-sphere
       itemType: overview
       text: Azure Sphere
@@ -173,9 +176,6 @@ conceptualContent:
     - url: /azure/azure-sql-edge/overview
       itemType: overview
       text: Azure SQL Edge (プレビュー)
-    - url: /azure/iot-edge/how-to-install-iot-edge-kubernetes
-      itemType: overview
-      text: Kubernetes の IoT Edge
     - url: /windows/iot-core/
       itemType: overview
       text: Windows for IoT
@@ -273,16 +273,16 @@ conceptualContent:
       text: Azure FXT Edge Filer
 additionalContent:
   sections:
-  - title: ハイブリッド ソリューション
-    summary: ハイブリッド プロジェクト用に探索して再利用するためのガイダンスと例。
+  - title: ハイブリッドおよびマルチクラウド ソリューション
+    summary: ハイブリッドおよびマルチクラウド プロジェクト用に探索して再利用するためのガイダンスと例。
     items:
-    - title: ハイブリッド アプリのパターンとソリューションの例
+    - title: アプリのパターンとソリューションの例
       links:
       - url: ./app-solutions/overview-patterns-solution-examples.md
         text: パターンとソリューションの例とは
       - url: ./app-solutions/overview-app-design-considerations.md
-        text: ハイブリッド アプリの設計上の考慮事項
-    - title: ハイブリッド アプリ パターンの探索
+        text: アプリの設計に関する考慮事項
+    - title: アプリのパターンを探索する
       links:
       - url: ./app-solutions/pattern-cross-cloud-scale.md
         text: クラウド間スケーリング
@@ -292,7 +292,7 @@ additionalContent:
         text: 足音検知 (リテール)
       - url: ./app-solutions/pattern-geo-distributed.md
         text: 地理的に分散されたアプリ
-    - title: ハイブリッド アプリ パターンのデプロイの例
+    - title: アプリ ソリューションのデプロイの例
       links:
       - url: ./app-solutions/solution-deployment-guide-cross-cloud-scaling.md
         text: クラウド間スケーリング
