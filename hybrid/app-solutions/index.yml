@@ -1,32 +1,32 @@
 ### YamlMime:Landing
-title: Azure のハイブリッド パターンとソリューションのドキュメント
-summary: アプリ開発でハイブリッド パターンとソリューションの例を活用する方法について説明します。 Azure と Azure Stack では、インテリジェントなクラウドとインテリジェントなエッジ サービスのスイート上に構築されたハイブリッド アプリケーションの開発が可能になります。
+title: Azure のハイブリッドおよびマルチクラウドのパターンとソリューションのドキュメント
+summary: インテリジェントなクラウドおよびインテリジェントなエッジ サービスのスイートに基づいて構築された、ハイブリッドおよびマルチクラウドのパターンとソリューションの例をアプリの開発で活用する方法について説明します。
 metadata:
-  title: Azure のハイブリッド パターンとソリューションのドキュメント
-  description: アプリ開発でハイブリッド パターンとソリューションの例を活用する方法について説明します。 Azure と Azure Stack では、インテリジェントなクラウドとインテリジェントなエッジ サービスのスイート上に構築されたハイブリッド アプリケーションの開発が可能になります。
+  title: Azure のハイブリッドおよびマルチクラウドのパターンとソリューションのドキュメント
+  description: インテリジェントなクラウドおよびインテリジェントなエッジ サービスのスイートに基づいて構築された、ハイブリッドおよびマルチクラウドのパターンとソリューションの例をアプリの開発で活用する方法について説明します。
   ms.service: azure-stack
   ms.topic: landing-page
   author: BryanLa
   ms.author: bryanla
   ms.date: 10/31/2019
-  ms.openlocfilehash: 923e8aa2af78b5d23ba1f25d8b0eb5b80edc4f0a
-  ms.sourcegitcommit: bb3e40b210f86173568a47ba18c3cc50d4a40607
+  ms.openlocfilehash: f51256c555011744f847e457b8bac46a1b5c4b14
+  ms.sourcegitcommit: 40117c1f26640d276fcdb9c760bb4e508c0c6003
   ms.translationtype: HT
   ms.contentlocale: ja-JP
-  ms.lasthandoff: 06/17/2020
-  ms.locfileid: "84909720"
+  ms.lasthandoff: 11/18/2020
+  ms.locfileid: "94872982"
 landingContent:
-- title: ハイブリッド パターンとソリューションについて
+- title: ハイブリッドとマルチクラウドのパターンとソリューションについて
   linkLists:
   - linkListType: overview
     links:
-    - text: ハイブリッド パターンとソリューションの例とは
+    - text: パターンとソリューションの例とは
       url: overview-patterns-solution-examples.md
   - linkListType: concept
     links:
-    - text: ハイブリッド アプリの設計上の考慮事項
+    - text: アプリの設計に関する考慮事項
       url: overview-app-design-considerations.md
-- title: ハイブリッド パターンを確認する
+- title: ハイブリッドとマルチクラウドのパターンを探索する
   linkLists:
   - linkListType: architecture
     links:
@@ -38,7 +38,7 @@ landingContent:
       url: pattern-retail-footfall-detection.md
     - text: 地理的に分散されたアプリ
       url: pattern-geo-distributed.md
-- title: ハイブリッド ソリューションのデプロイの例
+- title: ハイブリッドおよびマルチクラウド ソリューションのデプロイの例
   linkLists:
   - linkListType: tutorial
     links:

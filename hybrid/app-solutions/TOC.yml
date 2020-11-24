@@ -1,8 +1,8 @@
-- name: Azure ハイブリッドのドキュメント
+- name: ハイブリッドおよびマルチクラウド ソリューションのドキュメント
   href: index.yml
 - name: 概要
   items:
-    - name: ハイブリッド パターンとソリューションの例
+    - name: パターンとソリューションの例
       href: overview-patterns-solution-examples.md
 - name: パターン
   items:
@@ -58,7 +58,7 @@
       href: 'https://aka.ms/edgetrainingdeploy'
 - name: 概念
   items:
-    - name: ハイブリッド アプリの設計上の考慮事項
+    - name: アプリの設計に関する考慮事項
       href: overview-app-design-considerations.md
 - name: 関連項目
   items:
