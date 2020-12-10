@@ -10,12 +10,12 @@ metadata:
   author: BryanLa
   ms.author: bryanla
   ms.date: 11/16/2020
-  ms.openlocfilehash: 23c1d6e1444e637a8e012b2628d3dfbafe903b3e
-  ms.sourcegitcommit: 40117c1f26640d276fcdb9c760bb4e508c0c6003
+  ms.openlocfilehash: 2ca6a085610915882ad4d875b97b6f9ab53b1ed2
+  ms.sourcegitcommit: df7e3e6423c3d4e8a42dae3d1acfba1d55057258
   ms.translationtype: HT
   ms.contentlocale: ja-JP
-  ms.lasthandoff: 11/18/2020
-  ms.locfileid: "94873025"
+  ms.lasthandoff: 12/09/2020
+  ms.locfileid: "96901526"
 highlightedContent:
   items:
   - title: Azure Modular Datacenter の紹介
@@ -292,6 +292,8 @@ additionalContent:
         text: 足音検知 (リテール)
       - url: ./app-solutions/pattern-geo-distributed.md
         text: 地理的に分散されたアプリ
+      - url: ./app-solutions/pattern-highly-available-kubernetes.md
+        text: 高可用性 Kubernetes クラスター
     - title: アプリ ソリューションのデプロイの例
       links:
       - url: ./app-solutions/solution-deployment-guide-cross-cloud-scaling.md
@@ -302,6 +304,8 @@ additionalContent:
         text: 足音検知 (リテール)
       - url: ./app-solutions/solution-deployment-guide-geo-distributed.md
         text: 地理的に分散されたアプリ
+      - url: ./app-solutions/solution-deployment-guide-highly-available-kubernetes.md
+        text: 高可用性 Kubernetes クラスター
   - title: 評価と学習に関するリソース
     items:
     - title: Azure Stack
