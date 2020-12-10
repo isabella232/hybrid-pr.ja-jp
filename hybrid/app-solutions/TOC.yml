@@ -26,6 +26,8 @@
           href: pattern-cross-cloud-scale-onprem-data.md
         - name: 足音検知 (リテール)
           href: pattern-retail-footfall-detection.md
+        - name: 高可用性 Kubernetes クラスター
+          href: pattern-highly-available-kubernetes.md
         - name: エッジでの在庫切れ検出
           href: pattern-out-of-stock-at-edge.md
 - name: ソリューション デプロイ ガイド
@@ -40,6 +42,8 @@
       href: solution-deployment-guide-retail-footfall-detection.md
     - name: 地理的に分散されたアプリ
       href: solution-deployment-guide-geo-distributed.md
+    - name: 高可用性 Kubernetes クラスター
+      href: solution-deployment-guide-highly-available-kubernetes.md
     - name: ハイブリッド接続
       href: solution-deployment-guide-connectivity.md
     - name: ハイブリッド ID
