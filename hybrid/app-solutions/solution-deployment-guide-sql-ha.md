@@ -7,14 +7,14 @@ ms.date: 11/05/2019
 ms.author: bryanla
 ms.reviewer: anajod
 ms.lastreviewed: 11/05/2019
-ms.openlocfilehash: 2c20d621247ec8e1278feb092586232cc08d5480
-ms.sourcegitcommit: 485a1f97fa1579364e2be1755cadfc5ea89db50e
+ms.openlocfilehash: 0f857515a44ece7f967ade3dee8f493481709851
+ms.sourcegitcommit: c890f2c5e5e5f9f93c921f02dd1a6ca5026d5289
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/08/2020
-ms.locfileid: "91852475"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "97091804"
 ---
-# <a name="deploy-a-sql-server-2016-availability-group-to-azure-and-azure-stack-hub"></a>Azure と Azure Stack Hub に SQL Server 2016 可用性グループをデプロイする
+# <a name="deploy-a-sql-server-2016-availability-group-across-two-azure-stack-hub-environments"></a>SQL Server 2016 可用性グループを 2 つの Azure Stack Hub 環境にデプロイする
 
 この記事では、2 つの Azure Stack Hub 環境にわたって、非同期 DR (ディザスター リカバリー) サイトと共に、基本的な高可用性 (HA) SQL Server 2016 Enterprise クラスターを自動デプロイする方法を段階的に説明します。 SQL Server 2016 と高可用性の詳細については、「[AlwaysOn 可用性グループ: 高可用性とディザスター リカバリーのソリューション](/sql/database-engine/availability-groups/windows/always-on-availability-groups-sql-server?view=sql-server-2016)」を参照してください。
 

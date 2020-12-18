@@ -7,14 +7,14 @@ ms.date: 11/05/2019
 ms.author: bryanla
 ms.reviewer: anajod
 ms.lastreviewed: 11/05/2019
-ms.openlocfilehash: def9abaa2a7231648f11453f66119399be015a4d
-ms.sourcegitcommit: 485a1f97fa1579364e2be1755cadfc5ea89db50e
+ms.openlocfilehash: 624f032def509d8e42d55807d72176e5fce85910
+ms.sourcegitcommit: df7e3e6423c3d4e8a42dae3d1acfba1d55057258
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/08/2020
-ms.locfileid: "91852509"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "96901509"
 ---
-# <a name="deploy-a-highly-available-mongodb-solution-to-azure-and-azure-stack-hub"></a>高可用性の MongoDB ソリューションを Azure と Azure Stack Hub にデプロイする
+# <a name="deploy-a-highly-available-mongodb-solution-across-two-azure-stack-hub-environments"></a>高可用性の MongoDB ソリューションを 2 つの Azure Stack Hub 環境にデプロイする
 
 この記事では、2 つの Azure Stack Hub 環境にわたって、DR (ディザスター リカバリー) サイトと共に、基本的な高可用性 (HA) MongoDB クラスターを自動デプロイする方法を段階的に説明します。 MongoDB と高可用性の詳細については、「[Replica Set Members](https://docs.mongodb.com/manual/core/replica-set-members/)」(レプリカ セット メンバー) を参照してください。
 
