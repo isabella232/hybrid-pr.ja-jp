@@ -10,12 +10,12 @@ metadata:
   author: BryanLa
   ms.author: bryanla
   ms.date: 03/09/2021
-  ms.openlocfilehash: 198095c4a96cfcca76a89b47ecc5f716b6b6770a
-  ms.sourcegitcommit: 817b61dd59371b24281419936295da239a2cca18
+  ms.openlocfilehash: 23834253d05753219efbd5b5e15a216741388e8a
+  ms.sourcegitcommit: d218ae31c564b862f2d79bb560075f5983f1771c
   ms.translationtype: HT
   ms.contentlocale: ja-JP
-  ms.lasthandoff: 03/23/2021
-  ms.locfileid: "104891085"
+  ms.lasthandoff: 03/24/2021
+  ms.locfileid: "105048920"
 highlightedContent:
   items:
   - title: 'Ignite 2021: ハイブリッドに関するセッション'
@@ -396,6 +396,18 @@ additionalContent:
         text: ハイブリッド ファイル サーバー インフラストラクチャを実装する
       - url: /learn/modules/implement-hybrid-backup-recovery-windows-server-iaas/
         text: Windows Server IaaS を使用してハイブリッド バックアップと回復を実装する
+    - title: Windows Server
+      links:
+      - url: /learn/paths/implement-windows-server-hybrid-cloud-infrastructure/
+        text: Windows Server ハイブリッド クラウド インフラストラクチャを実装する
+      - url: /learn/modules/implement-hybrid-backup-recovery-windows-server-iaas/
+        text: Windows Server IaaS を使用してハイブリッド バックアップと回復を実装する
+      - url: /learn/modules/implement-hybrid-identity-windows-server/
+        text: Windows Server でハイブリッド ID を実装する
+      - url: /learn/modules/monitor-windows-server-iaas-virtual-machines-hybrid-instances/
+        text: Windows Server IaaS Virtual Machines とハイブリッド インスタンスの監視
+      - url: /learn/paths/implement-windows-server-hybrid-cloud-management-monitoring-security/
+        text: Windows Server ハイブリッド クラウドの管理、監視、およびセキュリティ
   - title: その他のリソース
     items:
     - title: 全般
