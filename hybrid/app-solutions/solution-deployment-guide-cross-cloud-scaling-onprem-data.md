@@ -7,12 +7,12 @@ ms.date: 11/05/2019
 ms.author: bryanla
 ms.reviewer: anajod
 ms.lastreviewed: 11/05/2019
-ms.openlocfilehash: ecc42a94e2c59531b2a2e933772b0d8ce8c58609
-ms.sourcegitcommit: 0d5b5336bdb969588d0b92e04393e74b8f682c3b
+ms.openlocfilehash: 0989859fd68847932d3e69defee59740a2bffd44
+ms.sourcegitcommit: 962334135b63ac99c715e7bc8fb9282648ba63c9
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "92353480"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "104895399"
 ---
 # <a name="deploy-hybrid-app-with-on-premises-data-that-scales-cross-cloud"></a>オンプレミス データを使用してクロスクラウドをスケーリングするハイブリッド アプリをデプロイする
 
@@ -47,7 +47,7 @@ ms.locfileid: "92353480"
 このチュートリアルは、グローバル Azure と Azure Stack Hub についての基本知識があることを前提にしています。 チュートリアルを開始する前に、より詳しい情報を確認しておきたい場合は、以下の記事をお読みください。
 
 - [Azure 入門](https://azure.microsoft.com/overview/what-is-azure/)
-- [Azure Stack Hub の主要概念](/azure-stack/operator/azure-stack-overview.md)
+- [Azure Stack Hub の主要概念](/azure-stack/operator/azure-stack-overview)
 
 このチュートリアルは、Azure サブスクリプションをお持ちであることも前提としています。 サブスクリプションをお持ちでない場合は、開始する前に[無料アカウントを作成](https://azure.microsoft.com/free/)してください。
 
@@ -55,7 +55,7 @@ ms.locfileid: "92353480"
 
 このソリューションを開始する前に、次の要件を満たしてください。
 
-- Azure Stack Development Kit (ASDK) または Azure Stack Hub 統合システムのサブスクリプション。 ASDK をデプロイするには、[インストーラーを使用して ASDK をデプロイする](/azure-stack/asdk/asdk-install.md)方法の手順に従います。
+- Azure Stack Development Kit (ASDK) または Azure Stack Hub 統合システムのサブスクリプション。 ASDK をデプロイするには、[インストーラーを使用して ASDK をデプロイする](/azure-stack/asdk/asdk-install)方法の手順に従います。
 - ご利用の Azure Stack Hub 環境に次のものがインストールされている必要があります。
   - Azure App Service。 Azure Stack Hub のオペレーターと協力して、Azure App Service をご自分の環境にデプロイし、構成してください。 このチュートリアルでは、App Service で専用の worker ロールを少なくとも 1 つ利用できるようにすることが求められます。
   - Windows Server 2016 イメージ。
@@ -90,8 +90,8 @@ ms.locfileid: "92353480"
 
 7. **[設定] の [オプション機能の構成]** で、次の設定を構成します。
 
-   - **ストレージ アカウント** : 新しいアカウントが必要な場合は、作成します。
-   - **仮想ネットワーク** :
+   - **ストレージ アカウント**: 新しいアカウントが必要な場合は、作成します。
+   - **仮想ネットワーク**:
 
      > [!Important]  
      > SQL Server VM が VPN ゲートウェイと同じ仮想ネットワーク上にデプロイされていることを確認してください。
@@ -107,7 +107,7 @@ ms.locfileid: "92353480"
 8. **[SQL Server の設定]** で、次の設定を構成します。
 
    - **[SQL 接続]** で **[パブリック (インターネット)]** を選択します。
-   - **[ポート]** は、既定値 ( **1433** ) のままにします。
+   - **[ポート]** は、既定値 (**1433**) のままにします。
    - **[SQL 認証]** には **[有効]** を選択します。
 
      > [!Note]  
@@ -139,7 +139,7 @@ Azure App Service は、Web アプリの実行と管理を簡単にします。 
 
 Azure Stack Hub 上の App Service は、ユーザーがアプリにアクセスできるよう、パブリック インターネットからルーティングできなければなりません。 Azure Stack Hub がインターネットからアクセスできる場合、Azure Stack Hub Web アプリの公開 IP アドレスまたは URL をメモします。
 
-ASDK を使用している場合は、[静的 NAT のマッピングを構成](/azure-stack/operator/azure-stack-create-vpn-connection-one-node.md#configure-the-nat-vm-on-each-asdk-for-gateway-traversal)することで、仮想環境の外部に App Service を公開することができます。
+ASDK を使用している場合は、[静的 NAT のマッピングを構成](/azure-stack/operator/azure-stack-create-vpn-connection-one-node#configure-the-nat-vm-on-each-asdk-for-gateway-traversal)することで、仮想環境の外部に App Service を公開することができます。
 
 ### <a name="connect-a-web-app-in-azure-to-a-hybrid-network"></a>Azure 内の Web アプリをハイブリッド ネットワークに接続する
 
@@ -212,13 +212,13 @@ App Service ドメインが機能しないため、このチュートリアル�
 
 Traffic Manager は DNS の CNAME に依存しているため、エンドポイントに対して適切にトラフィックをルーティングするためには、サブドメインが必要となります。 DNS レコードとドメイン マッピングの詳細については、「[Traffic Manager を使用したドメインのマップ](/azure/app-service/web-sites-traffic-manager-custom-domain-name)」を参照してください。
 
-Azure エンドポイントについては、Web アプリにアクセスするためにユーザーが使用できるサブドメインを作成します。 このチュートリアルでは、 **app.northwind.com** を使用できますが、この値はご自身のドメインに合わせてカスタマイズする必要があります。
+Azure エンドポイントについては、Web アプリにアクセスするためにユーザーが使用できるサブドメインを作成します。 このチュートリアルでは、**app.northwind.com** を使用できますが、この値はご自身のドメインに合わせてカスタマイズする必要があります。
 
 また、Azure Stack Hub エンドポイントについても、A レコードを使用してサブドメインを作成する必要があります。 **azurestack.northwind.com** を使用できます。
 
 ### <a name="configure-a-custom-domain-in-azure"></a>Azure でカスタム ドメインを構成する
 
-1. [Azure App Service に CNAME をマップ](/azure/app-service/app-service-web-tutorial-custom-domain#map-a-cname-record)して、 **app.northwind.com** ホスト名を Azure Web アプリに追加します。
+1. [Azure App Service に CNAME をマップ](/azure/app-service/app-service-web-tutorial-custom-domain#map-a-cname-record)して、**app.northwind.com** ホスト名を Azure Web アプリに追加します。
 
 ### <a name="configure-custom-domains-in-azure-stack-hub"></a>Azure Stack Hub でカスタム ドメインを構成する
 
@@ -238,9 +238,9 @@ Azure に SSL を追加するには、次の手順に従います。
 
 1. 作成したサブドメインに対し、取得した SSL 証明書が有効であることを確認します  (ワイルドカード証明書を使用してもかまいません)。
 
-2. Azure portal で、 [Azure Web Apps に既存のカスタム SSL 証明書をバインドする](/azure/app-service/app-service-web-tutorial-custom-ssl)方法に関する記事の「 **Web アプリの準備** 」と **SSL 証明書のバインド** に関するセクションの指示に従います。 **[SSL の種類]** として **[SNI ベースの SSL]** を選択します。
+2. Azure portal で、[Azure Web Apps に既存のカスタム SSL 証明書をバインドする](/azure/app-service/app-service-web-tutorial-custom-ssl)方法に関する記事の「**Web アプリの準備**」と **SSL 証明書のバインド** に関するセクションの指示に従います。 **[SSL の種類]** として **[SNI ベースの SSL]** を選択します。
 
-3. すべてのトラフィックを HTTP ポートにリダイレクトします。 [Azure Web Apps への既存のカスタム SSL 証明書のバインド](/azure/app-service/app-service-web-tutorial-custom-ssl)に関する記事のセクション「 **HTTPS の適用** 」の手順に従ってください。
+3. すべてのトラフィックを HTTP ポートにリダイレクトします。 [Azure Web Apps への既存のカスタム SSL 証明書のバインド](/azure/app-service/app-service-web-tutorial-custom-ssl)に関する記事のセクション「**HTTPS の適用**」の手順に従ってください。
 
 Azure Stack Hub に SSL を追加するには、次の手順に従います。
 
@@ -274,7 +274,7 @@ App Service 環境変数を使用し、アプリの各インスタンスに異�
         options.UseSqlite("Data Source=localdatabase.db"));
     ```
 
-3. 前のコード ブロックを次のコードに置き換えます。このコードでは、 *appsettings.json* ファイルで定義されている接続文字列が使用されます。
+3. 前のコード ブロックを次のコードに置き換えます。このコードでは、*appsettings.json* ファイルで定義されている接続文字列が使用されます。
 
     ```C#
     services.AddDbContext<MyDatabaseContext>(options =>
@@ -405,7 +405,7 @@ Azure portal を使用して Traffic Manager プロファイルを作成し、�
    - **[Type] (種類)** で、 **[外部エンドポイント]** を選択します。
    - エンドポイントの **[名前]** を入力します。
    - **完全修飾ドメイン名 (FQDN) または IP** として、Azure Stack Hub Web アプリの外部 URL を入力します。
-   - **[重み]** は、既定値 ( **1** ) のままにします。 これにより、このエンドポイントが正常な状態である場合、すべてのトラフィックがそのエンドポイントに送信されるようになります。
+   - **[重み]** は、既定値 (**1**) のままにします。 これにより、このエンドポイントが正常な状態である場合、すべてのトラフィックがそのエンドポイントに送信されるようになります。
    - **[無効として追加]** はオフのままにします。
 
 5. **[OK]** を選択して、Azure Stack Hub エンドポイントを保存します。
@@ -450,14 +450,14 @@ Azure portal で、このチュートリアルのリソース グループに移
 2. **[メトリック アラートの追加 (クラシック)]** を選択します。
 3. **[ルールの追加]** で、次の設定を構成します。
 
-   - **[名前]** に「 **Burst into Azure Cloud** 」と入力します。
+   - **[名前]** に「**Burst into Azure Cloud**」と入力します。
    - **[説明]** は省略できます。
    - **[ソース]** の **[アラート対象]** で **[メトリック]** を選択します。
    - **[条件]** で、自分のサブスクリプション、Traffic Manager プロファイルのリソース グループ、リソースに使用する Traffic Manager プロファイルの名前を選択します。
 
 4. **[メトリック]** で **[要求率]** を選択します。
 5. **[条件]** で **[より大きい]** を選択します。
-6. **[しきい値]** に「 **2** 」を入力します。
+6. **[しきい値]** に「**2**」を入力します。
 7. **[期間]** で **[直近 5 分]** を選択します。
 8. **[通知手段]** で次のように設定します。
    - **[所有者、共同作成者、閲覧者に電子メールを送信]** のチェック ボックスをオンにします。
@@ -471,14 +471,14 @@ Azure portal で、このチュートリアルのリソース グループに移
 2. **[メトリック アラートの追加 (クラシック)]** を選択します。
 3. **[ルールの追加]** で、次の設定を構成します。
 
-   - **[名前]** に「 **Scale back into Azure Stack Hub** 」と入力します。
+   - **[名前]** に「**Scale back into Azure Stack Hub**」と入力します。
    - **[説明]** は省略できます。
    - **[ソース]** の **[アラート対象]** で **[メトリック]** を選択します。
    - **[条件]** で、自分のサブスクリプション、Traffic Manager プロファイルのリソース グループ、リソースに使用する Traffic Manager プロファイルの名前を選択します。
 
 4. **[メトリック]** で **[要求率]** を選択します。
 5. **[条件]** で **[より小さい]** を選択します。
-6. **[しきい値]** に「 **2** 」を入力します。
+6. **[しきい値]** に「**2**」を入力します。
 7. **[期間]** で **[直近 5 分]** を選択します。
 8. **[通知手段]** で次のように設定します。
    - **[所有者、共同作成者、閲覧者に電子メールを送信]** のチェック ボックスをオンにします。

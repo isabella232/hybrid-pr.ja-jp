@@ -7,12 +7,12 @@ ms.date: 11/05/2019
 ms.author: bryanla
 ms.reviewer: anajod
 ms.lastreviewed: 11/05/2019
-ms.openlocfilehash: 2177b32474dea695967e197acbd4bc1e18422d7b
-ms.sourcegitcommit: df7e3e6423c3d4e8a42dae3d1acfba1d55057258
+ms.openlocfilehash: caedbd4758b9ae8c93cf9bb625ed9aac68bfa196
+ms.sourcegitcommit: 962334135b63ac99c715e7bc8fb9282648ba63c9
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/09/2020
-ms.locfileid: "96901492"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "104895367"
 ---
 # <a name="deploy-an-ai-based-footfall-detection-solution-using-azure-and-azure-stack-hub"></a>Azure と Azure Stack Hub を使用して AI ベースの足取り検出ソリューションをデプロイする
 
@@ -37,22 +37,22 @@ ms.locfileid: "96901492"
 
 - 「[足取り検出パターン](pattern-retail-footfall-detection.md)」トピックを確認します。
 - 次のものがある、Azure Stack Development Kit (ASDK) または Azure Stack Hub 統合システム インスタンスへのユーザー アクセス権を取得します。
-  - [Azure App Service on Azure Stack Hub リソース プロバイダー](/azure-stack/operator/azure-stack-app-service-overview.md)がインストールされている。 インストールには、Azure Stack Hub インスタンスへのオペレーター アクセス、または管理者と協力する必要があります。
+  - [Azure App Service on Azure Stack Hub リソース プロバイダー](/azure-stack/operator/azure-stack-app-service-overview)がインストールされている。 インストールには、Azure Stack Hub インスタンスへのオペレーター アクセス、または管理者と協力する必要があります。
   - App Service とストレージ クォータを提供するオファーに対するサブスクリプション。 オファーを作成するには、オペレーター アクセスが必要です。
 - Azure サブスクリプションへのアクセスを取得します。
   - Azure サブスクリプションがない場合は、始める前に[無料試用版アカウント](https://azure.microsoft.com/free/)にサインアップしてください。
 - ディレクトリに 2 つのサービス プリンシパルを作成する
   - 1 つは、Azure サブスクリプションのスコープでアクセスする、Azure リソースで使用するように設定します。
   - 1 つは、Azure Stack Hub サブスクリプションのスコープでアクセスする、Azure Stack Hub リソースで使用するように設定します。
-  - サービス プリンシパルの作成とアクセスの承認の詳細については、[アプリ ID を使用してリソースにアクセスする](/azure-stack/operator/azure-stack-create-service-principals.md)に関するページを参照してください。 Azure CLI を使用する場合は、「[Azure CLI で Azure サービス プリンシパルを作成する](/cli/azure/create-an-azure-service-principal-azure-cli?view=azure-cli-latest&preserve-view=true)」を参照してください。
+  - サービス プリンシパルの作成とアクセスの承認の詳細については、[アプリ ID を使用してリソースにアクセスする](/azure-stack/operator/azure-stack-create-service-principals)に関するページを参照してください。 Azure CLI を使用する場合は、「[Azure CLI で Azure サービス プリンシパルを作成する](/cli/azure/create-an-azure-service-principal-azure-cli?view=azure-cli-latest&preserve-view=true)」を参照してください。
 - Azure Cognitive Services を Azure または Azure Stack Hub にデプロイします。
   - まず、[Cognitive Services の詳細について説明します](https://azure.microsoft.com/services/cognitive-services/)。
-  - 次に、「[Azure Cognitive Services を Azure Stack にデプロイする](/azure-stack/user/azure-stack-solution-template-cognitive-services.md)」にアクセスして、Azure Stack Hub 上に Cognitive Services をデプロイします。 プレビューにアクセスするには、まず、サインアップする必要があります。
+  - 次に、「[Azure Cognitive Services を Azure Stack にデプロイする](/azure-stack/user/azure-stack-solution-template-cognitive-services)」にアクセスして、Azure Stack Hub 上に Cognitive Services をデプロイします。 プレビューにアクセスするには、まず、サインアップする必要があります。
 - 未構成の Azure Custom Vision AI Dev Kit をクローンまたはダウンロードします。 詳細については、[Vision AI DevKit](https://azure.github.io/Vision-AI-DevKit-Pages/) を参照してください。
 - Power BI アカウントにサインアップする。
 - Azure Cognitive Services Face API サブスクリプション キーとエンドポイント URL。 どちらも「[Cognitive Services を試す](https://azure.microsoft.com/try/cognitive-services/?api=face-api)」の無料試用版を使用して取得できます。 または、[Cognitive Services アカウントの作成](/azure/cognitive-services/cognitive-services-apis-create-account)の手順に従います。
 - 次の開発リソースをインストールする。
-  - [Azure CLI 2.0](/azure-stack/user/azure-stack-version-profiles-azurecli2.md)
+  - [Azure CLI 2.0](/azure-stack/user/azure-stack-version-profiles-azurecli2)
   - [Docker CE](https://hub.docker.com/search/?type=edition&offering=community)
   - [Porter](https://porter.sh/)。 提供されている CNAB バンドル マニフェストを使用してクラウド アプリをデプロイするには、Porter を使用します。
   - [Visual Studio Code](https://code.visualstudio.com/)

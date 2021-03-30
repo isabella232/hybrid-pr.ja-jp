@@ -7,12 +7,12 @@ ms.date: 10/31/2019
 ms.author: bryanla
 ms.reviewer: anajod
 ms.lastreviewed: 10/31/2019
-ms.openlocfilehash: 0bf07bb38537f530a0adb3569c43d53af13b8d56
-ms.sourcegitcommit: bb3e40b210f86173568a47ba18c3cc50d4a40607
-ms.translationtype: MT
+ms.openlocfilehash: 866557ec3af2337e9f034da84cf417675508563b
+ms.sourcegitcommit: 962334135b63ac99c715e7bc8fb9282648ba63c9
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/17/2020
-ms.locfileid: "84911226"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "104895331"
 ---
 # <a name="footfall-detection-pattern"></a>足取り検出パターン
 
@@ -24,7 +24,7 @@ Contoso Stores では、店舗のレイアウトに関連して、顧客が現�
 
 Contoso では、顧客の人口統計、ロイヤルティ、店舗のディスプレイと製品に対する反応を確認するための、邪魔にならずプライバシーに配慮した方法を見つけたいと考えています。
 
-## <a name="solution"></a>解決策
+## <a name="solution"></a>ソリューション
 
 この小売分析パターンでは、階層型アプローチを使用してエッジで推論を行います。 Custom Vision AI Dev Kit を使用することで、人の顔が含まれる画像のみが、分析のためにプライベート Azure Stack Hub に送信されます。Azure Stack Hub では、Azure Cognitive Services が実行されています。 集計された匿名データが Azure に送信され、すべての店舗にわたって集計されて Power BI で視覚化されます。 エッジとパブリック クラウドを組み合わせることにより、Contoso は最新の AI テクノロジを活用しながら、企業のポリシーに準拠し、顧客のプライバシーを尊重することができます。
 
@@ -50,7 +50,7 @@ Contoso では、顧客の人口統計、ロイヤルティ、店舗のディス
 | Azure | [Azure Event Hubs](/azure/event-hubs/) | Azure Event Hubs は、Azure Stream Analytics と密接に統合された、匿名データを取り込むためのスケーラブルなプラットフォームを提供します。 |
 |  | [Azure Stream Analytics](/azure/stream-analytics/) | Azure Stream Analytics ジョブは、匿名データを集計し、これを視覚化できるように 15 秒間隔でグループ化します。 |
 |  | [Microsoft Power BI](https://powerbi.microsoft.com/) | Power BI には、Azure Stream Analytics からの出力を表示するための、使いやすいダッシュボード インターフェイスが用意されています。 |
-| Azure Stack Hub | [App Service](/azure-stack/operator/azure-stack-app-service-overview.md) | App Service リソースプロバイダー (RP) は、Web アプリ/API および関数のホスティングや管理の機能を含む、エッジ コンポーネントの基本を提供します。 |
+| Azure Stack Hub | [App Service](/azure-stack/operator/azure-stack-app-service-overview) | App Service リソースプロバイダー (RP) は、Web アプリ/API および関数のホスティングや管理の機能を含む、エッジ コンポーネントの基本を提供します。 |
 | | [Azure Kubernetes Service (AKS) エンジン](https://github.com/Azure/aks-engine) クラスター | AKS RP では AKS エンジンが Azure Stack Hub にデプロイされているため、Face API コンテナーを実行するためのスケーラブルで回復力のあるエンジンが提供されます。 |
 | | Azure Cognitive Services の [Face API コンテナー](/azure/cognitive-services/face/face-how-to-install-containers)| Face API コンテナーを備えた Azure Cognitive Services RP により、Contoso のプライベート ネットワーク上で人口統計、感情、および買い物客の一意検出が実現します。 |
 | | Blob Storage | AI Dev Kit からキャプチャされた画像は、Azure Stack Hub の BLOB ストレージにアップロードされます。 |
@@ -77,7 +77,7 @@ Contoso では、顧客の人口統計、ロイヤルティ、店舗のディス
 
 このソリューションは多数のデバイスと場所にまたがることがあるため、扱いにくくなる可能性があります。 [Azure の IoT サービス](/azure/iot-fundamentals/)を使用することで、新しい場所とデバイスを自動的にオンラインにし、最新の状態に保つことができます。
 
-### <a name="security"></a>Security
+### <a name="security"></a>セキュリティ
 
 このソリューションでは顧客の画像をキャプチャするため、セキュリティが最も重要な考慮事項となります。 すべてのストレージ アカウントが適切なアクセス ポリシーで保護されていることを確認し、またキーを定期的にローテーションします。 ストレージ アカウントと Event Hubs に、企業および政府のプライバシー規制に準拠したアイテム保持ポリシーが備わっていることを確認します。 また、ユーザー アクセス レベルは必ず階層化してください。 階層化により、ユーザーは各自のロールに必要なデータにだけアクセスできるようになります。
 

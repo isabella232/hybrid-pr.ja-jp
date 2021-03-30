@@ -7,12 +7,12 @@ ms.date: 11/05/2019
 ms.author: bryanla
 ms.reviewer: anajod
 ms.lastreviewed: 11/05/2019
-ms.openlocfilehash: 16c5d7820e8c865a9f88cb00da5cc7c854379414
-ms.sourcegitcommit: d2def847937178f68177507be151df2aa8e25d53
+ms.openlocfilehash: 4480f51b03082f2a0cbb7f2f213e05b7bf488646
+ms.sourcegitcommit: 962334135b63ac99c715e7bc8fb9282648ba63c9
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/20/2020
-ms.locfileid: "86477288"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "104895381"
 ---
 # <a name="configure-hybrid-cloud-connectivity-using-azure-and-azure-stack-hub"></a>Azure と Azure Stack Hub を使用してハイブリッド クラウド接続を構成する
 
@@ -25,7 +25,7 @@ ms.locfileid: "86477288"
 > - グローバル Azure のクラウド スケールのアプリのデプロイとリソースを使用しながら、レガシー システムを維持する。
 
 > [!Tip]  
-> ![hybrid-pillars.png](./media/solution-deployment-guide-cross-cloud-scaling/hybrid-pillars.png)  
+> ![ハイブリッドの柱の図](./media/solution-deployment-guide-cross-cloud-scaling/hybrid-pillars.png)  
 > Microsoft Azure Stack Hub は Azure の拡張機能です。 Azure Stack Hub により、オンプレミス環境にクラウド コンピューティングの機敏性とイノベーションがもたらされ、ハイブリッド アプリをビルドし、どこにでもデプロイできる唯一のハイブリッド クラウドが可能になります。  
 > 
 > [ハイブリッド アプリの設計の考慮事項](overview-app-design-considerations.md)に関する記事では、ハイブリッド アプリを設計、デプロイ、および運用するためのソフトウェア品質の重要な要素 (配置、スケーラビリティ、可用性、回復性、管理容易性、およびセキュリティ) についてレビューしています。 これらの設計の考慮事項は、ハイブリッド アプリの設計を最適化したり、運用環境での課題を最小限に抑えたりするのに役立ちます。
@@ -37,7 +37,7 @@ ms.locfileid: "86477288"
 ### <a name="azure"></a>Azure
 
 - Azure サブスクリプションをお持ちでない場合は、開始する前に [無料アカウント](https://azure.microsoft.com/free/?WT.mc_id=A261C142F) を作成してください。
-- Azure で [Web アプリ](/vsts/build-release/apps/cd/azure/aspnet-core-to-azure-webapp?tabs=vsts&view=vsts)を作成します。 このソリューションで必要になるため、Web アプリの URL を書き留めておきます。
+- Azure で [Web アプリ](/aspnet/core/tutorials/publish-to-azure-webapp-using-vs)を作成します。 このソリューションで必要になるため、Web アプリの URL を書き留めておきます。
 
 ### <a name="azure-stack-hub"></a>Azure Stack Hub
 
@@ -47,9 +47,9 @@ ms.locfileid: "86477288"
    >[!Note]
    >ASDK のデプロイには最大 7 時間がかかることがあるため、適切に計画してください。
 
-- [App Service](/azure-stack/operator/azure-stack-app-service-deploy.md) PaaS サービスを Azure Stack Hub にデプロイします。
-- Azure Stack Hub 環境で [プランとオファーを作成](/azure-stack/operator/service-plan-offer-subscription-overview.md)します。
-- Azure Stack Hub 環境内で[テナント サブスクリプションを作成](/azure-stack/operator/azure-stack-subscribe-plan-provision-vm.md)します。
+- [App Service](/azure-stack/operator/azure-stack-app-service-deploy) PaaS サービスを Azure Stack Hub にデプロイします。
+- Azure Stack Hub 環境で [プランとオファーを作成](/azure-stack/operator/service-plan-offer-subscription-overview)します。
+- Azure Stack Hub 環境内で[テナント サブスクリプションを作成](/azure-stack/operator/azure-stack-subscribe-plan-provision-vm)します。
 
 ### <a name="azure-stack-hub-components"></a>Azure Stack Hub のコンポーネント
 
@@ -58,7 +58,7 @@ Azure Stack Hub オペレーターが、App Service のデプロイ、プラン�
 このソリューションの例では、Azure と Azure Stack Hub について一定の基本的な知識があることを前提にしています。 ソリューションを開始する前に詳細を確認するには、次の記事をお読みください。
 
 - [Azure 入門](https://azure.microsoft.com/overview/what-is-azure/)
-- [Azure Stack Hub の主要概念](/azure-stack/operator/azure-stack-overview.md)
+- [Azure Stack Hub の主要概念](/azure-stack/operator/azure-stack-overview)
 
 ### <a name="before-you-begin"></a>開始する前に
 
@@ -113,7 +113,7 @@ Azure で vNet を作成するには:
 
 Azure Stack Hub で vNet を作成するには:
 
-1. Azure Stack Hub **テナント ポータル**を使用して、上記の手順 (1 から 4) を繰り返します。
+1. Azure Stack Hub **テナント ポータル** を使用して、上記の手順 (1 から 4) を繰り返します。
 
 ## <a name="add-a-gateway-subnet"></a>ゲートウェイ サブネットの追加
 
@@ -137,14 +137,14 @@ Azure に仮想ネットワーク ゲートウェイを作成するには、次�
 1. ポータル ページの左側にある **[+]** を選択し、検索フィールドに「仮想ネットワーク ゲートウェイ」と入力します。
 2. **[結果]** で **[仮想ネットワーク ゲートウェイ]** を選択します。
 3. **[仮想ネットワーク ゲートウェイ]** で、 **[作成]** を選択して **[仮想ネットワーク ゲートウェイの作成]** ページを開きます。
-4. **[仮想ネットワーク ゲートウェイの作成]** で、**チュートリアルの例の値**を使用してネットワーク ゲートウェイの値を指定します。 次の追加の値を含めます。
+4. **[仮想ネットワーク ゲートウェイの作成]** で、**チュートリアルの例の値** を使用してネットワーク ゲートウェイの値を指定します。 次の追加の値を含めます。
 
    - **[SKU]** : Basic
    - **[仮想ネットワーク]** : 前に作成した仮想ネットワークを選択します。 作成したゲートウェイ サブネットが自動的に選択されます。
    - **[最初の IP 構成]** : ゲートウェイのパブリック IP アドレスです。
      - **[ゲートウェイ IP 構成の作成]** を選択します。これにより、 **[パブリック IP アドレスの選択]** ページが開きます。
      - **[+ 新規作成]** を選択して **[パブリック IP アドレスの作成]** ページを開きます。
-     - パブリック IP アドレスの**名前**を入力します。 SKU は **[Basic]** のままにし、 **[OK]** を選択して変更を保存します。
+     - パブリック IP アドレスの **名前** を入力します。 SKU は **[Basic]** のままにし、 **[OK]** を選択して変更を保存します。
 
        > [!Note]
        > 現在、VPN Gateway ではパブリック IP アドレスの動的割り当てのみがサポートされます。 ただし、VPN ゲートウェイに割り当てられた IP アドレスが後から変わることは基本的にありません。 パブリック IP アドレスが変わるのは、ゲートウェイが削除され、再度作成されたときのみです。 VPN ゲートウェイのサイズ変更、リセット、その他の内部メンテナンス/アップグレードでは、IP アドレスは変わりません。
@@ -172,7 +172,7 @@ Azure に仮想ネットワーク ゲートウェイを作成するには、次�
 1. ポータルで、 **[+リソースの作成]** を選択します。
 2. 検索ボックスに「**ローカル ネットワーク ゲートウェイ**」と入力し、**Enter** キーを押して検索します。 結果の一覧が表示されます。
 3. **[ローカル ネットワーク ゲートウェイ]** を選択し、 **[作成]** を選択して **[ローカル ネットワーク ゲートウェイの作成]** ページを開きます。
-4. **[ローカル ネットワーク ゲートウェイの作成]** で、**チュートリアルの例の値**を使用してローカル ネットワーク ゲートウェイの値を指定します。 次の追加の値を含めます。
+4. **[ローカル ネットワーク ゲートウェイの作成]** で、**チュートリアルの例の値** を使用してローカル ネットワーク ゲートウェイの値を指定します。 次の追加の値を含めます。
 
     - **IP アドレス**: Azure または Azure Stack Hub が接続する VPN デバイスのパブリック IP アドレスです。 NAT の内側にない有効なパブリック IP アドレスを指定するので、Azure はアドレスに到達することができます。 この時点で IP アドレスを持っていない場合は、例の値をプレースホルダーとして使用できます。 後で戻ってプレースホルダーを VPN デバイスのパブリック IP アドレスに置き換える必要があります。 Azure は、有効なアドレスを指定するまでデバイスに接続できません。
     - **[アドレス空間]** : このローカル ネットワークが表すネットワークのアドレス範囲です。 複数のアドレス領域の範囲を追加することができます。 指定した範囲が、接続先となる他のネットワークの範囲と重複しないようにしてください。 指定したアドレス範囲が、Azure によってオンプレミスの VPN デバイスの IP アドレスにルーティングされます。 オンプレミスのサイトに接続する場合は、例の値を使用せず、独自の値を使用してください。
@@ -193,7 +193,7 @@ Azure に仮想ネットワーク ゲートウェイを作成するには、次�
 次の手順を使用して、仮想ネットワーク ゲートウェイとオンプレミス VPN デバイスとの間にサイト間 VPN 接続を作成します。
 
 1. Azure portal で、 **[+リソースの作成]** を選択します。
-2. **接続**を検索します。
+2. **接続** を検索します。
 3. **[結果]** で、 **[接続]** を選択します。
 4. **[接続]** で、 **[作成]** を選択します。
 5. **[接続の作成]** で、次の設定を構成します。

@@ -7,12 +7,12 @@ ms.date: 11/05/2019
 ms.author: bryanla
 ms.reviewer: anajod
 ms.lastreviewed: 11/05/2019
-ms.openlocfilehash: ab0eb885e7b0fefaca8991522712652f979d8712
-ms.sourcegitcommit: bb3e40b210f86173568a47ba18c3cc50d4a40607
-ms.translationtype: MT
+ms.openlocfilehash: 4f86e5ae4b8b9bd7693617b07419b67dfcf05dc1
+ms.sourcegitcommit: 962334135b63ac99c715e7bc8fb9282648ba63c9
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/17/2020
-ms.locfileid: "84910918"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "104895314"
 ---
 # <a name="hybrid-patterns-and-solution-examples-for-azure-and-azure-stack"></a>Azure と Azure Stack 向けのハイブリッド パターンとソリューションの例
 
@@ -31,7 +31,7 @@ Azure Stack は、"*ハイブリッド クラウド*" を有効にすること�
 
 ハイブリッド アプリのシナリオは、開発に使用できるリソースによって大きく異なります。 また、地理、セキュリティ、インターネット アクセスなどの考慮事項も存在します。 ここで説明するパターンとソリューションは、すべての要件に対応しているとは限りませんが、ハイブリッド ソリューションを実装する際に探索して再利用するためのガイドラインと例を提供します。
 
-## <a name="design-patterns"></a>設計パターン
+## <a name="design-patterns"></a>デザイン パターン
 
 設計パターンは、実際の顧客シナリオや経験から、一般化された反復可能な設計ガイダンスを選び抜いたものです。 パターンは抽象的であるため、さまざまな種類のシナリオや業界に適用できます。 各パターンにはコンテキストと問題が文書化されており、ソリューションの例の概要を示します。 このソリューションの例は、考えられるパターンの実装を示しています。
 
@@ -49,4 +49,4 @@ Azure Stack は、"*ハイブリッド クラウド*" を有効にすること�
 - 製品とソリューションのポートフォリオ全体の詳細について、[Azure Stack ファミリの製品とソリューション](/azure-stack)を参照してください。
 - 目次の「パターン」セクションと「ソリューション デプロイ ガイド」セクションを探索し、それぞれの詳細を参照してください。
 - 「[ハイブリッド アプの設計の考慮事項](overview-app-design-considerations.md)」で、ハイブリッド アプリを設計、デプロイ、および運用するためのソフトウェア品質の重要な要素を確認します。
-- [Azure Stack で開発環境を設定](/azure-stack/user/azure-stack-dev-start.md)し、Azure Stack で[最初のアプリをデプロイ](/azure-stack/user/azure-stack-dev-start-deploy-app.md)します。
+- [Azure Stack で開発環境を設定](/azure-stack/user/azure-stack-dev-start)し、Azure Stack で[最初のアプリをデプロイ](/azure-stack/user/azure-stack-dev-start-deploy-app)します。
