@@ -7,12 +7,12 @@ ms.date: 11/05/2019
 ms.author: bryanla
 ms.reviewer: anajod
 ms.lastreviewed: 11/05/2019
-ms.openlocfilehash: 5ae6c4323324fa104cd0e5c7b5198492be14b8eb
-ms.sourcegitcommit: 56980e3c118ca0a672974ee3835b18f6e81b6f43
+ms.openlocfilehash: ed2ad5bed8f4bd80d4a40ab7600842d5544ff97d
+ms.sourcegitcommit: 962334135b63ac99c715e7bc8fb9282648ba63c9
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/26/2020
-ms.locfileid: "88886817"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "104895416"
 ---
 # <a name="deploy-an-app-that-scales-cross-cloud-using-azure-and-azure-stack-hub"></a>Azure と Azure Stack Hub を使用してクロスクラウドをスケーリングするアプリをデプロイする
 
@@ -30,7 +30,7 @@ Azure Stack Hub でホストされる Web アプリから、Traffic Manager を�
 > - デプロイを監視し追跡するについて説明します。
 
 > [!Tip]  
-> ![hybrid-pillars.png](./media/solution-deployment-guide-cross-cloud-scaling/hybrid-pillars.png)  
+> ![ハイブリッドの柱の図](./media/solution-deployment-guide-cross-cloud-scaling/hybrid-pillars.png)  
 > Microsoft Azure Stack Hub は Azure の拡張機能です。 Azure Stack Hub はオンプレミス環境にクラウド コンピューティングの機敏性とイノベーションをもたらし、ハイブリッド アプリをビルドし、どこにでもデプロイできる唯一のハイブリッド クラウドを可能にします。  
 > 
 > [ハイブリッド アプリの設計の考慮事項](overview-app-design-considerations.md)に関する記事では、ハイブリッド アプリを設計、デプロイ、および運用するためのソフトウェア品質の重要な要素 (配置、スケーラビリティ、可用性、回復性、管理容易性、およびセキュリティ) についてレビューしています。 これらの設計の考慮事項は、ハイブリッド アプリの設計を最適化したり、運用環境での課題を最小限に抑えたりするのに役立ちます。
@@ -39,16 +39,16 @@ Azure Stack Hub でホストされる Web アプリから、Traffic Manager を�
 
 - Azure のサブスクリプション。 必要に応じて、開始前に[無料アカウント](https://azure.microsoft.com/free/?WT.mc_id=A261C142F)を作成します。
 - Azure Stack Hub 統合システムまたは Azure Stack Development Kit (ASDK) のデプロイ。
-  - Azure Stack Hub をインストールする手順については、「[ASDK のインストール](/azure-stack/asdk/asdk-install.md)」を参照してください。
+  - Azure Stack Hub をインストールする手順については、「[ASDK のインストール](/azure-stack/asdk/asdk-install)」を参照してください。
   - ASDK デプロイ後の自動化スクリプトについては、[https://github.com/mattmcspirit/azurestack](https://github.com/mattmcspirit/azurestack) にアクセスしてください。
   - このインストールが完了するまで数時間かかることがあります。
-- [App Service](/azure-stack/operator/azure-stack-app-service-deploy.md) PaaS サービスを Azure Stack Hub にデプロイします。
-- Azure Stack Hub 環境内で[プラン/オファーを作成](/azure-stack/operator/service-plan-offer-subscription-overview.md)します。
-- Azure Stack Hub 環境内で[テナント サブスクリプションを作成](/azure-stack/operator/azure-stack-subscribe-plan-provision-vm.md)します。
+- [App Service](/azure-stack/operator/azure-stack-app-service-deploy) PaaS サービスを Azure Stack Hub にデプロイします。
+- Azure Stack Hub 環境内で[プラン/オファーを作成](/azure-stack/operator/service-plan-offer-subscription-overview)します。
+- Azure Stack Hub 環境内で[テナント サブスクリプションを作成](/azure-stack/operator/azure-stack-subscribe-plan-provision-vm)します。
 - テナント サブスクリプション内で Web アプリを作成します。 後で使用できるように新しい Web アプリの URL を書き留めておきます。
 - テナント サブスクリプション内で、Azure Pipelines 仮想マシン (VM) をデプロイします。
 - .NET 3.5 がインストールされた Windows Server 2016 VM が必要です。 この VM は、プライベート ビルド エージェントとして Azure Stack Hub 上のテナント サブスクリプションに構築されます。
-- [Windows Server 2016 with SQL 2017 VM イメージ](/azure-stack/operator/azure-stack-add-vm-image.md)は、Azure Stack Hub Marketplace で入手できます。 このイメージを入手できない場合は、Azure Stack Hub のオペレーターと協力して、環境に追加されていることを確認してください。
+- [Windows Server 2016 with SQL 2017 VM イメージ](/azure-stack/operator/azure-stack-add-vm-image)は、Azure Stack Hub Marketplace で入手できます。 このイメージを入手できない場合は、Azure Stack Hub のオペレーターと協力して、環境に追加されていることを確認してください。
 
 ## <a name="issues-and-considerations"></a>問題と注意事項
 
@@ -79,7 +79,7 @@ Azure Stack Hub でホストされる Web アプリから、Traffic Manager を�
 ハイブリッドの継続的インテグレーションおよび継続的配置 (CI/CD) を設定して、Web アプリを Azure と Azure Stack Hub にデプロイし、両方のクラウドに変更を自動プッシュします。
 
 > [!Note]  
-> (Windows Server と SQL の) 実行および App Service のデプロイには、適切なイメージがシンジケート化された Azure Stack Hub が必要です。 詳細については、App Service のドキュメント「[App Service on Azure Stack Hub のデプロイの前提条件](/azure-stack/operator/azure-stack-app-service-before-you-get-started.md)」を参照してください。
+> (Windows Server と SQL の) 実行および App Service のデプロイには、適切なイメージがシンジケート化された Azure Stack Hub が必要です。 詳細については、App Service のドキュメント「[App Service on Azure Stack Hub のデプロイの前提条件](/azure-stack/operator/azure-stack-app-service-before-you-get-started)」を参照してください。
 
 ### <a name="add-code-to-azure-repos"></a>Azure Repos にコードを追加する
 
@@ -91,7 +91,7 @@ Azure Repos
 
     ![Azure Repos のプロジェクトに接続する](media/solution-deployment-guide-cross-cloud-scaling/image1.JPG)
 
-2. 既定の Web アプリを作成して開くことで、**リポジトリを複製**します。
+2. 既定の Web アプリを作成して開くことで、**リポジトリを複製** します。
 
     ![Azure Web アプリでリポジトリを複製する](media/solution-deployment-guide-cross-cloud-scaling/image2.png)
 
@@ -137,11 +137,11 @@ Azure Pipelines および Azure DevOps Services が提供するパイプライ�
 
    ![Azure Cloud ビルドに成果物を追加する](media/solution-deployment-guide-cross-cloud-scaling/image7.png)
 
-4. [パイプライン] タブで、環境の**フェーズ、タスク** リンクを選択し、Azure のクラウド環境の値を設定します。
+4. [パイプライン] タブで、環境の **フェーズ、タスク** リンクを選択し、Azure のクラウド環境の値を設定します。
 
    ![Azure クラウド環境値を設定する](media/solution-deployment-guide-cross-cloud-scaling/image8.png)
 
-5. **環境名**を設定し、Azure Cloud エンドポイントに対して **Azure サブスクリプション**を選択します。
+5. **環境名** を設定し、Azure Cloud エンドポイントに対して **Azure サブスクリプション** を選択します。
 
       ![Azure Cloud エンドポイントの Azure サブスクリプションを選択する](media/solution-deployment-guide-cross-cloud-scaling/image9.png)
 
@@ -153,13 +153,13 @@ Azure Pipelines および Azure DevOps Services が提供するパイプライ�
 
       ![Azure クラウドでホストされる環境のエージェント キューを設定する](media/solution-deployment-guide-cross-cloud-scaling/image11.png)
 
-8. [Azure App Service 配置] メニューで、環境に対して有効な**パッケージまたはフォルダー**を選択します。 **[OK]** を選択して、**フォルダーの場所**を選択します。
+8. [Azure App Service 配置] メニューで、環境に対して有効な **パッケージまたはフォルダー** を選択します。 **[OK]** を選択して、**フォルダーの場所** を選択します。
   
       ![Azure App Service 環境のパッケージまたはフォルダーを選択する](media/solution-deployment-guide-cross-cloud-scaling/image12.png)
 
-      ![Azure App Service 環境のパッケージまたはフォルダーを選択する](media/solution-deployment-guide-cross-cloud-scaling/image13.png)
+      ![フォルダー ピッカー ダイアログ 1](media/solution-deployment-guide-cross-cloud-scaling/image13.png)
 
-9. すべての変更を保存し、**リリース パイプライン**に戻ります。
+9. すべての変更を保存し、**リリース パイプライン** に戻ります。
 
     ![リリース パイプラインの変更を保存する](media/solution-deployment-guide-cross-cloud-scaling/image14.png)
 
@@ -190,28 +190,28 @@ Azure Pipelines および Azure DevOps Services が提供するパイプライ�
 
     ![Azure Stack エージェントを選択する](media/solution-deployment-guide-cross-cloud-scaling/image21.png)
 
-17. [Azure App Service 配置] セクションで、環境に対して有効な**パッケージまたはフォルダー**を選択します。 **[OK]** を選択して、フォルダーの場所を選択します。
+17. [Azure App Service 配置] セクションで、環境に対して有効な **パッケージまたはフォルダー** を選択します。 **[OK]** を選択して、フォルダーの場所を選択します。
 
     ![[Azure App Service の配置] のフォルダーを選択する](media/solution-deployment-guide-cross-cloud-scaling/image22.png)
 
-    ![[Azure App Service の配置] のフォルダーを選択する](media/solution-deployment-guide-cross-cloud-scaling/image23.png)
+    ![フォルダー ピッカー ダイアログ 2](media/solution-deployment-guide-cross-cloud-scaling/image23.png)
 
 18. [変数] タブで、`VSTS\_ARM\_REST\_IGNORE\_SSL\_ERRORS` という名前の変数を追加し、その値を **true** に設定し、スコープを Azure Stack に設定します。
 
     ![Azure App の配置に変数を追加する](media/solution-deployment-guide-cross-cloud-scaling/image24.png)
 
-19. 両方の成果物で**継続的**配置トリガー アイコンを選択し、**継続的**配置トリガーを有効にします。
+19. 両方の成果物で **継続的** 配置トリガー アイコンを選択し、**継続的** 配置トリガーを有効にします。
 
     ![継続的配置トリガーを選択する](media/solution-deployment-guide-cross-cloud-scaling/image25.png)
 
-20. Azure Stack 環境で**配置前**条件アイコンを選択し、トリガーを**リリース後**に設定します。
+20. Azure Stack 環境で **配置前** 条件アイコンを選択し、トリガーを **リリース後** に設定します。
 
     ![配置前条件を選択する](media/solution-deployment-guide-cross-cloud-scaling/image26.png)
 
 21. すべての変更を保存します。
 
 > [!Note]  
-> タスクの一部の設定は、テンプレートからリリース定義を作成したときに、[環境変数](/azure/devops/pipelines/release/variables?tabs=batch&view=vsts#custom-variables)として自動的に定義されている可能性があります。 こうした設定は、タスクの設定では変更できません。これらの設定を編集するには、親環境項目を選択する必要があります。
+> タスクの一部の設定は、テンプレートからリリース定義を作成したときに、[環境変数](/azure/devops/pipelines/release/variables?tabs=batch#custom-variables)として自動的に定義されている可能性があります。 こうした設定は、タスクの設定では変更できません。これらの設定を編集するには、親環境項目を選択する必要があります。
 
 ## <a name="publish-to-azure-stack-hub-via-visual-studio"></a>Visual Studio 経由で Azure Stack Hub に発行する
 
@@ -242,7 +242,7 @@ Azure Pipelines および Azure DevOps Services が提供するパイプライ�
 ## <a name="develop-the-app-build"></a>アプリ ビルドを開発する
 
 > [!Note]  
-> (Windows Server と SQL の) 実行および App Service のデプロイには、適切なイメージがシンジケート化された Azure Stack Hub が必要です。 詳細については、「[App Service on Azure Stack Hub のデプロイの前提条件](/azure-stack/operator/azure-stack-app-service-before-you-get-started.md)」を参照してください。
+> (Windows Server と SQL の) 実行および App Service のデプロイには、適切なイメージがシンジケート化された Azure Stack Hub が必要です。 詳細については、「[App Service on Azure Stack Hub のデプロイの前提条件](/azure-stack/operator/azure-stack-app-service-before-you-get-started)」を参照してください。
 
 Azure Repos から [Azure Resource Manager テンプレート](https://azure.microsoft.com/resources/templates/)を Web アプリ コードのように使用して両方のクラウドに対してデプロイします。
 
@@ -250,7 +250,7 @@ Azure Repos から [Azure Resource Manager テンプレート](https://azure.mic
 
 1. Azure Stack Hub でのプロジェクト作成権限が付与されているアカウントを使用して、Azure Repos にサインインします。
 
-2. 既定の Web アプリを作成して開くことで、**リポジトリを複製**します。
+2. 既定の Web アプリを作成して開くことで、**リポジトリを複製** します。
 
 #### <a name="create-self-contained-web-app-deployment-for-app-services-in-both-clouds"></a>両方のクラウドで App Services の自己完結型 Web アプリ デプロイを作成する
 
@@ -290,17 +290,17 @@ Azure Pipelines および Azure DevOps Services が提供するパイプライ�
 
 4. **[成果物の追加]** の **[ソース (ビルド定義)]** から Azure Cloud ビルド アプリを選択します。
 
-5. **[パイプライン]** タブで、**1 フェーズ**、**1 タスク**のリンクを選択し、**環境のタスクを表示**します。
+5. **[パイプライン]** タブで、**1 フェーズ**、**1 タスク** のリンクを選択し、**環境のタスクを表示** します。
 
 6. **[タスク]** タブで **[環境名]** に「Azure」と入力し、 **[Azure サブスクリプション]** リストから [AzureCloud Traders-Web EP] を選択します。
 
-7. **Azure App Service の名前**として「`northwindtraders`」と入力します。次のキャプチャ画面を参照してください。
+7. **Azure App Service の名前** として「`northwindtraders`」と入力します。次のキャプチャ画面を参照してください。
 
 8. [エージェント フェーズ] で、 **[エージェント キュー]** リストから **[Hosted VS2017]** を選択します。
 
-9. **[Azure App Service 配置]** で、環境に対して有効な**パッケージまたはフォルダー**を選択します。
+9. **[Azure App Service 配置]** で、環境に対して有効な **パッケージまたはフォルダー** を選択します。
 
-10. **[ファイルまたはフォルダーの選択]** で、**保存先**に対して **[OK]** を選択します。
+10. **[ファイルまたはフォルダーの選択]** で、**保存先** に対して **[OK]** を選択します。
 
 11. すべての変更を保存し、 **[パイプライン]** に戻ります。
 
@@ -318,18 +318,18 @@ Azure Pipelines および Azure DevOps Services が提供するパイプライ�
 
 18. **[エージェントの選択]** で、 **[エージェント キュー]** リストから **[AzureStack -bDouglas Fir]** を選択します。
 
-19. **[Azure App Service 配置]** で、環境に対して有効な**パッケージまたはフォルダー**を選択します。 **[ファイルまたはフォルダーの選択]** で、フォルダーの**保存先**に対して **[OK]** を選択します。
+19. **[Azure App Service 配置]** で、環境に対して有効な **パッケージまたはフォルダー** を選択します。 **[ファイルまたはフォルダーの選択]** で、フォルダーの **保存先** に対して **[OK]** を選択します。
 
 20. **[変数]** タブで、`VSTS\_ARM\_REST\_IGNORE\_SSL\_ERRORS` という名前の変数を見つけます。 変数の値を **[true]** に設定し、そのスコープを **[Azure Stack Hub]** に設定します。
 
 21. **[パイプライン]** タブで、NorthwindCloud Traders-Web の成果物に使用する **[継続的配置トリガー]** アイコンを選択し、 **[継続的配置トリガー]** を **[有効]** に設定します。 **NorthwindCloud Traders-Vessel** の成果物についても同じ操作を行います。
 
-22. Azure Stack Hub 環境で**配置前**条件アイコンを選択し、トリガーを**リリース後**に設定します。
+22. Azure Stack Hub 環境で **配置前** 条件アイコンを選択し、トリガーを **リリース後** に設定します。
 
 23. すべての変更を保存します。
 
 > [!Note]  
-> リリース タスクの一部の設定は、テンプレートからリリース定義を作成したときに、[環境変数](/azure/devops/pipelines/release/variables?tabs=batch&view=vsts#custom-variables)として自動的に定義されます。 これらの設定は、タスク設定では変更できませんが、親環境項目で変更できます。
+> リリース タスクの一部の設定は、テンプレートからリリース定義を作成したときに、[環境変数](/azure/devops/pipelines/release/variables?tabs=batch#custom-variables)として自動的に定義されます。 これらの設定は、タスク設定では変更できませんが、親環境項目で変更できます。
 
 ## <a name="create-a-release"></a>リリースを作成する
 
@@ -347,13 +347,13 @@ Azure Pipelines および Azure DevOps Services が提供するパイプライ�
 
 2. デプロイ前またはデプロイ後の承認の **[アクション]** 列で人アイコンを選択し、デプロイを承認 (または拒否) したユーザーと、そのユーザーが入力したメッセージを表示します。
 
-3. デプロイ完了後、ログ ファイル全体が右側のウィンドウに表示されます。 左側のペインでいずれかの **[ステップ]** を選択し、**ジョブの初期化**など、単一ステップのログ ファイルを表示します。 ログを個別に表示できることから、デプロイ全体を構成する各要素の追跡とデバッグがしやすくなっています。 特定のステップのログ ファイルを**保存**するか、**すべてのログを zip としてダウンロード**します。
+3. デプロイ完了後、ログ ファイル全体が右側のウィンドウに表示されます。 左側のペインでいずれかの **[ステップ]** を選択し、**ジョブの初期化** など、単一ステップのログ ファイルを表示します。 ログを個別に表示できることから、デプロイ全体を構成する各要素の追跡とデバッグがしやすくなっています。 特定のステップのログ ファイルを **保存** するか、**すべてのログを zip としてダウンロード** します。
 
 4. **[概要]** タブを開くと、そのリリースの概要情報が表示されます。 ビルドとそのデプロイ先となった環境の詳細、デプロイ状態など、リリースに関する各種の情報がこのビューに表示されます。
 
 5. 環境リンク (**Azure** または **Azure Stack Hub**) を選択すると、特定の環境に対する既存のデプロイと保留中のデプロイについての情報が表示されます。 これらのビューを使って簡単に、同じビルドが両方の環境にデプロイされていることを確認します。
 
-6. **デプロイされた運用アプリ**をブラウザーで開きます。 たとえば、Azure App Services Web サイトの URL `https://[your-app-name\].azurewebsites.net` を開きます。
+6. **デプロイされた運用アプリ** をブラウザーで開きます。 たとえば、Azure App Services Web サイトの URL `https://[your-app-name\].azurewebsites.net` を開きます。
 
 ### <a name="integration-of-azure-and-azure-stack-hub-provides-a-scalable-cross-cloud-solution"></a>Azure と Azure Stack Hub を統合することにより、スケーラブルなクラウド間ソリューションが実現する
 
