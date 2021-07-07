@@ -3,16 +3,16 @@ title: Azure と Azure Stack Edge を使用した在庫切れ検出
 description: Azure と Azure Stack Edge サービスを使用して、在庫切れの検出を実装する方法について説明します。
 author: BryanLa
 ms.topic: article
-ms.date: 11/05/2019
+ms.date: 05/24/2021
 ms.author: bryanla
 ms.reviewer: anajod
-ms.lastreviewed: 11/05/2019
-ms.openlocfilehash: 865f63bc4234e50ed169aa29cefdb1886750594c
-ms.sourcegitcommit: bb3e40b210f86173568a47ba18c3cc50d4a40607
-ms.translationtype: MT
+ms.lastreviewed: 05/24/2021
+ms.openlocfilehash: b25a6391c4e64fa7018031bac4fb7d098c56b529
+ms.sourcegitcommit: cf2c4033d1b169f5b63980ce1865281366905e2e
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/17/2020
-ms.locfileid: "84911189"
+ms.lasthandoff: 05/25/2021
+ms.locfileid: "110343877"
 ---
 # <a name="out-of-stock-detection-at-the-edge-pattern"></a>エッジ パターンでの在庫切れ検出
 
@@ -69,7 +69,7 @@ ms.locfileid: "84911189"
 
 このソリューションは多数のデバイスと場所にまたがることがあるため、扱いにくくなる可能性があります。 Azure の IoT サービスにより、新しい場所とデバイスを自動的にオンラインにし、最新の状態に保つことができます。 適切なデータ ガバナンス手順にも従う必要があります。
 
-### <a name="security"></a>Security
+### <a name="security"></a>セキュリティ
 
 このパターンでは、潜在的に敏感なデータが処理されます。 キーが定期的にローテーションされており、Azure Storage アカウントとローカル共有のアクセス許可が正しく設定されていることを確認します。
 
@@ -81,4 +81,4 @@ ms.locfileid: "84911189"
 - ベスト プラクティスの詳細とその他の疑問の回答を得るには、「[ハイブリッド アプリケーション設計に関する考慮事項](overview-app-design-considerations.md)」を参照してください。
 - 製品とソリューションのポートフォリオ全体の詳細について、[Azure Stack ファミリの製品とソリューション](/azure-stack)を参照してください。
 
-ソリューションの例をテストする準備ができたら、[分析ソリューションの階層化データのデプロイ ガイド](https://aka.ms/edgeinferencingdeploy)に進んでください。 デプロイ ガイドでは、コンポーネントをデプロイしてテストするための詳細な手順について説明します。
+ソリューションの例をテストする準備ができたら、[Edge ML 推論ソリューションのデプロイ ガイド](https://aka.ms/edgeinferencingdeploy)に進んでください。 デプロイ ガイドでは、コンポーネントをデプロイしてテストするための詳細な手順について説明します。

@@ -3,18 +3,18 @@ title: Azure と Azure Stack Hub 向けのハイブリッド パターンとソ�
 description: Azure と Azure Stack Hub でのハイブリッド ソリューションの学習と構築のためのハイブリッド パターンとソリューションの例の概要。
 author: BryanLa
 ms.topic: overview
-ms.date: 11/05/2019
+ms.date: 05/24/2021
 ms.author: bryanla
 ms.reviewer: anajod
-ms.lastreviewed: 11/05/2019
-ms.openlocfilehash: 4f86e5ae4b8b9bd7693617b07419b67dfcf05dc1
-ms.sourcegitcommit: 962334135b63ac99c715e7bc8fb9282648ba63c9
+ms.lastreviewed: 05/24/2021
+ms.openlocfilehash: 9f3f13c23bec31c5132c7e90294356b9463fd72b
+ms.sourcegitcommit: cf2c4033d1b169f5b63980ce1865281366905e2e
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "104895314"
+ms.lasthandoff: 05/25/2021
+ms.locfileid: "110343860"
 ---
-# <a name="hybrid-patterns-and-solution-examples-for-azure-and-azure-stack"></a>Azure と Azure Stack 向けのハイブリッド パターンとソリューションの例
+# <a name="hybrid-solution-patterns-and-examples-for-azure-and-azure-stack"></a>Azure と Azure Stack 向けのハイブリッド ソリューションのパターンと例
 
 Microsoft では、Azure と Azure Stack の製品とソリューションを 1 つの一貫した Azure エコシステムとして提供しています。 Microsoft Azure Stack ファミリは Azure の拡張機能です。
 
@@ -29,11 +29,11 @@ Azure Stack は、"*ハイブリッド クラウド*" を有効にすること�
 
 クラウドをまたぐアプリは "*ハイブリッド アプリ*" とも呼ばれます。 Azure でハイブリッド クラウド アプリを構築し、接続されている/いないを問わず、あらゆる場所にあるデータセンターにデプロイすることができます。
 
-ハイブリッド アプリのシナリオは、開発に使用できるリソースによって大きく異なります。 また、地理、セキュリティ、インターネット アクセスなどの考慮事項も存在します。 ここで説明するパターンとソリューションは、すべての要件に対応しているとは限りませんが、ハイブリッド ソリューションを実装する際に探索して再利用するためのガイドラインと例を提供します。
+ハイブリッド アプリのシナリオは、開発に使用できるリソースによって大きく異なります。 また、地理、セキュリティ、インターネット アクセスなどの考慮事項も存在します。 ここで説明するソリューションのパターンと例は、すべての要件に対応しているとは限りませんが、ハイブリッド ソリューションを実装する際に探索して再利用するためのガイドラインと例を提供します。
 
-## <a name="design-patterns"></a>デザイン パターン
+## <a name="solution-patterns"></a>ソリューション パターン
 
-設計パターンは、実際の顧客シナリオや経験から、一般化された反復可能な設計ガイダンスを選び抜いたものです。 パターンは抽象的であるため、さまざまな種類のシナリオや業界に適用できます。 各パターンにはコンテキストと問題が文書化されており、ソリューションの例の概要を示します。 このソリューションの例は、考えられるパターンの実装を示しています。
+ソリューション パターンは、実際の顧客シナリオや経験から、一般化された反復可能な設計ガイダンスを選び抜いたものです。 パターンは抽象的であるため、さまざまな種類のシナリオや業界に適用できます。 各パターンにはコンテキストと問題が文書化されており、ソリューションの例の概要を示します。 このソリューションの例は、考えられるパターンの実装を示しています。
 
 パターンの記事には、次の 2 種類があります。
 
