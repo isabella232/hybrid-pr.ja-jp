@@ -295,15 +295,15 @@ additionalContent:
               text: 高可用性 Kubernetes クラスター
         - title: アプリ ソリューションのデプロイの例
           links:
-            - url: ./app-solutions/solution-deployment-guide-cross-cloud-scaling.md
+            - url: /azure/architecture/hybrid/deployments/solution-deployment-guide-cross-cloud-scaling
               text: クラウド間スケーリング
             - url: 'https://aka.ms/hybriddevopsdeploy'
               text: DevOps ハイブリッド CI/CD
-            - url: ./app-solutions/solution-deployment-guide-retail-footfall-detection.md
+            - url: /azure/architecture/hybrid/deployments/solution-deployment-guide-retail-footfall-detection
               text: 足音検知 (リテール)
-            - url: ./app-solutions/solution-deployment-guide-geo-distributed.md
+            - url: /azure/architecture/hybrid/deployments/solution-deployment-guide-geo-distributed
               text: 地理的に分散されたアプリ
-            - url: ./app-solutions/solution-deployment-guide-highly-available-kubernetes.md
+            - url: /azure/architecture/hybrid/deployments/solution-deployment-guide-highly-available-kubernetes
               text: 高可用性 Kubernetes クラスター
     - title: 評価と学習に関するリソース
       items:

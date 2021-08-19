@@ -9,12 +9,12 @@ metadata:
   author: BryanLa
   ms.author: bryanla
   ms.date: 10/31/2019
-  ms.openlocfilehash: 388cfb13249491275d7223415f26f20c17fe8f54
-  ms.sourcegitcommit: df7e3e6423c3d4e8a42dae3d1acfba1d55057258
+  ms.openlocfilehash: acdd50bcc56ead2e56af84850dcfe66697cf8ee1
+  ms.sourcegitcommit: df06f598da09074d387f5f765f7c4237af98fb59
   ms.translationtype: HT
   ms.contentlocale: ja-JP
-  ms.lasthandoff: 12/09/2020
-  ms.locfileid: "96901543"
+  ms.lasthandoff: 08/17/2021
+  ms.locfileid: "122281195"
 landingContent:
 - title: ハイブリッドとマルチクラウドのパターンとソリューションについて
   linkLists:
@@ -43,13 +43,13 @@ landingContent:
   - linkListType: tutorial
     links:
     - text: クラウド間スケーリング
-      url: solution-deployment-guide-cross-cloud-scaling.md
+      url: /azure/architecture/hybrid/deployments/solution-deployment-guide-cross-cloud-scaling
     - text: DevOps ハイブリッド CI/CD
       url: https://aka.ms/hybriddevopsdeploy
     - text: 足音検知 (リテール)
-      url: solution-deployment-guide-retail-footfall-detection.md
+      url: /azure/architecture/hybrid/deployments/solution-deployment-guide-retail-footfall-detection
     - text: 地理的に分散されたアプリ
-      url: solution-deployment-guide-geo-distributed.md
+      url: /azure/architecture/hybrid/deployments/solution-deployment-guide-geo-distributed
 - title: リテール足音検知のシナリオ
   linkLists:
   - linkListType: architecture
@@ -59,7 +59,7 @@ landingContent:
   - linkListType: tutorial
     links:
     - text: ソリューション デプロイ ガイド
-      url: solution-deployment-guide-retail-footfall-detection.md
+      url: /azure/architecture/hybrid/deployments/solution-deployment-guide-retail-footfall-detection
 - title: オンプレミスのデータ シナリオを使ったクラウド間スケーリング
   linkLists:
   - linkListType: architecture
@@ -69,7 +69,7 @@ landingContent:
   - linkListType: tutorial
     links:
     - text: ソリューション デプロイ ガイド
-      url: solution-deployment-guide-cross-cloud-scaling-onprem-data.md
+      url: /azure/architecture/hybrid/deployments/solution-deployment-guide-cross-cloud-scaling-onprem-data
 - title: 高可用性 Kubernetes クラスターのシナリオ
   linkLists:
   - linkListType: architecture

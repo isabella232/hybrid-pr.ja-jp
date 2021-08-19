@@ -33,29 +33,29 @@
 - name: ソリューション デプロイ ガイド
   items:
     - name: クラウド間スケーリング
-      href: solution-deployment-guide-cross-cloud-scaling.md
+      href: /azure/architecture/hybrid/deployments/solution-deployment-guide-cross-cloud-scaling
     - name: クラウド間スケーリング (オンプレミスのデータ)
-      href: solution-deployment-guide-cross-cloud-scaling-onprem-data.md
+      href: /azure/architecture/hybrid/deployments/solution-deployment-guide-cross-cloud-scaling-onprem-data
     - name: DevOps ハイブリッド CI/CD
       href: 'https://aka.ms/hybriddevopsdeploy'
     - name: 足音検知 (リテール)
-      href: solution-deployment-guide-retail-footfall-detection.md
+      href: /azure/architecture/hybrid/deployments/solution-deployment-guide-retail-footfall-detection
     - name: 地理的に分散されたアプリ
-      href: solution-deployment-guide-geo-distributed.md
+      href: /azure/architecture/hybrid/deployments/solution-deployment-guide-geo-distributed
     - name: 高可用性 Kubernetes クラスター
-      href: solution-deployment-guide-highly-available-kubernetes.md
+      href: /azure/architecture/hybrid/deployments/solution-deployment-guide-highly-available-kubernetes
     - name: ハイブリッド接続
-      href: solution-deployment-guide-connectivity.md
+      href: /azure/architecture/hybrid/deployments/solution-deployment-guide-connectivity
     - name: ハイブリッド ID
-      href: solution-deployment-guide-identity.md
+      href: /azure/architecture/hybrid/deployments/solution-deployment-guide-identity
     - name: ハイブリッド リレー
       href: 'https://aka.ms/hybridrelaydeployment'
     - name: 階層化データ
       href: 'https://aka.ms/tiereddatadeploy'
     - name: 高可用性 MongoDB
-      href: solution-deployment-guide-mongodb-ha.md
+      href: /azure/architecture/hybrid/deployments/solution-deployment-guide-mongodb-ha
     - name: 高可用性 SQL Server 2016
-      href: solution-deployment-guide-sql-ha.md
+      href: /azure/architecture/hybrid/deployments/solution-deployment-guide-sql-ha
     - name: エッジでの在庫切れ
       href: 'https://aka.ms/edgeinferencingdeploy'
     - name: エッジでの ML モデルのトレーニング
