@@ -7,12 +7,12 @@ ms.date: 11/05/2019
 ms.author: bryanla
 ms.reviewer: anajod
 ms.lastreviewed: 11/05/2019
-ms.openlocfilehash: a830f96e97c347cbbcc09a1b17f4836ecb6eb3e6
-ms.sourcegitcommit: bb3e40b210f86173568a47ba18c3cc50d4a40607
-ms.translationtype: MT
+ms.openlocfilehash: 90e0c177b5eaee4d223b4613e0b2ddf385fa799c
+ms.sourcegitcommit: df06f598da09074d387f5f765f7c4237af98fb59
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/17/2020
-ms.locfileid: "84911133"
+ms.lasthandoff: 08/17/2021
+ms.locfileid: "122281263"
 ---
 # <a name="cross-cloud-scaling-pattern"></a>クラウド間スケーリング パターン
 
@@ -35,7 +35,7 @@ ms.locfileid: "84911133"
 > [!NOTE]
 > このパターンは、アプリのステートレス コンポーネントにのみ適用されます。
 
-## <a name="components"></a>Components
+## <a name="components"></a>コンポーネント
 
 クラウド間スケーリング パターンは、次のコンポーネントで構成されています。
 
@@ -121,6 +121,6 @@ ms.locfileid: "84911133"
 
 - この DNS ベースのトラフィック ロード バランサーの詳細なしくみについては、「[Traffic Manager について](/azure/traffic-manager/traffic-manager-overview)」を参照してください。
 - ベスト プラクティスの詳細を確認し、その他の疑問の回答を取得するには、[ハイブリッド アプリケーションの設計上の考慮事項](overview-app-design-considerations.md)に関する記事を参照してください。
-- 製品とソリューションのポートフォリオ全体の詳細について、[Azure Stack の製品ファミリとソリューション](/azure-stack)に関するページをご覧ください。
+- 製品とソリューションのポートフォリオ全体の詳細について、[Azure Stack ファミリの製品とソリューション](/azure-stack)を参照してください。
 
-ソリューションの例をテストする準備ができたら、[クラウド間スケーリングのソリューション デプロイ ガイド](solution-deployment-guide-cross-cloud-scaling.md)に進んでください。 デプロイ ガイドでは、コンポーネントをデプロイしてテストするための詳細な手順について説明します。 Azure Stack Hub でホストされる Web アプリから Azure でホストされる Web アプリに切り替えるための手動トリガー プロセスを提供する、クラウド間ソリューションを作成する方法について学習します。 また、Traffic Manager を介して自動スケーリングを使用し、負荷に対して柔軟かつスケーラブルなクラウド ユーティリティを実現する方法についても学習します。
+ソリューションの例をテストする準備ができたら、[クラウド間スケーリングのソリューション デプロイ ガイド](/azure/architecture/hybrid/deployments/solution-deployment-guide-cross-cloud-scaling)に進んでください。 デプロイ ガイドでは、コンポーネントをデプロイしてテストするための詳細な手順について説明します。 Azure Stack Hub でホストされる Web アプリから Azure でホストされる Web アプリに切り替えるための手動トリガー プロセスを提供する、クラウド間ソリューションを作成する方法について学習します。 また、Traffic Manager を介して自動スケーリングを使用し、負荷に対して柔軟かつスケーラブルなクラウド ユーティリティを実現する方法についても学習します。

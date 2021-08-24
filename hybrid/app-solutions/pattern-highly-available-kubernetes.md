@@ -7,12 +7,12 @@ ms.date: 12/03/2020
 ms.author: bryanla
 ms.reviewer: bryanla
 ms.lastreviewed: 12/03/2020
-ms.openlocfilehash: 454cc0a0531882b7a8ec050a461420ce13eebcfe
-ms.sourcegitcommit: df7e3e6423c3d4e8a42dae3d1acfba1d55057258
+ms.openlocfilehash: f8a733bcdab871695e552ec687d42e3ff4230490
+ms.sourcegitcommit: df06f598da09074d387f5f765f7c4237af98fb59
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/09/2020
-ms.locfileid: "96912003"
+ms.lasthandoff: 08/17/2021
+ms.locfileid: "122281314"
 ---
 # <a name="high-availability-kubernetes-cluster-pattern"></a>高可用性 Kubernetes クラスター パターン
 
@@ -127,9 +127,9 @@ Kubernetes クラスター自体は、コンピューティング、ストレー
 
     スケーリングは、最初に Kubernetes クラスターをデプロイするために使用された AKS エンジン ヘルパー VM を使用して手動で行います。 詳細については、「[Kubernetes クラスターのスケーリング](https://github.com/Azure/aks-engine/blob/master/docs/topics/scale.md)」を参照してください
 
-- **クォータ** - Azure Stack Hub 上で AKS のデプロイを計画するときに構成した[クォータ](/azure-stack/operator/azure-stack-quota-types)について検討します。 各[サブスクリプション](/azure-stack/operator/service-plan-offer-subscription-overview)に適切なプランとクォータが構成されていることを確認します。 サブスクリプションは、スケールアウトの際にクラスターに必要なコンピューティング、ストレージ、およびその他のサービスの量に対応できる必要があります。
+- **クォータ** - Azure Stack Hub 上で AKS のデプロイを計画するときに構成した [クォータ](/azure-stack/operator/azure-stack-quota-types)について検討します。 各[サブスクリプション](/azure-stack/operator/service-plan-offer-subscription-overview)に適切なプランとクォータが構成されていることを確認します。 サブスクリプションは、スケールアウトの際にクラスターに必要なコンピューティング、ストレージ、およびその他のサービスの量に対応できる必要があります。
 
-- **アプリケーションのワークロード** - Azure Kubernetes Service ドキュメントの Kubernetes コア概念に関する記事で[クラスターとワークロードの概念](/azure/aks/concepts-clusters-workloads#nodes-and-node-pools)に関するページをご覧ください。 この記事は、アプリケーションのコンピューティングとメモリのニーズに基づいて適切な VM サイズを調べるのに役立ちます。  
+- **アプリケーションのワークロード** - Azure Kubernetes Service ドキュメントの Kubernetes コア概念に関する記事で [クラスターとワークロードの概念](/azure/aks/concepts-clusters-workloads#nodes-and-node-pools)に関するページをご覧ください。 この記事は、アプリケーションのコンピューティングとメモリのニーズに基づいて適切な VM サイズを調べるのに役立ちます。  
 
 **アプリケーション (アプリケーション レベル)**
 
@@ -394,4 +394,4 @@ Azure Stack Hub の機能を拡張できる Microsoft パートナー ソリュ�
 - Azure Stack Hub 内での[クラウド間スケーリング](pattern-cross-cloud-scale.md)および[地理的に分散されたアプリ パターン](pattern-geo-distributed.md)。
 - [Azure Kubernetes Service (AKS) 上のマイクロサービス アーキテクチャ](/azure/architecture/reference-architectures/microservices/aks)。
 
-ソリューションの例をテストする準備ができたら、[高可用性 Kubernetes クラスター デプロイ ガイド](solution-deployment-guide-highly-available-kubernetes.md)に進んでください。 デプロイ ガイドでは、コンポーネントをデプロイしてテストするための詳細な手順について説明します。
+ソリューションの例をテストする準備ができたら、[高可用性 Kubernetes クラスター デプロイ ガイド](/azure/architecture/hybrid/deployments/solution-deployment-guide-highly-available-kubernetes)に進んでください。 デプロイ ガイドでは、コンポーネントをデプロイしてテストするための詳細な手順について説明します。

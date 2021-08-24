@@ -6,12 +6,12 @@ ms.topic: article
 ms.date: 11/05/2019
 ms.author: bryanla
 ms.reviewer: anajod2019
-ms.openlocfilehash: 1f6243927390c7a520c2607c722664b2d31fc07f
-ms.sourcegitcommit: bb3e40b210f86173568a47ba18c3cc50d4a40607
-ms.translationtype: MT
+ms.openlocfilehash: 3c839d9bf3b6c3e1ff50cc695fd5f1a1127793d2
+ms.sourcegitcommit: df06f598da09074d387f5f765f7c4237af98fb59
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/17/2020
-ms.locfileid: "84910881"
+ms.lasthandoff: 08/17/2021
+ms.locfileid: "122281229"
 ---
 # <a name="geo-distributed-app-pattern"></a>地理的に分散されたアプリ パターン
 
@@ -27,7 +27,7 @@ Azure Stack Hub の地理的トラフィック ルーティング パターン (
 
 ![地理的に分散されたパターン](media/pattern-geo-distributed/geo-distribution.png)
 
-## <a name="components"></a>Components
+## <a name="components"></a>コンポーネント
 
 ### <a name="outside-the-cloud"></a>クラウドの外部
 
@@ -82,4 +82,4 @@ Azure Stack Hub の地理的トラフィック ルーティング パターン (
 - ベスト プラクティスの詳細とその他の疑問の回答を得るには、「[ハイブリッド アプリケーション設計に関する考慮事項](overview-app-design-considerations.md)」を参照してください。
 - 製品とソリューションのポートフォリオ全体の詳細について、[Azure Stack ファミリの製品とソリューション](/azure-stack)を参照してください。
 
-ソリューションの例をテストする準備ができたら、[地理的に分散されたアプリのソリューション デプロイ ガイド](solution-deployment-guide-geo-distributed.md)に進んでください。 デプロイ ガイドでは、コンポーネントをデプロイしてテストするための詳細な手順について説明します。 地理的に分散されたアプリ パターンを使用し、さまざまなメトリックに基づいて特定のエンドポイントにトラフィックを送信する方法を学習します。 地理的ベースのルーティングとエンドポイント構成で Traffic Manager プロファイルを作成すると、リージョンの要件、企業および国際的な規制、およびデータ ニーズに基づいて、情報がエンドポイントにルーティングされます。
+ソリューションの例をテストする準備ができたら、[地理的に分散されたアプリのソリューション デプロイ ガイド](/azure/architecture/hybrid/deployments/solution-deployment-guide-geo-distributed)に進んでください。 デプロイ ガイドでは、コンポーネントをデプロイしてテストするための詳細な手順について説明します。 地理的に分散されたアプリ パターンを使用し、さまざまなメトリックに基づいて特定のエンドポイントにトラフィックを送信する方法を学習します。 地理的ベースのルーティングとエンドポイント構成で Traffic Manager プロファイルを作成すると、リージョンの要件、企業および国際的な規制、およびデータ ニーズに基づいて、情報がエンドポイントにルーティングされます。

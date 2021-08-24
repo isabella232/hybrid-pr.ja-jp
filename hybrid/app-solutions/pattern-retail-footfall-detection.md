@@ -7,12 +7,12 @@ ms.date: 10/31/2019
 ms.author: bryanla
 ms.reviewer: anajod
 ms.lastreviewed: 10/31/2019
-ms.openlocfilehash: 866557ec3af2337e9f034da84cf417675508563b
-ms.sourcegitcommit: 962334135b63ac99c715e7bc8fb9282648ba63c9
+ms.openlocfilehash: 79fb39d418bed53ef6a78980fcd9188bdf6e57ae
+ms.sourcegitcommit: df06f598da09074d387f5f765f7c4237af98fb59
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "104895331"
+ms.lasthandoff: 08/17/2021
+ms.locfileid: "122281280"
 ---
 # <a name="footfall-detection-pattern"></a>足取り検出パターン
 
@@ -88,4 +88,4 @@ Contoso では、顧客の人口統計、ロイヤルティ、店舗のディス
 - 足取り検出パターンによって利用される、[階層化データ パターン](https://aka.ms/tiereddatadeploy)に関するページをご覧ください。
 - Custom Vision の使用に関する詳細については、[Custom Vision AI Dev Kit](https://azure.github.io/Vision-AI-DevKit-Pages/) に関するページをご覧ください。 
 
-ソリューションの例をテストする準備ができたら、[足取り検出のデプロイ ガイド](solution-deployment-guide-retail-footfall-detection.md)に進んでください。 デプロイ ガイドでは、コンポーネントをデプロイしてテストするための詳細な手順について説明します。
+ソリューションの例をテストする準備ができたら、[足取り検出のデプロイ ガイド](/azure/architecture/hybrid/deployments/solution-deployment-guide-retail-footfall-detection)に進んでください。 デプロイ ガイドでは、コンポーネントをデプロイしてテストするための詳細な手順について説明します。

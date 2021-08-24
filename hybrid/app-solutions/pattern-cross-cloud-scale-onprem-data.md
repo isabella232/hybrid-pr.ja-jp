@@ -7,12 +7,12 @@ ms.date: 11/05/2019
 ms.author: bryanla
 ms.reviewer: anajod
 ms.lastreviewed: 11/05/2019
-ms.openlocfilehash: edbb608fbf8e5288f29572bfe4cca98ffb3cb8fc
-ms.sourcegitcommit: bb3e40b210f86173568a47ba18c3cc50d4a40607
-ms.translationtype: MT
+ms.openlocfilehash: 5c8e3adb621ae4322bf6d60792fc307dbb24ff90
+ms.sourcegitcommit: df06f598da09074d387f5f765f7c4237af98fb59
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/17/2020
-ms.locfileid: "84911128"
+ms.lasthandoff: 08/17/2021
+ms.locfileid: "122281246"
 ---
 # <a name="cross-cloud-scaling-on-premises-data-pattern"></a>クラウド間スケーリング (オンプレミスのデータ) パターン
 
@@ -38,7 +38,7 @@ Azure と Azure Stack Hub にまたがるハイブリッド アプリを構築�
 |----------|-----------|-------------|
 | Azure | Azure App Service | [Azure App Service](/azure/app-service/) を使用すると、Web アプリ、RESTful API アプリ、および Azure Functions を構築してホストすることができます。 すべて任意のプログラミング言語で行うことができ、インフラストラクチャを管理する必要はありません。 |
 | | Azure Virtual Network| [Azure Virtual Network (VNet)](/azure/virtual-network/virtual-networks-overview) は、Azure 内のプライベート ネットワークの基本的な構成ブロックです。 VNet により、仮想マシン (VM) などのさまざまな種類の Azure リソースは、他の Azure リソース、インターネット、およびオンプレミスのネットワークと安全に通信することができます。 また、このソリューションでは、追加のネットワーク コンポーネントの使用方法も示します。<br>- アプリとゲートウェイ サブネット。<br>- ローカルのオンプレミス ネットワーク ゲートウェイ。<br>- サイト間 VPN ゲートウェイ接続として機能する仮想ネットワーク ゲートウェイ。<br>- パブリック IP アドレス。<br>- ポイント対サイト VPN 接続。<br>- DNS ドメインをホストし、名前解決を提供するための Azure DNS。 |
-| | Azure の Traffic Manager | [Azure Traffic Manager](/azure/traffic-manager/traffic-manager-overview) は、DNS ベースのトラフィック ロード バランサーです。 これを使用すると、さまざまなデータセンターのサービス エンドポイントへのユーザー トラフィックの分散を制御できます。 |
+| | Azure Traffic Manager | [Azure Traffic Manager](/azure/traffic-manager/traffic-manager-overview) は、DNS ベースのトラフィック ロード バランサーです。 これを使用すると、さまざまなデータセンターのサービス エンドポイントへのユーザー トラフィックの分散を制御できます。 |
 | | Azure Application Insights | [Application Insights](/azure/azure-monitor/app/app-insights-overview) は、複数のプラットフォームでアプリを構築および管理する Web 開発者向けの拡張可能なアプリケーション パフォーマンス管理サービスです。|
 | | Azure Functions | [Azure Functions](/azure/azure-functions/) を使用すると、最初に VM を作成したり、Web アプリを公開したりしなくても、サーバーレス環境でコードを実行できます。 |
 | | Azure の自動スケール | [自動スケーリング](/azure/azure-monitor/platform/autoscale-overview)は、Cloud Services、VM、および Web アプリの組み込み機能です。 この機能を使用すると、アプリは、需要の変化に応じて最高のパフォーマンスを発揮できます。 アプリは、トラフィックの急増に合わせて調整を行い、メトリクスが変化すると通知し、必要に応じてスケーリングします。 |
@@ -57,7 +57,7 @@ Azure と Azure Stack Hub にまたがるハイブリッド アプリを構築�
 
 Azure と Azure Stack Hub は、今日のグローバルに分散したビジネスのニーズに対応するのに非常に適しています。
 
-#### <a name="hybrid-cloud-without-the-hassle"></a>手間のかからないハイブリッド クラウド
+#### <a name="hybrid-cloud-without-the-hassle"></a>簡単に利用可能なハイブリッド クラウド
 
 Microsoft は、オンプレミスの資産と Azure Stack Hub および Azure を統合した、他に類のない単一の統合ソリューションを提供します。 この統合により、複数のポイント ソリューションやさまざまなクラウド プロバイダーを管理する煩雑さを軽減します。 クラウド間スケーリングにより、数回のクリックだけで Azure の機能を利用できます。 クラウド バーストを使用して Azure Stack Hub を Azure に接続するだけで、必要に応じて自分のデータとアプリを Azure で使用できるようになります。
 
@@ -96,7 +96,7 @@ Azure と Azure Stack Hub を使用すると、組織全体で一貫した一連
 
 Azure Stack Hub は、Azure Active Directory (Azure AD) および Active Directory フェデレーション サービス (AD FS) の両方と連携します。 Azure Stack Hub では、接続されたシナリオで Azure AD と連携します。 接続されていない環境では、ADFS を、切断されたソリューションとして使用できます。 サービス プリンシパルを使用してアプリへのアクセスが許可され、Azure Resource Manager を介してリソースをデプロイまたは構成することができます。
 
-### <a name="security"></a>Security
+### <a name="security"></a>セキュリティ
 
 #### <a name="ensure-compliance-and-data-sovereignty"></a>コンプライアンスの確保とデータの主権
 
@@ -137,4 +137,4 @@ Azure Stack Hub OEM パートナーとのパートナーシップにより、Mic
 - ベスト プラクティスの詳細とその他の疑問の回答を確認するには、「[ハイブリッド アプリケーション設計に関する考慮事項](overview-app-design-considerations.md)」を参照してください。
 - このパターンでは、Azure Stack Hub を含む Azure Stack 製品ファミリを使用します。 製品とソリューションのポートフォリオ全体の詳細について、[Azure Stack ファミリの製品とソリューション](/azure-stack)を参照してください。
 
-ソリューションの例をテストする準備ができたら、[クラウド間スケーリング (オンプレミスのデータ) のソリューション デプロイ ガイド](solution-deployment-guide-cross-cloud-scaling-onprem-data.md)に進んでください。 デプロイ ガイドでは、コンポーネントをデプロイしてテストするための詳細な手順について説明します。
+ソリューションの例をテストする準備ができたら、[クラウド間スケーリング (オンプレミスのデータ) のソリューション デプロイ ガイド](/azure/architecture/hybrid/deployments/solution-deployment-guide-cross-cloud-scaling-onprem-data)に進んでください。 デプロイ ガイドでは、コンポーネントをデプロイしてテストするための詳細な手順について説明します。
